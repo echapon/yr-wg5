@@ -1,0 +1,45 @@
+\documentclass[11pt,twoside,a4paper]{cernrep} 
+\usepackage{rep_common}
+\pagestyle{plain}
+% --
+% -- The bibliography file paths for the main volume and all parts
+% --
+\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section}
+% --
+\providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
+
+\begin{document}
+\newcommand{\main}{.}
+\def\biblio{}
+
+\title{HL/HE-LHC Physics Workshop Report \\[5mm]
+  Standard Model physics opportunities}
+\input{authors}
+
+\maketitle
+
+\begin{abstract}
+This is the abstract.
+\end{abstract}
+
+% -- Set the level of the TOC: 2 means including subsection, 1 means
+% including section 
+\setcounter{tocdepth}{2}
+\tableofcontents
+\newpage
+
+% -- List of sections
+\subfile{\main/section1/section}
+\newpage
+\subfile{\main/section2/section}
+\newpage
+
+% -- Add bibliography to table of contents
+%\addcontentsline{toc}{chapter}{References}
+
+% dummy reference to avoid that bibtex fails
+% -- Add volume bibliography and part specific bibliographies
+\bibliographystyle{report}
+\bibliography{\bibfiles}
+
+\end{document}
