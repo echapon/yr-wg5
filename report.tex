@@ -4,7 +4,7 @@
 % --
 % -- The bibliography file paths for the main volume and all parts
 % --
-\def\bibfiles{\main/bib/chapter,\main/section1/bib/section,\main/section2/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/introduction/bib/section,\main/opportunities/bib/section,\main/hf/bib/section,\main/quarkonia/bib/section,\main/thermalradiation/bib/section,\main/flow/bib/section,\main/smallsystems/bib/section,\main/lightflavour/bib/section,\main/jets/bib/section,\main/smallx/bib/section,\main/beyond/bib/section,\main/helhc/bib/section}
 % --
 \providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
 
@@ -30,9 +30,31 @@
 \newpage
 
 % -- List of sections
-\subfile{\main/section1/section}
+\subfile{\main/introduction/section}
 \newpage
-\subfile{\main/section2/section}
+\subfile{\main/opportunities/section}
+\newpage
+
+\subfile{\main/hf/section}
+\newpage
+\subfile{\main/quarkonia/section}
+\newpage
+\subfile{\main/thermalradiation/section}
+\newpage
+\subfile{\main/flow/section}
+\newpage
+\subfile{\main/smallsystems/section}
+\newpage
+\subfile{\main/lightflavour/section}
+\newpage
+\subfile{\main/jets/section}
+\newpage
+\subfile{\main/smallx/section}
+\newpage
+
+\subfile{\main/beyond/section}
+\newpage
+\subfile{\main/helhc/section}
 \newpage
 
 % -- Add bibliography to table of contents
