@@ -1,0 +1,25 @@
+# Here some simple instructions how to work "offline" with the tex document
+
+# check out repository, authenticate with your
+# Overleaf email address and password
+git clone https://git.overleaf.com/15078352bjchjtpfkyhx yr-wg5
+
+# build the whole document
+cd yr-wg5
+pdflatex report.tex
+bibtex report
+pdflatex report.tex
+
+# build one chapter
+cd smallx
+pdflatex section.tex
+bibtex section
+pdflatex section.tex
+
+# update local repository
+git pull
+
+# check in changes into repository
+git pull # always update first
+git commit <file1> <file2> ...
+git push
