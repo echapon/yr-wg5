@@ -6,6 +6,180 @@
 
 \begin{document}
 
-\section{New Section Title}
+\section{Ultra-peripheral and proton-lead collisions: probes of the partonic structure of ions and protons and resolving open questions in QCD production}
+
+\textcolor{red}{Instructions/Comments}
+\begin{itemize}
+\item variable naming and unit conventions to be taken from review: https://arxiv.org/abs/0706.3356
+\item please have a look at the .sty-files to check for symbols to be used
+\item subsubsection may be omitted partially in final document, only working titles, please modify title if needed for your part, keep this structure for the moment to allow to separate different contributions more easily
+\item luminosities to be used: PbPb: 10 nb$^{-1}$ @ 5.5 TeV ATLAS/CMS/ALICE, LHCb to be seen, about a factor 10 less, 
+pPb: 1000~nb$^{-1}$ @ 8.8 TeV for ATLAS/CMS, LHCb: 160~nb$^{-1}$@8.8~TeV, 50~nb$^{-1}$ for ALICE @ 8.8 TeV 
+\item please keep for the moment the 'headers' for the subparts
+\item we should make an effort to stay within 20 pages, even if it is not easy
+\end{itemize}
+
+\subsection{Introduction}
+Editor: Nestor Armesto \\
+Indicative length: 1-2 pp \\
+Content: intrinsic motivation, importance for heavy-ion physics and other fields, contextualisation w.r.t. other projects, content overview\\
+Figures: kinematic plane Q2-x, UPC starting point Fig.7 of https://arxiv.org/abs/0706.3356
+
+\subsection{The physics of ultra-peripheral collisions}
+Editor: see sub-parts\\
+Indicative length: 6 pages\\
+Figures: to be discussed based on available experimental material, preference to full scale upgrade, should be balanced in terms of experiments as well as topics\\
+Tables: one large overview table for observables
+\subsubsection{Experimental overview}
+Editors: Christoph Mayer(ALICE), Evgeny Krishen (ALICE), Daniel Tapia Takaki (CMS), Zvi Citron (ATLAS), Michael Winn (LHCb)
+Indicative length: 2 pages\\
+Content: observable overview table ordered by rate including back-of-envelope calculations for stat. error if nothing else available and explanations to instrumentation (one paragraph per experiment with suitable comparison with Run1/2), short mentioning of 'far beyond' observables in terms of luminosity in same collision system as default.
+
+
+
+\begin{table}[htbp]
+ {\tiny
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+Experiment   & published                  & systems   & Ref.                                                               &$\eta_{track}$  &$p_{T,track}$[GeV/$c$]*& $y_{lab,pair}$/mass[GeV/$c$] & raw yield & physics interest\\
+\hline
+ALICE &$J/\psi \to e e,\mu \mu$       & PbPb     & arxiv:1305.1467   & $|\eta|<0.9$   & one above 1.0        & $|y|<0.9$    &  &                \\
+             &$\psi(2S)\to ll/\psi+\pi\pi$& PbPb     & arxiv:1508.05076 &$|\eta|<0.9$    & one above 1.0 ($l$)  & $|y|<0.9$                   &     & \\
+ALICE &$\gamma\gamma\to ee$        & PbPb     & arxiv:1305.1467   &$|\eta|<0.9$    & -                    & 2.2$<m<$2.6,    & &             \\
+             &                            &          &                                                                    &                &                      & 3.7$<m<$10         & &           \\
+ALICE &$\rho \to \pi\pi$           & PbPb     & arxiv:1503.09177 &   -            &  -                   & $|y|<0.5$        & &            \\  
+ALICE   &$J/\psi \to \mu\mu$         & pPb      & arXiv:1406.7819  &$2.5<|\eta|<4.0$& $\approx >1.0$       & 2.5$<y<$4.0     & &              \\
+ALICE   &$J/\psi \to \mu\mu$         & PbPb     &arXiv:1209.3715  &3.7$<|\eta|<$2.5& $\approx >1.0$       & 2.6$<y<$3.6         & &          \\
+ALICE   &$J/\psi \to \mu\mu$         &PbPb\,per.& arXiv:1509.08802 &$2.5<|\eta|<4.0$& $\approx >1.0$       & 2.5$<y<$4.0             & &     \\
+\hline
+CMS          &$J/\psi \to \mu\mu$         & PbPb     & arXiv:1605.0966                  &1.2$<|\eta|<2.4$& $1.2<p_T<1.8$        & 1.8$<|y|<$2.3            & &     \\
+\hline
+LHCb         &$J/\psi/\psi(2S) \to \mu\mu$& pp       & arXiv:1401.3288
+                                                                                                                          & 2.0$<\eta<$4.5  & $p_T>0.4$~GeV/$c$   & $2.0<y<4.5$    & &               \\
+\hline
+ATLAS       &$\gamma\gamma\to \mu^+\mu^-$ & PbPb   &CONF-2016-025
+& $|\eta|<2.4$    & $p_T>4$             & $m>$~10~GeV/$c$   & &            \\
+ATLAS       & dijet & PbPb   &CONF-2016-025
+& $|\eta|<4.9$    & sum-$E_T>5$             &   &  & \\
+\hline
+& $J/\psi \to l^+l^-$                    &          &                                                                    &                  &                     & multi-diff., b-slope  & &          \\
+& Upsilon $\to l^+l^-$                   &          &                                                                    &                  &                     &          & &                        \\
+&$\psi(3S) \to D\bar{D}$                 &          &                                                                    &                  &                     &              & &                    \\
+& coherent $\phi \to$KK             &          &                                                                    &                 &                      &       & &      \\
+\hline
+& future $\gamma-\gamma$                 &          &                                                                    &                 &                      &        & &   \\
+\hline
+&  $\eta_c$, ($\chi_{c0},\chi_{c2}$)    &          &                                                                    &                 &                      &         & &    \\
+& 4 $l$: 2$\times$Vector-meson   &          &                                                                    &                 &                      &       & &      \\
+& $p\bar{p}$ ($\eta_c$)                 &          &                                                                    &                 &                      &        & &    \\
+\hline
+\end{tabular}
+\caption{Acceptances and observables: \textcolor{red}{MW: to be completed by experimental contacts, final layout and what in table to be decided, e.g. Ref. can be directly at experiment name for existing measurements and projections. The $p_T$-track selections for ATLAS,ALICE,CMS,LHCb represent not the limits of the reconstructibility but fiducial acceptance cuts that were chosen for those specific observables.}  }
+}
+\end{table}
+
+\subsubsection{Detailed projections}
+space for detailed projection studies, so far no explicit study known to MW
+\subsubsection{Inclusive and diffractive dijet production in UPC}
+Editors: Mark Strikman, Vadim Guzey + Adrian Dimitru, Vladimir Skokov\\
+Indicative length: 1-2 pages
+\subsubsection{Incoherent vector meson production}
+Editors: Mark Strikman and Vadim Guzey + Jesus Guillermo Contreras Nuno\\
+Indicative length: 1-2 pages
+\subsubsection{Opportunities with gamma-induced reactions in inelastic collisions}
+Editors: Spencer Klein + Jesus Guillermo Contreras Nuno\\
+Indicative length: 1-2 pages  
+
+\subsection{The physics of pPb collisions}
+Editors: see subparts\\
+Indicative length 6-7 pages\\
+Figures: to be discussed based on available experimental material, preference to full scale upgrade, should be balanced in terms of experiments as well as topics\\
+Tables: one large overview table for observables
+\subsubsection{Experimental overview}
+Editors: Yen-Jie Lee (CMS), Marco van Leeuwen (ALICE), Zvi Citron (ATLAS), Michael Winn (LHCb)\\
+Indicative length: 1-2 pages\\
+Content: observable overview table ordered by rate including back-of-envelope calculations for stat. error if nothing else available and explanations to instrumentation (one paragraph per experiment with suitable comparison with Run1/2), short mentioning of 'far beyond' observables in terms of luminosity in same collision system as default.
+
+\begin{table}[htbp]
+ {\footnotesize
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Experiment   & Observable & $p_{T}$[GeV/$c$]-range, mass & $y_{lab}$               & raw yield & physics interest \\
+\hline 
+ALICE  &                  &          &        &                    &        \\ 
+       &                  &          &        &                    & 
+\\
+       &                  &          &        &                    & 
+\\
+\hline
+ATLAS  &                  &          &        &                     &        \\
+       &                  &          &        &                    & 
+\\
+       &                  &          &        &                    & 
+\\
+\hline
+CMS    &                  &          &        &                    &         \\
+       &                  &          &        &                    & 
+\\
+       &                  &          &        &                    & 
+\\
+\hline
+LHCb   &                  &          &         &                    &         \\
+
+       &  $D\bar{D}$-correlations     &          &        &                    & TMD, saturation, collective behaviour  \\
+       &  open-charm production     &          &        &                    & nPDF, factorisation breaking \\ 
+ &  open-beauty production     &          &        &                    & nPDF, factorisation breaking \\ 
+&  photons     &          &        &                    & nPDF, saturation \\
+&  low-mass Drell-Yan   &          &        &                    & nPDF, saturation
+\\
+&  W-production     &          &        &                    & nPDF \\
+&  Z-production     &          &        &                    & nPDF
+\\
+\hline
+\end{tabular}
+\caption{Acceptances and observables.  }
+}
+\end{table}
+
+\subsubsection{Detailed projections}
+Editors: experimental contacts from overview unless other contact given, description as short as possible with reference to publicly available material \\
+Indicative length: 2 pages \\
+Content: W,Z(ATLAS/CMS), Drell-Yan(CMS/ATLAS), dijet(CMS/ATLAS)\\
+top (CMS) \\
+W,Z,low-mass Drell-Yan (LHCb), gamma (ALICE) \\
+ccbar + bbbar correlations (LHCb)
+\subsubsection{TMD and Low-$x$ phenomena sensitive observables in $c\bar{c}$ and $b\bar{b}$ production }
+Editor:  Cyrille Marquet\\
+Content: c-cbar and b-bbar correlations: heavy-mesons and dijets \\
+Indicative length: 1-2 page
+\subsubsection{Title to be condensed by author}
+Editor: Francois Arleo\\
+Content: Drell-Yan/photons, E-loss, pt-broadening in pA\\
+Indicative length: 1-2 page
+
+
+\subsection{Constraints on nuclear pdf at the HL-LHC}
+Editors: see subparts\\
+Indicative length: 5 pages
+\subsubsection{Overview}
+Editors: Fred Olsen, Aleksander Kusina, Ingo Schienbein, Hannu Paukkunen,   Ilkka Helenius\\
+Indicative length: 2 pages \\
+Content: summary of 'safe' inputs referring to subchapter tables, discussion of their impact and global fit to pseudodata and discussion of theory progress to enlarge 'safe' observables: low-x resummation, NNLO for heavy-quark c,b observables, necessary input assumptions and how to confirm/falsify with measurements
+outlook trying to fold in progress to be expected from experiment/theory and also consequences for Initial state description in heavy-ions \\
+Figures: summary plots for nPDF with and without reweight of pseudodata
+\subsubsection{UPC dijets}
+Editors: Ilkka Helenius 
+Indicative length: 1-2 pages
+\subsubsection{Top production}
+Editors: Hannu Paukkunen and David d'Enterria
+Indicative length: 1-2 pages
+
+\subsection{Perspectives with lighter ions}
+To be confirmed, need some rough luminosity scales for pA and AA \\
+Editors: to be recruited from other parts \\
+Indicative length: 2 pages \\
+
 
 \end{document}
