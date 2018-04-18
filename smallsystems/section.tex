@@ -4,6 +4,8 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
+\include{commands}
+
 \begin{document}
 
 \section{Physics of Hot and Dense QCD in Small Systems}
@@ -28,7 +30,16 @@
 
 \subsection{Key observables}
 
-% Multiplicity distribution used, with reference?
+\subsubsection{Multiplicity distribution in pp}
+
+\todo{NB. This section will most likely be too long, and has to be shortened for the yellow report}
+For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE (|eta| < 1.5) and ATLAS (|eta|< 2.5) data and the parameterisation with a negative binominal distribution which have been frequently used to characterize the multiplicity distribution\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.}.
+
+The data used is shown in Fig.~FIGURE (left panel: ALICE, right panel: ATLAS). The fit with a single negative binominal distribution of the tail of the distribution (XX\% of the cross-section) is also shown. The three parameters of this fit are shown as a function of center of mass energy in Fig.~FIGURE together with a power-law fit used to interpolate to 5.5 TeV and extrapolate to 14 TeV.
+
+The resulting multiplicity distribution for 14 TeV is shown in Fig.~FIGURE for the ALICE and ATLAS case, and compared in Fig.~FIGURE scaled relative to the average multiplicity to allow a direct comparison. \todo{comment on comparison, and on general uncertainties of tail}. \todo{discuss comparison to pPb and PbPb}
+
+\todo{add tables of multiplicity classes for pp, pPb and PbPb}.
 
 % vn, cn
 %   Higher orders
