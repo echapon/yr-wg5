@@ -4,7 +4,7 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
-\include{commands}
+\include{\main/smallsystems/commands}
 
 \begin{document}
 
@@ -33,28 +33,90 @@
 \subsubsection{Multiplicity distribution in pp}
 
 \todo{NB. This section will most likely be too long, and has to be shortened for the yellow report}
-For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE (|eta| < 1.5) and ATLAS (|eta|< 2.5) data and the parameterisation with a negative binominal distribution which have been frequently used to characterize the multiplicity distribution\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.}.
+For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE ($|\eta| < 1.5$) and ATLAS ($|\eta|< 2.5$) data. Data from CMS is compatible with the used distribution and is therefore not explicitly included in the extrapolation. A parameterisation with a single\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.} negative binomial distribution is used which also have been frequently used to characterize the multiplicity distribution~\cite{GrosseOetringhaus:2009kz,ALICE:2017pcy}.
 
-The data used is shown in Fig.~FIGURE (left panel: ALICE, right panel: ATLAS). The fit with a single negative binominal distribution of the tail of the distribution (XX\% of the cross-section) is also shown. The three parameters of this fit are shown as a function of center of mass energy in Fig.~FIGURE together with a power-law fit used to interpolate to 5.5 TeV and extrapolate to 14 TeV.
+The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a single negative binomial distribution of the tail of the distribution (XX\% of the cross-section) is also shown. The three parameters of this fit are shown as a function of centre of mass energy in Fig.~FIGURE together with a power-law fit used to interpolate to 5.5 TeV and extrapolate to 14 TeV.
 
-The resulting multiplicity distribution for 14 TeV is shown in Fig.~FIGURE for the ALICE and ATLAS case, and compared in Fig.~FIGURE scaled relative to the average multiplicity to allow a direct comparison. \todo{comment on comparison, and on general uncertainties of tail}. \todo{discuss comparison to pPb and PbPb}
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/mult_data.pdf}
+\caption{Multiplicity distributions measured by ALICE (left panel) and ATLAS (right panel) overlaid by the fit with a negative binomial distribution.}
+\label{fig:smallsystems_mult_data}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/mult_extrapolation.pdf}
+\caption{Extrapolated multiplicity distributions within $|\eta| < 1.5$ (left panel) and $|\eta| < 2.5$ (center panel) and scaled to the average multiplicity (right panel). The region of 14--16 \nch\ is indicated.}
+\label{fig:smallsystems_mult_extrapolation}
+\end{figure}
+
+The resulting multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. \todo{comment on comparison, and on general uncertainties of tail}. \todo{discuss comparison to pPb and PbPb}
 
 \todo{add tables of multiplicity classes for pp, pPb and PbPb}.
+\todo{where to add which sigma(pp) used}
+
+\subsubsection{Particle Correlations}
+
+The measurements of two-particle correlations and higher-order cumulants have produced the initial observations of collectivity in small systems. In pp collisions, two distinct regions are of interest at HL-LHC: the high-multiplicity tail and the low-multiplicity regions. 
+
+In pPb collisions, ...
 
 % vn, cn
 %   Higher orders
 %   Subevent method
 %   With PID + strangeness
-%   HF + quarkonia
+%   HF (D in pp!) + quarkonia
 %   P(vn) should be within reach in pp even!
+
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/corr_cumulants.pdf}
+\caption{Higher-order cumulants with and without applying subevents for pp (left) and pPb (right). ATLAS.}
+\label{fig:smallsystems_cumulants}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/corr_symmetriccumulants.pdf}
+\caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right). CMS.}
+\label{fig:smallsystems_symmetriccumulants}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/corr_cumulants_pid.pdf}
+\caption{Particle identified $v_n$ coefficients for pi, K, p (pp, ALICE), D mesons (pp, CMS), J/Psi (pp, pPb, ALICE, CMS) as a function of pT. Note that the multiplicity ranges are different for the different estimates. Plot may be messy and may need splitting in several panels.}
+\label{fig:smallsystems_cumulants_pid}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/corr_pvn.pdf}
+\caption{P(vn) estimate (ATLAS).}
+\label{fig:smallsystems_pvn}
+\end{figure}
+
+\subsubsection{Strangeness Enhancement}
+
+
+
 % Strangeness enhancement
-% Energy loss
-%   “RAA”
-%   Hadrons (and jets)
-%   Definition of RAA in pp to be discussed
-%   X+jets (X=photon,W,Z,[hadron,jet])
-%   Heavy Flavour
+
+\subsubsection{Energy Loss}
+
+Narrative: 
+- Existing pA eloss measurements (ALICE, ATLAS, CMS) show limit of maximal few percent quenching. In conclusion, RpA is not a good observable
+- Produce estimates for a) h-jet (a la ALICE), b) gamma-jet or Z-jet (ATLAS/CMS), c) jet substructure
+- Produce these for pA and pp
+- For pp, see if high mu sample can be also used for something. In fact it should be made clear where it can be used and where not, as this chapter will be one of the places where a low mu pp program is motivated.
+
+%   Heavy Flavour?
+
+\subsubsection{Thermal Radiation}
+
 % Thermal radiation?
+
 
 \subsection{Data-taking strategy}
 
