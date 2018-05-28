@@ -53,7 +53,42 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 
 The resulting multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. \todo{comment on comparison, and on general uncertainties of tail}. \todo{discuss comparison to pPb and PbPb}
 
-\todo{add tables of multiplicity classes for pp, pPb and PbPb}.
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c}
+Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
+\hline
+5--7 \nch     & 35--49   & 1.9e+08       & 3.7e+10 \\
+7--10 \nch    & 49--70   & 1.0e+07       & 2.0e+09 \\
+10--12 \nch   & 70--84   & 9.0e+04       & 1.8e+07 \\
+12--14 \nch   & 84--98   & 3.7e+03       & 7.3e+05 \\
+14--16 \nch   & 98--112  & 1.4e+02       & 2.8e+04 \\
+\hline
+\end{tabular}
+\caption{Number of events in selected multiplicity bins.}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{l|c|c|c}
+Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
+\hline
+0--5\% p--Pb   & 41--56        & 4.9e+07       & 9.8e+09 \\
+5--10\% p--Pb  & 34--41        & 1.9e+08       & 3.8e+10 \\
+10--20\% p--Pb & 27--34        & 6.6e+08       & 1.3e+11 \\
+20--40\% p--Pb & 20--27        & 2.7e+09       & 5.4e+11 \\
+\hline
+60--65\% Pb--Pb    & 98--137       & 1.5e+02       & 3.0e+04 \\
+65--70\% Pb--Pb    & 68--98        & 1.6e+05       & 3.1e+07 \\ 
+70--75\% Pb--Pb    & 45--68        & 2.1e+07       & 4.2e+09 \\
+75--80\% Pb--Pb    & 29--45        & 5.9e+08       & 1.2e+11 \\
+80--85\% Pb--Pb    & 18--29        & 4.6e+09       & 9.1e+11 \\
+\hline
+\end{tabular}
+\caption{Number of events in pp collisions sliced in equivalent multiplicity bins in p--Pb and Pb--Pb collisions.}
+\end{table}
+
+
 \todo{where to add which sigma(pp) used}
 
 \subsubsection{Particle Correlations}
@@ -62,38 +97,31 @@ The measurements of two-particle correlations and higher-order cumulants have pr
 
 In pPb collisions, ...
 
-% vn, cn
-%   Higher orders
-%   Subevent method
-%   With PID + strangeness
-%   HF (D in pp!) + quarkonia
-%   P(vn) should be within reach in pp even!
-
 \begin{figure}[ht]
 \centering
 \includegraphics[draft]{\main/smallsystems/img/corr_cumulants.pdf}
-\caption{Higher-order cumulants with and without applying subevents for pp (left) and pPb (right). ATLAS.}
+\caption{Higher-order cumulants with and without applying subevents for pp (left) and pPb (right) as a function of Nch. ATLAS.}
 \label{fig:smallsystems_corr_cumulants}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[draft]{\main/smallsystems/img/corr_symmetriccumulants.pdf}
-\caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right). CMS.}
+\caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right) as a function of Nch. CMS.}
 \label{fig:smallsystems_corr_symmetriccumulants}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[draft]{\main/smallsystems/img/corr_cumulants_pid.pdf}
-\caption{Particle identified $v_n$ coefficients for pi, K, p (pp, ALICE), D mesons (pp, CMS), J/Psi (pp, pPb, ALICE, CMS) as a function of pT. Note that the multiplicity ranges are different for the different estimates. Plot may be messy and may need splitting in several panels.}
+\caption{Particle identified $v_n$ (TODO only v2?) coefficients for pi, K, p (pp, ALICE), D mesons (pp, CMS), J/Psi (pp, pPb, ALICE, CMS) as a function of pT. Note that the multiplicity ranges are different for the different estimates. TODO: Plot may be messy and may need splitting in several panels.}
 \label{fig:smallsystems_corr_cumulants_pid}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[draft]{\main/smallsystems/img/corr_pvn.pdf}
-\caption{P(vn) estimate (ATLAS).}
+\caption{P(vn) estimate (ATLAS/ALICE).}
 \label{fig:smallsystems_corr_pvn}
 \end{figure}
 
@@ -102,11 +130,9 @@ In pPb collisions, ...
 \begin{figure}[ht]
 \centering
 \includegraphics[height=9cm]{\main/smallsystems/img/strangeness_omegapi.pdf}
-\caption{$\Omega/\pi$ ratio as a function of $\nch$ in pp collisions. Black symbols denote existing data \cite{ALICE:2017jyt} and colored symbols extrapolation. TODO: maybe only show 200pb-1}
+\caption{$\Omega/\pi$ ratio as a function of $\nch$ in pp collisions. Black symbols denote existing data \cite{ALICE:2017jyt} and coloured symbols extrapolation. TODO: maybe only show 200pb-1}
 \label{fig:smallsystems_strangeness_omega_pi}
 \end{figure}
-
-% Strangeness enhancement
 
 \subsubsection{Energy Loss}
 
@@ -116,12 +142,14 @@ Narrative:
 - Produce these for pA and pp
 - For pp, see if high mu sample can be also used for something. In fact it should be made clear where it can be used and where not, as this chapter will be one of the places where a low mu pp program is motivated.
 
-%   Heavy Flavour?
-
 \subsubsection{Thermal Radiation}
 
-% Thermal radiation?
-
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/thermal_radiation.pdf}
+\caption{Thermal dileptons. dN/Mee vs. Mee}
+\label{fig:smallsystems_thermal_radition}
+\end{figure}
 
 \subsection{Data-taking strategy}
 
