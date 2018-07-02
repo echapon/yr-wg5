@@ -4,7 +4,7 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
-\include{\main/smallsystems/commands}
+\input{\main/smallsystems/commands}
 
 \begin{document}
 
@@ -39,14 +39,18 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/mult_data.pdf}
+\includegraphics[width=0.49\linewidth]{\main/smallsystems/img/mult_data_1.pdf}
+\hfill
+\includegraphics[width=0.49\linewidth]{\main/smallsystems/img/mult_data_11.pdf}
 \caption{Multiplicity distributions measured by ALICE (left panel) and ATLAS (right panel) overlaid by the fit with a negative binomial distribution.}
 \label{fig:smallsystems_mult_data}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/mult_extrapolation.pdf}
+\includegraphics[width=0.32\linewidth]{\main/smallsystems/img/mult_extrapolation_1.pdf}
+\includegraphics[width=0.32\linewidth,draft]{\main/smallsystems/img/mult_extrapolation_11.pdf}
+\includegraphics[width=0.32\linewidth,draft]{\main/smallsystems/img/mult_extrapolation_11.pdf}
 \caption{Extrapolated multiplicity distributions within $|\eta| < 1.5$ (left panel) and $|\eta| < 2.5$ (center panel) and scaled to the average multiplicity (right panel). The region of 14--16 \nch\ is indicated.}
 \label{fig:smallsystems_mult_extrapolation}
 \end{figure}
@@ -55,14 +59,14 @@ The resulting multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:sma
 
 \begin{table}
 \centering
-\begin{tabular}{c|c|c|c}
-Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
+\begin{tabular}{c|c|c|c|c}
+Range & $\dNdeta$ & Fraction & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 \hline
-5--7 \nch     & 35--49   & 1.9e+08       & 3.7e+10 \\
-7--10 \nch    & 49--70   & 1.0e+07       & 2.0e+09 \\
-10--12 \nch   & 70--84   & 9.0e+04       & 1.8e+07 \\
-12--14 \nch   & 84--98   & 3.7e+03       & 7.3e+05 \\
-14--16 \nch   & 98--112  & 1.4e+02       & 2.8e+04 \\
+5--7 \nch     & 35--49   & 2.4e-03       & 1.9e+08       & 3.7e+10 \\
+7--10 \nch    & 49--70   & 1.3e-04       & 1.0e+07       & 2.0e+09 \\
+10--12 \nch   & 70--84   & 1.1e-06       & 9.0e+04       & 1.8e+07 \\
+12--14 \nch   & 84--98   & 4.7e-08       & 3.7e+03       & 7.3e+05 \\
+14--16 \nch   & 98--112  & 1.8e-09       & 1.4e+02       & 2.8e+04 \\
 \hline
 \end{tabular}
 \caption{Number of events in selected multiplicity bins.}
@@ -125,12 +129,14 @@ In pPb collisions, ...
 \label{fig:smallsystems_corr_pvn}
 \end{figure}
 
+\todo{p(vn)}
+
 \subsubsection{Strangeness Enhancement}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[height=9cm]{\main/smallsystems/img/strangeness_omegapi.pdf}
-\caption{$\Omega/\pi$ ratio as a function of $\nch$ in pp collisions. Black symbols denote existing data \cite{ALICE:2017jyt} and coloured symbols extrapolation. TODO: maybe only show 200pb-1}
+\caption{$\Omega/\pi$ ratio as a function of $\nch$ in pp collisions. Black symbols denote existing data \cite{ALICE:2017jyt} and blue symbols extrapolation. TODO add syst unc scaled by factor 2}
 \label{fig:smallsystems_strangeness_omega_pi}
 \end{figure}
 
