@@ -72,10 +72,9 @@
 
 \subsubsection{Multiplicity distribution in pp}
 
-\todo{NB. This section will most likely be too long, and has to be shortened for the yellow report}
-For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE ($|\eta| < 1.5$) and ATLAS ($|\eta|< 2.5$) data. Data from CMS is compatible with the used distribution and is therefore not explicitly included in the extrapolation. A parameterisation with a single\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.} negative binomial distribution is used which also have been frequently used to characterize the multiplicity distribution~\cite{GrosseOetringhaus:2009kz,ALICE:2017pcy}.
+For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE ($|\eta| < 1.5$) \cite{Adam:2015gka} and ATLAS ($|\eta|< 2.5$) \cite{Aad:2010ac,Aad:2016xww} data. Data from CMS \cite{Khachatryan:2010nk} is compatible with the used distribution and is therefore not explicitly included in the extrapolation. A parameterisation with a single\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.} negative binomial distribution is used which also have been frequently used to characterize the multiplicity distribution~\cite{GrosseOetringhaus:2009kz,ALICE:2017pcy}.
 
-The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a single negative binomial distribution of the tail of the distribution (XX\% of the cross-section) is also shown. The three parameters of this fit are shown as a function of centre of mass energy in Fig.~FIGURE together with a power-law fit used to interpolate to 5.5 TeV and extrapolate to 14 TeV.
+The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a single negative binomial distribution of the tail of the distribution (20--40\% of the cross-section) is also shown. The three parameters of this fit are fit with a power-law fit to extrapolate to 14 TeV.
 
 \begin{figure}[ht]
 \centering
@@ -95,8 +94,10 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 \label{fig:smallsystems_mult_extrapolation}
 \end{figure}
 
-The resulting multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. \todo{comment on comparison, and on general uncertainties of tail}. \todo{discuss comparison to pPb and PbPb}
+The resulting extrapolated multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. In addition, these are compared scaled by their respective average multiplicities. The agreement is rather good, with some discrepancy in the tail of the distribution. The extrapolation based on the smaller phase space region falls off more quickly with multiplicity, and is therefore used as the more conservative estimate for all extrapolations.
 
+Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in p--Pb and Pb--Pb collisions. These tables are the key input for the extrapolations in this section.
+ 
 \begin{table}
 \centering
 \begin{tabular}{c|c|c|c|c}
@@ -110,6 +111,7 @@ Range & $\dNdeta$ & Fraction & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 \hline
 \end{tabular}
 \caption{Number of pp events at 14 TeV in selected multiplicity bins.}
+\label{tab:smallsystems_pp}
 \end{table}
 
 \begin{table}
