@@ -188,6 +188,8 @@
 \DeclareRobustCommand{\Pemp}{\HepParticle{\Pe}{}{\mp}\Xspace} % e minus/plus
 \DeclareRobustCommand{\Pem}{\HepParticle{\Pe}{}{-}\Xspace} % electron
 \DeclareRobustCommand{\Pep}{\HepParticle{\Pe}{}{+}\Xspace} % positron
+\DeclareRobustCommand{\Pepem}{\HepParticle{\Pe}{}{+}\HepParticle{\Pe}{}{-}\Xspace} % positron-electron pair
+
 %%% For nuclear physics: beta decay
 \DeclareRobustCommand{\PGb}{\HepParticle{\upbeta}{}{}\Xspace} % beta
 \DeclareRobustCommand{\PGbm}{\HepParticle{\PGb}{}{-}\Xspace} % beta-
@@ -197,7 +199,8 @@
 \DeclareRobustCommand{\PGmpm}{\HepParticle{\PGm}{}{\pm}\Xspace} % mu plus/minus
 \DeclareRobustCommand{\PGmm}{\HepParticle{\PGm}{}{-}\Xspace} % muon
 \DeclareRobustCommand{\PGmp}{\HepParticle{\PGm}{}{+}\Xspace} % anti-muon
-
+ \DeclareRobustCommand{\PGmpGmm}{\HepParticle{\PGm}{}{+}\HepParticle{\PGm}{}{-}\Xspace} % anti-muon-muon pair
+ 
 \DeclareRobustCommand{\PGt}{\HepParticle{\uptau}{}{}\Xspace} % tau
 \DeclareRobustCommand{\PGtpm}{\HepParticle{\PGt}{}{\pm}\Xspace} % tau plus/minus
 \DeclareRobustCommand{\PGtm}{\HepParticle{\PGt}{}{-}\Xspace} % tau lepton
