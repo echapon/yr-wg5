@@ -2,47 +2,346 @@
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+
+% custom commands
+\providecommand{\pt}{\ensuremath{p_\text{T}}\Xspace}
+\providecommand{\raa}{\ensuremath{R_\text{AA}}\Xspace}
+\providecommand{\sqrtsnn}{\ensuremath{\sqrt{s_\text{NN}}}\Xspace}
 % until here
 
 \begin{document}
 
 \section{Quarkonia}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Introduction}
+\label{sec_intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A key objective in high-energy heavy-ion physics is to determine the in-medium forces 
+that give rise to the remarkable many-body features of the quark-gluon plasma (QGP).
+In the QCD vacuum, the unravelling of the fundamental force between two static color charges  
+was made possible by the discovery of the charmonium and bottomonium states in the 1970's. 
+Subsequent quantitative analyses of the bound-state spectra established the underlying
+potential to be of Cornell type~\cite{Eichten:1979ms}, 
+\begin{equation}
+V(r) = -\frac{4}{3} \frac{\alpha_s}{r} + \sigma r \ ,
+\label{V}
+\end{equation} 
+with a color-Coulomb term due to gluon exchange and a linear rising term with string
+tension $\sigma\simeq0.9$\,GeV/fm. This potential has also been quantitatively confirmed 
+by lattice-QCD (lQCD) simulations~\cite{Bali:2000gf}. 
+The corresponding effective field theory of QCD, potential non-relativistc QCD
+(pNRQCD), provides a rigorous framework for the description of the heavy quarkonium
+bound-state spectra in the large-mass limit~\cite{Brambilla:2004wf}.
+The heavy-quark (HQ) potential thus provides a well calibrated starting point to probe the 
+QCD medium, and the in-medium spectroscopy of quarkonia is the natural tool to carry this 
+out in heavy-ion collisions, cf.~\cite{Rapp:2008tf,BraunMunzinger:2009ih,Kluberg:2009wc,Mocsy:2013syh,Liu:2015izf} 
+for recent reviews.
+The string term in the HQ potential, eq.~(\ref{V}), characterizes the long-range nonperturbative 
+part of the force and is associated with the confining property of QCD. It is expected to play 
+a critical role in the transition from hadronic to partonic degrees of freedom, and may well be 
+responsible for the remarkable transport properties of the QGP, {\it i.e.}, its strongly coupled 
+nature, up to temperatures of 2-3 times the pseudo-critical temperature, $T_c$~\cite{Liu:2016ysz}. 
 
-\subsection{Charmonia in PbPb collisions}
+Much like in vacuum, a systematic investigation of the in-medium force must involve the 
+{\em spectroscopy} of different states, as they subsequently dissolve with increasing 
+temperature. In this sense, quarkonia are not straightforwardly usable as a thermometer, 
+which would imply that their dissociation pattern provides a known gauge. In the vacuum, 
+only the 1S ground-state bottomonia (\PGUP{1S} and \PGhb) are small enough in size 
+to be mostly bound by the color-Coulomb force. All excited bottomonia and all charmonia are 
+predominantly bound by the nonperturbative string force (and/or residual mesonic forces). 
+Thus, charmonia and excited bottomonia are excellent probes of the in-medium confining
+force, as originally envisioned for the \PJgy~\cite{Matsui:1986dk}.
+However, in the cooling of the expanding fireball, quarkonia can also be ``regenerated" 
+through recombinatin of individual heavy quarks and anti-quarks diffusing through the medium. 
+This mechanism has turned out to be critical in understanding the
+\PJgy production systematics at the LHC where regeneration (or statistical hadronization) 
+constitutes the major part of the yield observed in central Pb-Pb collisions. It's precise
+amount is sensitive to the open-charm cross section and the charm-quark diffusion
+coefficient, whose determination are key objectives discussed in the chapter~\ref{sec:HI_HF} on open 
+heavy-flavor production. For bottomonia, the current understanding suggests that regeneration 
+is less 
+important (although still significant) for \PGUP{1S}, but possibly figures as a
+major component in the strongly suppressed yield of excited states, especially the 
+\PGUP{2S}. It is therefore of great importance to obtain additional information about
+the production "times" of the observed yields, in particular through \pt spectra
+and elliptic flow which contain information about the fireball's collectivity imprinted
+on the quarkonia by the time of their decoupling. A schematic illustration of the current knowledge
+extracted from ``in-medium quarkonium spectroscopy", {\it i.e.}, their production systematics 
+in heavy-ion collisions is shown in Fig.~\ref{fig_pot}.        
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=0.6\columnwidth]{fig/in-med-pot.pdf}
+\end{center}
+\vspace{-0.5cm}
+\caption{The vacuum heavy-quark potential as a function of $Q\bar Q$ separation. The vertical
+lines indicate the approximate locations of the vacuum bound states while the horizontal arrows
+indicate the minimal screening distances of the media produced at the SPS, RHIC and LHC, as 
+extracted from quarkonium production systematics in Pb-Pb and Au-Au collisions, along with 
+approximate initial temperatures reached in these collisions. 
+Figure taken from Ref.~\cite{Rapp:2017chc}}
+\label{fig_pot}
+\end{figure}
 
-List of figures:
-\begin{itemize}
-  \item prompt J/psi v2 vs pT, for 30--50\%: $|y|<0.9$, $1.6<|y|<2.4$, $2.5<|y|<4$
-  \item prompt J/psi RAA vs Pt ($|y|<2.4$) at high pT
-  \item prompt J/psi polarisation?
-  \item prompt psi(2S) RAA (and yields) vs. Npart (pT integrated) 
-  \item prompt psi(2S)/J/psi (or psi2S RAA) vs. Npart: $|y|<0.9 (2.4)$, $2.5<|y|<4$
-  \item prompt psi(2S) (and J/psi, or ratio) vs. pT (at low and high pT) 
-  \item prompt psi(2S) v2 vs pT for 30--50\%
-  \item RAA of chic(1P), X(3872) vs pT for $|y|<2.4$
-\end{itemize}
 
-\subsection{Bottomonia in PbPb collisions}
+On the theoretical side, the basic objects are the quarkonium spectral functions which 
+encode the information on the quarkonium binding energies, in-medium HQ masses and the
+(inelastic) reaction rates. Ample constraints on the determination of the quarkonium
+spectral functions are available from thermal lQCD, {\it e.g.}, in terms of the heavy-quark
+free energy, euclidean and spatial quarkonium correlation functions, and HQ susceptibilities,
+and are being implemented into potential model 
+calculations~\cite{Wong:2004zr,Mocsy:2005qw,Alberico:2006vw,Brambilla:2008cx,Riek:2010py,Burnier:2015tda,Liu:2017qah}.
+The information from the spectral functions can then be utilized in heavy-ion phenomenology
+via transport models. As such, there is a rather direct connection between first-principles
+information from lQCD and experiment that greatly benefits the extraction of robust information 
+on the in-medium QCD force and its emergent transport properties (most notably the (chemical)
+equilibration rates of quarkonia). 
+Thus far most transport models are based on rate equations and/or
+semicalssical Botlzmann equations. In recent years quantum transport approaches have 
+received increased attention; it will be interesting to see how large the corrections
+of these effects are to the semiclassical approaches. Quantum effects may be particular 
+relevant at high \pt in connection with the in-medium formation times of quarkonia, 
+augmented by the Lorentz time dilation in the moving frame; schematic treatments of
+this effect in semiclassical approaches suggest that varying formation times can leave 
+observable differences for high-momentum charmonia and 
+bottomonia~\cite{Song:2015bja,Hoelck:2016tqf,Du:2017qkv,Aronson:2017ymv,Krouppa:2017jlg}. 
+Finally, the implementation of phase-space distributions of explicitly diffusing heavy quarks 
+into quarkonium transport is being investigated by various groups, which, as mentioned above, 
+will provide valuable constraints on the magnitude and \pt dependence of regeneration 
+reactions.   
 
-List of figures, for Upsilon(1S,2S,3S), all for $|y|<2.4$ and $2.5<|y|<4$:
-\begin{itemize}
- \item  RAA (and yields?) vs pT, RAA vs y for 0--10\%, 0--100\% 
- \item v2 vs pT 30--50\%
- \item Y(1S,2S,3S) RAA vs Npart
- \item Y(2S,3S)/Y(1S) vs Npart  
-\end{itemize}
+\subsection{Charmonia in PbPb collisions (Main contributor: Anton Andronic)}
+
+
+\begin{figure}
+
+\begin{center}
+ \includegraphics[width=0.66\textwidth]{fig/alice/alice_jpsi_v2_projected.pdf}
+ \includegraphics[width=0.32\textwidth]{fig/alice/alice_jpsi_v2_projected2.pdf}
+\end{center}
+
+ \caption{prompt J/psi v2 vs pT, for 30--50\%: $|y|<0.9$, $1.6<|y|<2.4$, $2.5<|y|<4$~\cite{Abelev:1475243,CERN-LHCC-2013-014}}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.5\textwidth]{fig/atlas/atlas_promptjpsi_models}
+\end{center}
+
+ \caption{prompt J/psi RAA vs Pt ($|y|<2.4$) at high pT~\cite{Aaboud:2018quy}}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\textwidth]{fig/alice/jpsi_polarisation.png}
+\end{center}
+
+ \caption{prompt J/psi polarisation~\cite{Abelev:1475243}}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+ ?
+\end{center}
+
+ \caption{prompt psi(2S) RAA (and yields) vs. Npart (pT integrated) }
+\end{figure}
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.32\textwidth]{fig/alice/alice_dr_psi_projected}
+ \includegraphics[width=0.32\textwidth]{fig/alice/alice_dr_psi_projected2}
+\end{center}
+
+ \caption{prompt psi(2S)/J/psi (or psi2S RAA) vs. Npart: $|y|<0.9 (2.4)$, $2.5<|y|<4$}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.32\textwidth]{fig/theory/psi_dr_vitev.png}
+\end{center}
+
+ \caption{prompt psi(2S) (and J/psi, or ratio) vs. pT (at low and high pT) }
+\end{figure}
+
+\begin{figure}
+...
+
+ \caption{prompt psi(2S) v2 vs pT for 30--50\%}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.32\textwidth]{fig/theory/chic.png}
+\end{center}
+
+ \caption{RAA of chic(1P), X(3872) vs pT for $|y|<2.4$}
+\end{figure}
+
+\clearpage
+
+\subsection{Bottomonia in PbPb collisions (Main contributor: Emilien Chapon)}
+
+% To cite: Strickland papers, Rapp papers, Nora, Debasish, exp. papers...
+
+% Intro about bottomonia: specificities wrt charmonia, overview of theoretical ingredients.
+% Mass, beauty vs charm, 3 states, Tdiss, no B feed-down, feed-down, ...
+% split in th vs exp differences
+The study of bottomonia with PbPb data from the Runs 3 and 4 of the LHC can bring further information on the various physics aspects described above, and more.
+Although their production is a priori subject to the same effects as charmonia, in practice the two quarkonium families feature some fundamental differences.
+Binding energies differ, which is reflected in the different dissociation temperatures: about twice the critical temperature $T_C$ for \PGUP{1S}, much high than the about
+$1.2 T_C$ for \PJgy or \PGUP{2S}, for instance. The feed-down pattern is also more complex: while the contribution of B meson decays is specific to charmonia, more states can
+contribute to the different $S$-wave bottomonia, owing to decays of \PGUP{2S} and \PGUP{3S}, as well as the many states of the \PGcb family. In practice, up to $30-40$\% of the measured 
+\PGUP{1S} and \PGUP{2S} yields actually result from the feed-down from other states. At the same time, this important feature of bottomonium production means that
+a large portion of measured \PGUP{1S} suppression can be due to the stronger suppression of the feed-down states.
+In addition, the feed-down fractions, for the contribution of the 
+different states to the measured bottomonium states, are constrained experimentally as a function of \pt but with limited precision, which is one source of uncertainty in the models.
+The impact of regeneration from uncorrelated $\text{b}\bar{\text{b}}$ is also expected to be much smaller than for charmonia, because of the much smaller number of $\text{b}\bar{\text{b}}$
+pairs per PbPb event compared to $\text{c}\bar{\text{c}}$. The importance of regeneration for bottomonia is however still very model dependent, and no unambiguous experimental signal
+for it has been found yet. Possible ways of constraining this contribution will be discussed in this section.
+
+Experimentally, the higher mass of bottomonia compared to charmonia implies higher \pt decay leptons, allowing the ATLAS and CMS experiments to measure the production down to 0 \pt,
+as is possible for ALICE for both charmonia and bottomonia. The proximity in mass between the different mass states, especially between the \PGUP{2S} and \PGUP{3S} states, also 
+means that good muon (or electron) momentum resolution is essential to their measurement, especially for excited states. CMS benefits from its stronger magnetic field, while
+the addition of the MFT will also beneficial in improving the muon momentum resolution of the ALICE detector.
+
+% Summary of Run1+Run2 results %FIXME one word about RHIC too, please check
+It is useful to remind quickly the status in 2018, based on results from Run1 and early Run2 LHC data as well as RHIC data. \PGU production is found to be suppressed in PbPb compared to pp
+collisions, in all rapidity, \pt and centrality ranges measured. Suppression is stronger in central events, as expected from the hotter and longer-lived medium in such events.
+Another striking feature is that excited states are more suppressed than the ground state, the \PGUP{3S} being still unmeasured in AA collisions ($\raa(\PGUP{3S})<0.094$ at 95\% confidence
+level, for $\sqrtsnn = 5.02$\,TeV). In addition, the large suppression found for \PGUP{1S} in central collisions does not seem compatible with unmodified direct \PGUP{1S} production,
+though uncertainties on non-QGP effects (initial state modifications and final state effects) do not allow for an undebatable statement regarding \PGUP{1S} melting in the medium.
+No significant dependence of the suppression of \PGU states is found on collision energy or rapidity.
+
+Experimentally, the main provision of Runs 3 and 4 data, compared to Runs 1 and 2, will be the much higher quantity of data, expected to be 10\,nb$^{-1}$, an increase of a factor about
+100 for the ALICE experiment %FIXME check
+and about 5 for the ATLAS and CMS experiments. The much higher precision will be most beneficial in regions of the phase space where the cross section is smaller: for instance at
+forward rapidity and in peripheral collisions. At the same time, there is access to higher \pt bottomonia, up to about 50\,GeV with ATLAS and CMS, where one could look for hints of an
+increasing \raa, as found for prompt \PJgy in Run~2 data~\cite{Sirunyan:2017isk,Aaboud:2018quy}. In addition, more data will be even more appreciable for \PGUP{2S} and \PGUP{3S}: 
+the modification of the former in PbPb collisions is known with limited precision today, and only upper limits on the production of the latter are available. More data will also have
+an impact on the main systematic uncertainties impacting results today. Efficiency uncertainties will be reduced, thanks to the larger calibration datasets recorded (minimum bias data
+and \PJgy data for tag-and-probe corrections). At the same time, uncertainties on the modeling of signal and background mass shapes will also be reduced, some unrealistic 
+parametrisations being rejected by the more precise data.
+
+% comments on Phase-I and Phase-II upgrades
+The addition of the MFT during LS2 will also impact \PGU measurements from ALICE. The main improvement will be a reduction in the background, yielding to better signal over background
+ratios. This will further improve the precision for \PGUP{1S} measurements, as well as enable differential $\PGUP{2S}+\PGUP{3S}$ measurements. The improvement of the mass resolution can bring
+a further improvement in the experimental precision of the results. In addition, the ATLAS and CMS detectors will also undergo major upgrades between Runs 3 and 4, with an inner tracker
+extending to $|\eta|\lesssim 4.0$ (3.8) for ATLAS (CMS), and with extended muon coverage to $|\eta|\lesssim 2.7$ (3.0). While the detector improvements will have a smaller impact than the
+increase in statistics, this increase in pseudorapidity coverage is appreciable in also giving an overlap with the range of ALICE and LHCb.
+
+% Discuss regeneration
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.32\textwidth]{fig/cms/CMS-PAS-FTR-17-002_Figure_008-b.pdf}
+ \includegraphics[width=0.32\textwidth]{fig/theory/rapp_raa_npart_CMS.png}
+ \includegraphics[width=0.32\textwidth]{fig/theory/rapp_raa_npart_ALICE.png}
+\end{center}
+
+ \caption{Y(1S,2S,3S) RAA vs Npart\cite{CMS-PAS-FTR-17-002,Krouppa:2016jcl,Du:2017qkv}}
+ \label{fig:upsi_raa_npart}
+\end{figure}
+
+\begin{figure}
+ \begin{center}
+  \includegraphics[width=0.32\textwidth]{fig/theory/rapp_dr_npart.png}
+ \end{center}
+
+ \caption{Y(2S,3S)/Y(1S) vs Npart~\cite{Du:2017qkv}}
+\end{figure}
+
+% discuss centrality dependence: importance of different ingredients... potential, initial T, hydro vs transport, etc
+
+The main striking features of \PGU suppression can be observed in Fig.~\ref{fig:upsi_raa_npart} and in current data: first a strong dependence of the suppression with the collision
+centrality, with a stronger suppression in the most central collisions, and also a higher suppression of the excited states compared to the ground state. Good qualitative agreement
+is already found between models and data regarding this suppression. % and discuss details here
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.32\textwidth]{fig/theory/strickland_pt.png}
+ \includegraphics[width=0.32\textwidth]{fig/theory/rapp_raa_pt_CMS.png}
+ \includegraphics[width=0.32\textwidth]{fig/theory/rapp_raa_pt_ALICE.png}
+ \includegraphics[width=0.32\textwidth]{fig/theory/strickland_rap.png}
+\end{center}
+
+ \caption{RAA (and yields?) vs pT, RAA vs y for 0--10\%, 0--100\%~\cite{Krouppa:2017jlg,Du:2017qkv} }
+ \label{fig:upsi_raa_pt_y}
+\end{figure}
+
+% Discuss pt / y dependence with boost... what we learn from it (also regeneration)
+A precise measurement of the \pt dependence of the \PGUP{1S} \raa will be possible using LHC data from Runs 3 and 4. At low and medium \pt, up to about 15\,GeV, the measurement is
+sensitive to the possible regeneration component in \PGU meson production. Some projections for the expected precision of \PGU measurements from the ALICE and CMS detectors
+using 10\,nb$^{-1}$ of data after the Runs 3-4 are shown in Fig.~\ref{fig:upsi_raa_pt_y} as a function of \pt and y, and compared to the expectations from two 
+models~\cite{Krouppa:2017jlg,Du:2017qkv}. In the first model~\cite{Krouppa:2017jlg}, all the measured \PGU are from the primordial production and there is no regeneration, leading
+to a rather flat \raa at low and medium \pt. Only at higher \pt is a small rise predicted, which will be discussed below. In the second model~\cite{Du:2017qkv} however, a regeneration
+component is considered, and several assumptions are explored, especially on the degree of thermalisation of the bottom quarks. Indeed, because of the about three times higher mass of
+the bottom quark than that of the charm quark, it cannot be assumed that regenerated bottomonia would have a thermal blast-wave expression, as is a good approximation for charmonia.
+In Fig.~\ref{fig:upsi_raa_pt_y}, the latter model uses an instantaneous coalescence model instead, providing more realistic nonequilibrium \pt spectra for the input b quarks. 
+This leads to a maximum in the \raa as a function of \pt, at around 10\,GeV for \PGUP{1S}. The current data is not precise enough to confirm or disfavour this feature, but Run~3+4 
+data will allow to look for it.
+
+Almost no rapidity dependence is expected at LHC for the nuclear modification factor of \PGU mesons within the acceptance of ATLAS and CMS ($|\eta|\lesssim 2.5-3$), which can be better
+tested using Run~3+4 data. A modest increase is predicted in the acceptance of ALICE, as can be seen in Fig.~\ref{fig:upsi_raa_pt_y}, because of a cooler QGP. Again, this cannot be tested
+within the current experimental uncertainties, but can be looked for in future data.
+
+% Discuss impact of inputs
+
+% Discuss high pt
+
+% Discuss v2
+
+% few sentences about spectra (instead of raa): measure them, more direct comparison to models, already measured now, etc
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.32\textwidth]{fig/theory/rapp_v2_1S.png}
+ \includegraphics[width=0.32\textwidth]{fig/theory/rapp_v2_2S.png}
+\end{center}
+
+ \caption{v2 vs pT 30--50\%~\cite{Du:2017qkv}}
+\end{figure}
+
 
 Also a figure on the prospects for the $B_c$ meson?
 
+\clearpage
+
 \subsection{Quarkonia in pp and pPb collisions}
 
-List of figures
-\begin{itemize}
-  \item prompt J/psi v2 and v3 (separately for negative and positive $y_{CM}$)
-  \item prompt J/psi vs Nch (also in pp)
-  \item RpA vs pT for excited states: psi(2S), upsilon(2S,3S), chic(1P) (separately for negative and positive $y_{CM}$)
-\end{itemize}
+\begin{figure}
+ \begin{center}
+  \includegraphics[width=0.32\textwidth]{fig/alice/alice_jpsi_v2_projected.pdf}
+  \includegraphics[width=0.32\textwidth]{fig/alice/alice_jpsi_v2_projected2.pdf}
+ \end{center}
+
+ \caption{prompt J/psi v2 and v3 (separately for negative and positive $y_{CM}$)}
+\end{figure}
+
+\begin{figure}
+ \begin{center}
+  \includegraphics[width=0.5\textwidth]{fig/theory/cgc_jpsi_nch.png}
+ \end{center}
+
+ \caption{prompt J/psi vs Nch (also in pp)~\cite{Ma:2018bax}}
+\end{figure}
+
+\begin{figure}
+ \begin{center}
+ theory curves here
+ \end{center}
+
+ \caption{RpA vs pT for excited states: psi(2S), upsilon(2S,3S), chic(1P) (separately for negative and positive $y_{CM}$)}
+\end{figure}
+
+To be also discussed: SMOG results from LHCb.
+
+\subsection*{Acknowledgment}
+RR has been supported by the US National Science Foundation under
+grant number PHY-1614484, and in part by the ExtreMe Matter Institute EMMI at 
+the GSI Helmholtzzentrum f\"{u}r Schwerionenforschung (Darmstadt,Germany).
+
+\bibliographystyle{report}
+\bibliography{bib/section}
 
 \end{document}
