@@ -1,6 +1,9 @@
 \documentclass[11pt,twoside,a4paper]{cernrep} 
 \usepackage{rep_common}
 \usepackage{units}
+\usepackage{pdflscape}
+\usepackage{afterpage}
+\usepackage{lineno}
 \pagestyle{plain}
 % --
 % -- The bibliography file paths for the main volume and all parts
@@ -8,6 +11,8 @@
 \def\bibfiles{\main/bib/chapter,\main/introduction/bib/section,\main/opportunities/bib/section,\main/hf/bib/section,\main/quarkonia/bib/section,\main/thermalradiation/bib/section,\main/flow/bib/section,\main/smallsystems/bib/section,\main/lightflavour/bib/section,\main/jets/bib/section,\main/smallx/bib/section,\main/beyond/bib/section,\main/helhc/bib/section}
 % --
 \providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
+
+\linenumbers
 
 \begin{document}
 \newcommand{\main}{.}
