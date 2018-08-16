@@ -2,9 +2,8 @@
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+\IfEq{\jobname}{\currfilebase}{\input{\main/smallsystems/commands}}{}
 % until here
-
-\input{\main/smallsystems/commands}
 
 \emergencystretch=1em
 \raggedbottom
