@@ -169,6 +169,14 @@ Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 
 \todo{plot on energy density}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[draft]{\main/smallsystems/img/energy_density.pdf}
+\caption{Energy density as a function of $\nch$ under some specific assumptions, compared between pp, p--Pb, and Pb--Pb.}
+\label{fig:energy_density}
+\end{figure}
+
+
 \subsubsection{Particle Correlations}
 
 The measurements of two-particle correlations and higher-order cumulants have produced the initial observations of collectivity in small systems. In pp collisions, two distinct regions are of interest at HL-LHC: the high-multiplicity tail and the low-multiplicity regions. 
@@ -181,8 +189,7 @@ The 4-particle cumulant is calculated for the third-order harmonics. Figure~\ref
 \centering
 \includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_3_4_pp.pdf}
 \includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_3_4_pPb.pdf}
-%\includegraphics[draft]{img/corr_cumulants.pdf}
-\caption{4-particle cumulants $c_3\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $N_{ch}$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty, with $c_3\{4\}$ assumed to be zero. The red and green dash lines represent $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal respectively.}
+\caption{4-particle cumulants $c_3\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $\nch$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty, with $c_3\{4\}$ assumed to be zero. The red and green dash lines represent $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal respectively. The horizontal line in the left panel indicates the the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
 \label{fig:smallsystems_corr_cumulants}
 \end{figure}
 
@@ -190,25 +197,20 @@ The 4-particle cumulant is calculated for the third-order harmonics. Figure~\ref
 \centering
 \includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_2_4_pp.pdf}
 \includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_2_4_pPb.pdf}
-%\includegraphics[draft]{img/corr_cumulants.pdf}
-\caption{4-particle cumulants $c_2\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $N_{ch}$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty. The red and green dash lines represent $3\%$ and $4\%$ $v_2\{4\}$ signals for $pp$, and $4\%$ and $5\%$ $v_2\{4\}$ signals for $p$+Pb.}
+\caption{4-particle cumulants $c_2\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $N_{ch}$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty. The red and green dash lines represent $3\%$ and $4\%$ $v_2\{4\}$ signals for $pp$, and $4\%$ and $5\%$ $v_2\{4\}$ signals for $p$+Pb. The horizontal line in the left panel indicates the the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}. {\bf Figure to be removed, only to be discussed in the text.}}
 \label{fig:smallsystems_corr_cumulants_v2}
 \end{figure}
 
-
-
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/HLLHC_SC.pdf}
-%\includegraphics[draft]{img/corr_symmetriccumulants.pdf}
-\caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right) as a function of Nch. CMS.}
+\includegraphics[width=\linewidth]{\main/smallsystems/img/HLLHC_SC.pdf}
+\caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right) as a function of $\nch$. The projected reach is shown for the case of 2, 3 and 4 subevents assuming a constant signal as a function of multiplicity indicated by the lower horizontal line. The vertical line indicates the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
 \label{fig:smallsystems_corr_symmetriccumulants}
 \end{figure}
 
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/v2vspt_NCQ_deta1p05_sub_projection.pdf}
-%\includegraphics[draft]{img/corr_cumulants_pid.pdf}
+\includegraphics[width=.45\linewidth]{\main/smallsystems/img/v2vspt_NCQ_deta1p05_sub_projection.pdf}
 
 \caption{Particle identified $v_n$ (TODO only v2?) coefficients for pi, K, p (pp, ALICE), D mesons (pp, CMS), J/Psi (pp, pPb, ALICE, CMS) as a function of pT. Note that the multiplicity ranges are different for the different estimates. TODO: Plot may be messy and may need splitting in several panels.}
 \label{fig:smallsystems_corr_cumulants_pid}
@@ -216,24 +218,26 @@ The 4-particle cumulant is calculated for the third-order harmonics. Figure~\ref
 
 \subsubsection{Event-by-event fluctuations of elliptic flow $\rm{P}(v_{2})$}
 
-The $v_n$ measurements fluctuate on an event by event basis as no two nuclei have identical parton distribution. Probability denisity distribution, $\rm{P}(v_n)$ is closely related to event-by-event fluctuations of the eccentricities, $\rm{P}(\varepsilon_{n})$. As a result,  
-study of probability density distribution, $\rm{P}(v_n)$,  provides more information about the initial condition and the final state dynamics of the medium. Models predict a semi-gaussian distribution of $\rm{P}(v_{n})$ in large systems, while, in small systems the shape is predicted to be closer to a gaussian. Figure \ref{fig:smallsystems_corr_pvn} presents the measurement of $\rm{P}(v_{2})$ in $60-65\%$ centrality Pb--Pb collisions at $\sqrt{s_{\rm{NN}}} = $ 2.76 TeV recorded by ATLAS experiment. The results have been projected to the LHC run 3 and run 4 data with the same multiplicity range of pp collisions at $\sqrt{s} = 14$ TeV. 
+The $v_n$ measurements fluctuate on an event by event basis as no two nuclei have identical parton distribution. Probability density distribution, $\rm{P}(v_n)$ is closely related to event-by-event fluctuations of the eccentricities, $\rm{P}(\varepsilon_{n})$. As a result,  
+study of probability density distribution, $\rm{P}(v_n)$,  provides more information about the initial condition and the final state dynamics of the medium. Models predict a semi-Gaussian distribution of $\rm{P}(v_{n})$ in large systems, while, in small systems the shape is predicted to be closer to a Gaussian. Figure~\ref{fig:smallsystems_corr_pvn} presents a projection for the measurement of $\rm{P}(v_n)$ in pp collisions. This extrapolation is based on the $\rm{P}(v_{2})$ measurement in $60-65\%$ centrality Pb--Pb collisions at $\sqrt{s_{\rm{NN}}} = $ 2.76 TeV~\cite{Aad:2013xma}. The same signal is assumed although the width of the distribution is most likely smaller in pp collisions. Such a measurement would constitute the first measurement of $\rm{P}(v_{n})$ in pp collisions, and can shed important light on the nature of the observed $v_2$ coefficients.
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=.49\linewidth]{\main/smallsystems/img/ebye_v2_60-65_276TeVppprojection.pdf}
 
-\caption{Projection of the measurement of the probability distribution of $v_2$ in pp collisions. To illustrate the reach the same signal as in Pb--Pb is assumed. The projection is for the equivalent pp multiplicity (circles) to 60--65\% centrality in Pb--Pb collisions (squares).}
+\caption{Projection of the measurement of the probability distribution of $v_2$ in pp collisions. To illustrate the reach the same signal as in Pb--Pb~\cite{Aad:2013xma} is assumed. The projection is for the equivalent pp multiplicity (circles) to 60--65\% centrality in Pb--Pb collisions (squares).}
 \label{fig:smallsystems_corr_pvn}
 \end{figure}
 
 \subsubsection{Strangeness Enhancement}
 
+The unexpected increase of the strange particle yield normalized by the pion yield as a function of $\nch$ is one of the key observations in small systems. In pp collisions these ratios are measured up to $\dNdeta \approx 17$ with some overlap with p--Pb collisions. The most peripheral Pb--Pb collisions measured have a $\dNdeta \approx 96$. Figure~\ref{fig:smallsystems_strangeness_omega_pi} presents the expected reach of the $\Omega/\pi$ ratio in pp collisions which will bridge the present gap between pp and Pb--Pb collisions. In particular, if the measured increasing trend would continue, the $\Omega/\pi$ ratio would grow larger than in peripheral Pb--Pb collisions. Such an unlikely scenario will be clearly distinguishable from a scenario where the $\Omega/\pi$ flattens with increasing $\dNdeta$ and connects smoothly to Pb--Pb collisions. 
+
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/strangeness_omegapi.pdf}
 
-\caption{$\Omega/\pi$ ratio as a function of $\nch$ for pp, p--Pb, and Pb--Pb collisions. The existing data (from Ref.~\cite{ALICE:2017jyt}) is shown in open black symbols, the extrapolation for pp collision is denoted by blue filled circles.}
+\caption{$\Omega/\pi$ ratio as a function of $\dNdeta$ for pp, p--Pb, and Pb--Pb collisions. The existing data (from Ref.~\cite{ALICE:2017jyt}) is shown in open black symbols, the extrapolation for pp collision is denoted by blue filled circles. Two scenarios are shown: a) assuming that the ratio continues increasing following the measured trend, and b) assuming that the value stays the same as at the largest measured $\dNdeta$.}
 \label{fig:smallsystems_strangeness_omega_pi}
 \end{figure}
 
@@ -248,7 +252,6 @@ Narrative:
 \begin{figure}[ht]
 \centering
 \includegraphics[draft]{\main/smallsystems/img/energyloss_hjet.pdf}
-%\includegraphics[draft]{img/energyloss_hjet.pdf}
 \caption{Modification of jet recoil yields extracted from hadron-jet correlations for pp collisions (left) and p-Pb collisions (right). Delta-recoil ratio vs. pT.}
 \label{fig:smallsystems_energyloss_hjet}
 \end{figure}
@@ -256,7 +259,6 @@ Narrative:
 \begin{figure}[ht]
 \centering
 \includegraphics[draft]{\main/smallsystems/img/energyloss_Zjet.pdf}
-%\includegraphics[draft]{img/energyloss_Zjet.pdf}
 
 \caption{Z-jet correlations in pp (left panel) and p-Pb collisions (right panel). 1/N dN/dxZj vs xZj.}
 \label{fig:smallsystems_energyloss_Zjet}
