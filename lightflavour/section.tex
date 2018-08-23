@@ -1,11 +1,20 @@
 % don't remove the folling lines, and edit the defintion of \main if needed
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
+\input{lightflavour/commands.tex}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
 
 \begin{document}
+\newpage
+\section{Light flavour sector: (anti-)(hyper-)nuclei and fluctuations of conserved charges}
 
-\section{New Section Title}
+\textit{Contributors:} M. Arslandok, F. Bellini (coord.), N. Behera, R. Bellwied, K. Blum, P. Braun-Munzinger, S. Floerchinger, A. P. Kalweit, R. Lea, A. Mastroserio, A. Ohlson, V. Okorokov, M. Puccio,  K. Redlich, A. Rustamov, J. Stachel, S. Trogolo
 
+\subfile{\main/lightflavour/intro}
+\subfile{\main/lightflavour/nuclei}
+\subfile{\main/lightflavour/astro}
+\subfile{\main/lightflavour/fluctuations}
+\subfile{\main/lightflavour/summary}
 \end{document}
+ 

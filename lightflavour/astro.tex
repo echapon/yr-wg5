@@ -1,0 +1,68 @@
+\subsubsection{Implications of anti-nuclei measurements for cosmic-ray physics and dark-matter searches}
+
+Cosmic-ray (CR) anti-nuclei $\ap,\,\ad,\,\ah$ have long been considered as probes of new physics, such as dark matter annihilation (see, e.g.~\cite{Donato:1999gy, Baer:2005tw, Donato:2008yx, Brauninger:2009pe, Kadastik:2009ts, Cui:2010ud, Dal:2012my, Ibarra:2012cc, Fornengo:2013osa, Carlson:2014ssa, Aramaki:2015pii,Korsmeier:2017xzj}). Detecting the astrophysical flux of these particles is one of the main goals of CR experiments like AMS~\cite{Giovacchini:2007dwa,kounineHebar}, GAPS~\cite{vonDoetinchem:2015zva,Aramaki:2015laa}, and BESS~\cite{Abe:2011nx,2012PhRvL.108m1301A}. To learn about exotic sources, the background must first be understood. The Galaxy produces CR anti-nuclei due to collisions of high-energy CR protons and helium with ambient interstellar matter (ISM). This source of CR anti-nuclei is called secondary. Information from accelerator experiments like ALICE is essential for the theoretical calculation of this background.
+
+The flux of secondary anti-nuclei can be calculated with only minor sensitivity to the details of CR astrophysics. The point is to use secondary-to-secondary flux ratios, where astrophysical uncertainties largely cancel. 
+%
+Secondary $\ap,\,\ad,\,\ah$ are all formed dominantly by the same set of reactions\footnote{The contribution from p--He is at the level of $\sim50\%$; however, if the branching fractions into $\ap,\,\ad,\,\ah$ are similar in p--He and pp collisions, as is likely the case, then our analysis below, done for pp reactions, holds without further modification.}: pp. 
+%
+Using this basic fact, an explicit prediction for the locally observable flux of secondary $\ad$, relative to the  flux of secondary $\ap$ can be derived:
+%
+ \begin{eqnarray}\label{eq:ad2ap}\frac{J_{\ad}(\R)}{J_{\ap}(\R)}&=&\frac{\int_{\epsilon_{\ad}}^\infty d\epsilon\,J_p(\epsilon)\,\frac{d\sigma_{pp\to\ad}(\epsilon,\epsilon_{\ad})}{d\epsilon_{\ad}}}{\int_{\epsilon_{\ap}}^\infty d\epsilon\,J_p(\epsilon)\,\frac{d\sigma_{pp\to\ap}(\epsilon,\epsilon_{\ap})}{d\epsilon_{\ap}}+\left(\sigma_{\ad}(\epsilon_{\ad})-\sigma_{\ap}(\epsilon_{\ap})\right)J_{\ap}(\R)}.\end{eqnarray}
+%
+%
+\noindent Eq.~(\ref{eq:ad2ap}), the flux ratio on the left hand side is the theoretically predicted output, while the quantities on the right hand side are directly measurable quantities, that serve as the input for the prediction. 
+$J_{\ad}(\R)$ is the predicted $\ad$ flux, given at magnetic rigidity $\R$, $J_{\ap}(\R)$ is the $\ap$ flux at the same rigidity. 
+%
+$J_p(\epsilon)$ is the proton flux measured at proton energy $\epsilon$. 
+%
+$\frac{d\sigma_{pp\to\ad}(\epsilon,\epsilon_{\ad})}{d\epsilon_{\ad}}$ is the inclusive differential cross section, for a proton with energy $\epsilon$ hitting a stationary hydrogen target, to produce an $\ad$ with energy $\epsilon_{\ad}$. 
+This cross section is related to the Lorentz-invariant differential cross section, $\left(\epsilon\frac{d\sigma}{d^3p}\right)_{pp\to\ad}$, via
+%
+ \begin{eqnarray}\label{eq:LICS}\frac{d\sigma_{pp\to\ad}(\epsilon,\epsilon_{\ad})}{d\epsilon_{\ad}}&=&2\pi \int_0^\pi d\theta\,p_t\, \left(\epsilon\frac{d\sigma}{d^3p}\right)_{pp\to\ad},\end{eqnarray}
+%
+where $\theta$ is the angle between the incoming proton and the outgoing secondary in the ISM frame.
+The analogous quantity for $\ap$ is $\frac{d\sigma_{pp\to\ap}(\epsilon,\epsilon_{\ap})}{d\epsilon_{\ap}}$.
+%
+$\sigma_{\ad}(\epsilon_{\ad})$ is the energy-dependent inelastic cross section for $\ad$ on hydrogen. The analogous quantity for $\ap$ is $\sigma_{\ap}(\epsilon_{\ap})$. In what follows, $\sigma_{\ad}(\epsilon)=2\,\sigma_{\ap}(\epsilon)$ is assumed.
+% 
+Finally, the particle energies $\epsilon_{\ad}$ and $\epsilon_{\ap}$ are evaluated at the same rigidity $\R$,
+$\epsilon_{\ap}=\sqrt{\R^2+m_p^2},\;\;\;\;\epsilon_{\ad}=\sqrt{\R^2+4m_p^2}$.
+%
+For $\ah$, we simply (i) replace $\ad$ by $\ah$, (ii) use $\epsilon_{\ah}=\sqrt{4\R^2+9m_p^2}$, (iii) set $\sigma_{\ah}(\epsilon)=3\,\sigma_{\ap}(\epsilon)$, and (iv) add the production of $\at$. ($\at$ decays to $\ah$ with rest-frame lifetime of about 18 years -- practically prompt in astrophysical terms.)\\
+%
+Notice that no astrophysical CR propagation modelling parameters or assumptions appear in Eq.~(\ref{eq:ad2ap}). 
+%
+From the astrophysics point of view, Eq.~(\ref{eq:ad2ap}) amounts to the statement that the ratio of secondary CR fluxes measured locally, is equal to the ratio of their net\footnote{Net production $=$ (production) $-$ (inelastic loss).} production rates due to CR-ISM collisions. This basic prediction, valid for the description of secondary, stable, relativistic anti-nuclei, applies to all currently available CR propagation models~\cite{Ginzburg:1990sk,Katz:2009yd}. 
+%
+%Below, following~\cite{Blum:2017qnn}, we use Eq.~(\ref{eq:ad2ap}) to demonstrate the astrophysical implications of ALICE measurements. Recent calculations using a specific, detailed CR diffusion model~\cite{Korsmeier:2017xzj}, in which the $\ad$ and $\ah$ production cross section was also calibrated to match ALICE data, obtain results in agreement with ours. 
+
+Accelerator data is crucial for providing the Lorentz-invariant differential production cross section, appearing in Eq.~(\ref{eq:LICS}). 
+In particular, the anti-nuclei cross section for a nucleus with atomic number $A$ can be parameterized using the coalescence probability factor $B_A$ as a function of the anti-proton cross section as 
+$(\epsilon_A d\sigma/d^3p)_{pp\to A} = B_A/\sigma_{pp}^{A-1} [(\epsilon_{\overline{\rm p}} d\sigma/d^3p)_{pp\to \overline{\rm p}}]^A$, 
+where $\sigma_{pp}$ is the total inelastic pp cross section. 
+Here, for simplicity, threshold effects are omitted. 
+These effects cannot be measured from TeV-scale LHC data but are relevant for the astrophysical production: the integrals in Eq.~(\ref{eq:ad2ap}) receive contributions not far from the kinematic threshold. 
+Threshold correction as proposed in~\cite{Duperray:2002pj,Duperray:2003tv} and corrected in~\cite{Blum:2017qnn} can be further applied. 
+%
+Using Eq.~(\ref{eq:ad2ap}), and plugging in the coalescence factors experimentally obtained at the LHC, the predicted flux ratios can be obtained. 
+An example is given in \cite{Blum:2017qnn}, where the ALICE measurements of the $\overline{\rm d}$ and $\overline{^3\rm He}$ production cross section in pp collisions based on LHC Run 1 data ~\cite{Acharya:2017fvb} were used. 
+An important assumption was made there, that the low-rapidity ALICE $B_A$ measurement, confined to $|y|<0.5$, holds up to $y\gtrsim1$. Verifying the validity of this assumption is important future work, experimental and theoretical.
+On the other hand, in practice, the $p_T$-dependence is not quantitatively important for the astrophysics: secondary CR production is dominated by the low $p_T$ region. As a result, the impact on the CR flux, due to varying $B_A$, can be factored out, allowing us to derive simple approximate formulae:
+%
+ \begin{eqnarray}\label{eq:J2}\frac{J_{\overline{\rm d}}\left(\R\right)}{J_{\overline{\rm p}}\left(\R\right)}\huge|_{\R=100{\rm GV}}&\approx&4\times10^{-4}\,\left(\frac{B_2}{1.5\times10^{-2}~\rm GeV^2}\right),\end{eqnarray}
+%
+%
+ \begin{eqnarray}\label{eq:J3}\frac{J_{\overline{^3\rm He}}\left(\R\right)}{J_{\overline{\rm p}}\left(\R\right)}\huge|_{\R=100{\rm GV}}&\approx&2\times10^{-7}\,\left(\frac{B_3}{1.5\times10^{-4}~\rm GeV^4}\right),\end{eqnarray}
+%
+where the $B_2$ and $B_3$ values should be read from the lowest $p_T$ bin in the accelerator analysis. 
+%
+%If the flux ratios are needed at rigidity different than 100~GV, used in Eqs.~(\ref{eq:J2}-\ref{eq:J3}), the shape of the predicted flux ratios, read from Fig.~\ref{fig:He3bar}, can be used.
+
+\textcolor{blue}{TO be completed: expected improved precision on B2, B3 data from pp collisions in Run 3 and 4 and estimate of the precision needed in these flux calculations.}
+
+
+
+\subsubsection{Implications of anti-nuclei measurements for neutron star physics}
+
+\textcolor{blue}{In preparation: link to EoS of neutron star, femto measurements of the nucleon-hyperon interaction.}
