@@ -2,6 +2,7 @@
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+\IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
 \newcommand{\mlna}{\langle \ln\!A \rangle}
