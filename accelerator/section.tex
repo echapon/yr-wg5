@@ -5,12 +5,48 @@
 \IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
+
+%<Notes>
+% Dear contacts,
+
+% Several chapters have started defining custom commands, and this lead to some compilation issues.
+
+% I have now prepared a file commands.tex which is in the main folder. 
+% This file is included when you compile the full report (report.tex), but also when you compile the separate sections.
+
+% Please add your custom commands to this file. When you do that, please
+% - check that a command does not already exist and can be used,
+% - add a comment above your commands, e.g. "% heavy flavour"
+
+% NB. pT is \pT (already predefined in a CERN report style file). Please replace in case you are using \pt
+
+% Best regards,
+% Jan Fiete
+%</Notes>
+
+
 \begin{document}
 
 \section{Accelerator performance with heavy ions}
 
+\subsection{Schedule for future LHC heavy-ion runs} 
+
+Present nominal plan based on ALICE Letter of Intent 2012.
+
+\subsection{Pb-Pb luminosity at HL-LHC} 
+
 The LHC Design Report originally foresaw Pb-Pb collisions with a 
 luminosity of  .
+
+\subsubsection{Upgrades during LHC Long Shutdown 2}
  
+\subsection{p-Pb at HL-LHC} 
+ 
+\subsection{Lighter nuclei at HL-LHC}
+
+\subsection{Heavy-ion performance of HE-LHC} 
+
+
+
 
 \end{document}
