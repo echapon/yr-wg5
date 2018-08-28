@@ -28,7 +28,9 @@ The experimental program in the large intermediate region --- spanning from mid-
 
 The suggested theoretical pictures may have implications for high energy physics analyses, which depend on reliable models of the underlying event. As an example, it has been recently shown that the discussed long-range correlations are also present in the underlying event of $Z$-tagged pp collisions. As the usual models used to describe the underlying event fail, even qualitatively, to describe this, better descriptions of collective effects in small systems are also vital for improving understanding in high-energy physics analyses.\todo{this paragraph can be improved}
 
-The main experimental task is future years is twofold: Firstly, a detailed characterization of the similarities and differences in the overlap region between pp, p--Pb and Pb--Pb collisions, and secondly, the study of the onset of the observed effects.\todo{extend and merge with discussion on why pp and pPb are needed}
+The main experimental task in future years is twofold: Firstly, a detailed characterization of the similarities and differences in the overlap region between pp, p--Pb and Pb--Pb collisions, and secondly, the study of the onset of the observed effects.\todo{extend and merge with discussion on why pp and pPb are needed}
+
+\todo{This chapter is structures as follows:}
 
 \subsection{Historic overview}
 \label{sect:smallsystems_historicoverview}
@@ -133,7 +135,7 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 
 The resulting extrapolated multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. In addition, these are compared scaled by their respective average multiplicities. The agreement is rather good, with some discrepancy in the tail of the distribution. The extrapolation based on the smaller phase space region falls off more quickly with multiplicity, and is therefore used as the more conservative estimate for all extrapolations.
 
-While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the initial energy density $\epsilon_0$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for pp, p--Pb and Pb--Pb collisions using the Bjorken estimate. As input the $\langle\pT\rangle$~\cite{Abelev:2013bla} as well as the transverse overlap from IP-Glasma~\cite{McLerran:2013una} are used. The calculations for three different $\tau_0$ are shown. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon_0$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can easily reach large values in pp and p--Pb collisions.
+While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the energy density $\epsilon$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for pp, p--Pb and Pb--Pb collisions using the Bjorken estimate. As input the $\langle\pT\rangle$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the transverse overlap from IP-Glasma~\cite{McLerran:2013una} (for pp and p--Pb) and a Glauber MC~\cite{Loizides:2017ack} (for Pb--Pb) are used. The calculations for three different $\tau_0$ are shown. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon_0$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can easily reach large values in pp and p--Pb collisions.
 
 Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in p--Pb and Pb--Pb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$ \cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments.
  
@@ -174,19 +176,17 @@ Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/energy_density.pdf}
-\caption{Energy density as a function of $\dNdeta$ under some specific assumptions (see text), compared between pp, p--Pb, and Pb--Pb. Three different $\tau_0$ are assumed. The arrow on the right indicates the energy density reached in central Pb--Pb collisions ($\dNdeta \approx 2000$).}
+\includegraphics[width=0.5\linewidth]{\main/smallsystems/img/energy_density.pdf}
+\caption{Energy density as a function of $\dNdy$ under specific assumptions (see text), compared between pp, p--Pb, and Pb--Pb at $\tau = \unit[1]{fm/c}$. The line indicates the energy density reached in central Pb--Pb collisions ($\dNdy \approx 2000$).}
 \label{fig:energy_density}
 \end{figure}
 
-
 \subsubsection{Particle Correlations}
 
-The measurements of two-particle correlations and higher-order cumulants have produced the initial observations of collectivity in small systems. In pp collisions, two distinct regions are of interest at HL-LHC: the high-multiplicity tail and the low-multiplicity regions. 
+The measurements of two-particle correlations and higher-order cumulants have produced the initial observations of collective-like effects in small systems. In pp collisions, two distinct regions are of interest at HL-LHC: the high-multiplicity tail to compare to p--Pb and Pb--Pb collisions and the low-multiplicity regions to see the onset of these effects. In the following, several performance estimates are given as examples for the rich physics which can be addressed. 
 
-In pPb collisions, ...
-
-The 4-particle cumulant is calculated for the third-order harmonics. Figure~\ref{fig:smallsystems_corr_cumulants} compares the $c_3\{4\}$ values between the published and the projected results, for $pp$ and $p$+Pb. In order to remove the non-flow contributions, 3-subevent method is applied. In the $pp$ collisions, with the data collected in Run 2, the statistical uncertainties are large and the $c_3\{4\}$ values are systematically consistent with zero in most $N_{ch}$ ranges. While in large systems, significant non-zero $c_3\{4\}$ has been measured, which reflects the fluctuation of triangle flow. Whether similar behavior is observed in small systems still needs to be confirmed. The increase in luminosity in Run 3 and Run 4 provides a great opportunity to measure $c_3\{4\}$ in $pp$ with high precision: the statistics are sufficient to measure down to $1.5\%$ $v_3\{4\}$ in the high multiplicity region. Similarly, in the $p$+Pb collision, the current result shows that $c_3\{4\}$ is consistent with zero, but increased statistics will help to detect potential non-zero $c_3\{4\}$ down to $1.5\%$ in most multiplicity ranges.
+State-of-the-art measured 4-particle cumulants of $v_3$ ($c_3\{4\}$) in pp and p--Pb collisions are presented in Fig.~\ref{fig:smallsystems_corr_cumulants} overlaid with the projection for HL-LHC. 
+In order to remove non-flow contributions, the 3-subevent method is applied. In pp collisions, with the data collected in Run 2, the statistical uncertainties are large and the $c_3\{4\}$ values are systematically consistent with zero in most of the $\nch$ range. On the contrary, in large systems, significant non-zero $c_3\{4\}$ has been measured\todo{give values and REF for PbPb measurement in similar pT range, need to choose a centrality interval or give range.}, which reflects the nucleonic fluctuations in the initial state. Whether similar behavior is observed in small systems still needs to be confirmed. The increase in luminosity in Run 3 and Run 4 provides a great opportunity to measure $c_3\{4\}$ in pp with high precision: the statistics are sufficient to measure a signal as small as $v_3\{4\} = 1.5\%$ for $\nch \gtrapprox 170$, while 2\% are accessible with large significance over a wide multiplicity range ($\nch \gtrapprox 100$). Similarly, in p--Pb collision, the current result shows that $c_3\{4\}$ is consistent with zero, but increased statistics will help to detect a potential non-zero $c_3\{4\}$ smaller than $1.5\%$ for $100 \lessapprox \nch \lessapprox 500$. Similarly, the precision of the already measured non-zero $c_2\{4\}$ will be greatly improved\todo{can we refer to a CONF note?}.
 
 \begin{figure}[ht]
 \centering
@@ -196,20 +196,26 @@ The 4-particle cumulant is calculated for the third-order harmonics. Figure~\ref
 \label{fig:smallsystems_corr_cumulants}
 \end{figure}
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_2_4_pp.pdf}
-\includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_2_4_pPb.pdf}
-\caption{4-particle cumulants $c_2\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $N_{ch}$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty. The red and green dash lines represent $3\%$ and $4\%$ $v_2\{4\}$ signals for $pp$, and $4\%$ and $5\%$ $v_2\{4\}$ signals for $p$+Pb. The horizontal line in the left panel indicates the the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}. {\bf Figure to be removed, only to be discussed in the text.}}
-\label{fig:smallsystems_corr_cumulants_v2}
-\end{figure}
+% \begin{figure}[ht]
+% \centering
+% \includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_2_4_pp.pdf}
+% \includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_2_4_pPb.pdf}
+% \caption{4-particle cumulants $c_2\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $N_{ch}$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty. The red and green dash lines represent $3\%$ and $4\%$ $v_2\{4\}$ signals for $pp$, and $4\%$ and $5\%$ $v_2\{4\}$ signals for $p$+Pb. The horizontal line in the left panel indicates the the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}. {\bf Figure to be removed, only to be discussed in the text.}}
+% \label{fig:smallsystems_corr_cumulants_v2}
+% \end{figure}
 
-\begin{figure}[ht]
+The correlations of flow harmonics between different orders, called symmetric cumulants, are very sensitive to the initial state and the hydrodynamic evolution. In Pb--Pb collisions these are, for instance, used to constrain the shear viscosity over entropy ratio $\eta/s$. In addition, they challenge the description of the observed phenomena within initial state saturation models.
+Their measurement in small systems can provide important insight in the validity of the hydrodynamic description of the observed phenomena. The present uncertainties of such measurement in small systems are too large for a definitive conclusion, in particular in pp collisions, due to the dominance of non flow like jets and resonance decays. Figure~\ref{fig:smallsystems_corr_symmetriccumulants} shows the performance projection of ${\rm SC}(2,3) = \langle v_2^2 v_3^2 \rangle - \langle v_2^2 \rangle \langle v_3^2 \rangle$ for HL-LHC for pp and p--Pb collisions. The uncertainties of the measurement without subevents becomes practically invisible, however, those stay dominated by non-flow effects. A measurement requiring two, three and even four subevents becomes possible with uncertainties of the order of few times $10^{-7}$ depending on multiplicity. Such results can give a definitive answer if a similar hydrodynamic footprint is observed in small and large systems.
+
+
+\begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{\main/smallsystems/img/HLLHC_SC.pdf}
 \caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right) as a function of $\nch$. The projected reach is shown for the case of 2, 3 and 4 subevents assuming a constant signal as a function of multiplicity indicated by the lower horizontal line. The vertical line indicates the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
 \label{fig:smallsystems_corr_symmetriccumulants}
 \end{figure}
+
+\clearpage
 
 \begin{figure}[ht]
 \centering
