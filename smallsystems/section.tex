@@ -139,22 +139,34 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 \label{fig:smallsystems_mult_extrapolation}
 \end{figure}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.5\linewidth]{\main/smallsystems/img/energy_density.pdf}
+\caption{Energy density as a function of $\dNdy$ under specific assumptions (see text), compared between pp, p--Pb, and Pb--Pb at $\tau = \unit[1]{fm/c}$. The line indicates the energy density reached in central Pb--Pb collisions ($\dNdy \approx 2000$).}
+\label{fig:energy_density}
+\end{figure}
+
 The resulting extrapolated multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. In addition, these are compared scaled by their respective average multiplicities. The agreement is rather good, with some discrepancy in the tail of the distribution. The extrapolation based on the smaller phase space region falls off more quickly with multiplicity, and is therefore used as the more conservative estimate for all extrapolations.
 
-While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the energy density $\epsilon$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for pp, p--Pb and Pb--Pb collisions using the Bjorken estimate. As input the $\langle\pT\rangle$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the transverse overlap from IP-Glasma~\cite{McLerran:2013una} (for pp and p--Pb) and a Glauber MC~\cite{Loizides:2017ack} (for Pb--Pb) are used. The calculations for three different $\tau_0$ are shown. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon_0$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can easily reach large values in pp and p--Pb collisions.
+While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the energy density $\epsilon$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for pp, p--Pb and Pb--Pb collisions using the Bjorken estimate:
+\begin{equation}
+  \epsilon = \frac{3}{2} \frac{1}{A \tau} \langle E \rangle \frac{dN_{ch}}{dy}
+\end{equation}
+As input the multiplicity-dependent $\langle\pT\rangle$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the multiplicity-dependent transverse overlap from IP-Glasma~\cite{McLerran:2013una} (for pp and p--Pb) and a Glauber MC~\cite{Loizides:2017ack} (for Pb--Pb) are used. The energy density is calculated at a fixed $\tau = \unit[1]{fm/c}$. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can easily reach large values in pp and p--Pb collisions, as large as in central Pb--Pb collisions.
 
-Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in p--Pb and Pb--Pb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$ \cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments.
+Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in p--Pb and Pb--Pb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$~\cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments. 
+The conversion of the provided $\dNdeta$ to multiplicity ranges with larger pseudorapidity coverage is done for simplicity assuming a flat pseudorapidity distribution. For the conversion with $\pT$ cuts as employed in many current measurements a set of conversation factors is used, listed in Tab.~\ref{tab:smallsystems_conversion}.
  
 \begin{table}
 \centering
 \begin{tabular}{c|c|c|c|c}
 Range & $\dNdeta$ & Fraction & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 \hline
-5--7 \nch     & 35--49   & 2.4e-03       & 1.9e+08       & 3.7e+10 \\
-7--10 \nch    & 49--70   & 1.3e-04       & 1.0e+07       & 2.0e+09 \\
-10--12 \nch   & 70--84   & 1.1e-06       & 9.0e+04       & 1.8e+07 \\
-12--14 \nch   & 84--98   & 4.7e-08       & 3.7e+03       & 7.3e+05 \\
-14--16 \nch   & 98--112  & 1.8e-09       & 1.4e+02       & 2.8e+04 \\
+5--7 \meannch     & 35--49   & 2.4e-03       & 1.9e+08       & 3.7e+10 \\
+7--10 \meannch    & 49--70   & 1.3e-04       & 1.0e+07       & 2.0e+09 \\
+10--12 \meannch   & 70--84   & 1.1e-06       & 9.0e+04       & 1.8e+07 \\
+12--14 \meannch   & 84--98   & 4.7e-08       & 3.7e+03       & 7.3e+05 \\
+14--16 \meannch   & 98--112  & 1.8e-09       & 1.4e+02       & 2.8e+04 \\
 \hline
 \end{tabular}
 \caption{Number of pp events at 14 TeV in selected multiplicity bins.}
@@ -180,12 +192,24 @@ Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 \label{tab:smallsystems_pbpb}
 \end{table}
 
-\begin{figure}[ht]
+\begin{table}
 \centering
-\includegraphics[width=0.5\linewidth]{\main/smallsystems/img/energy_density.pdf}
-\caption{Energy density as a function of $\dNdy$ under specific assumptions (see text), compared between pp, p--Pb, and Pb--Pb at $\tau = \unit[1]{fm/c}$. The line indicates the energy density reached in central Pb--Pb collisions ($\dNdy \approx 2000$).}
-\label{fig:energy_density}
-\end{figure}
+\begin{tabular}{c|c|c|c|c|c}
+\backslashbox{$|\eta|$}{$\pT$} & $> \unit[0.1]{GeV/c}$ & $> \unit[0.2]{GeV/c}$ & $> \unit[0.3]{GeV/c}$ & $> \unit[0.4]{GeV/c}$ & $> \unit[0.5]{GeV/c}$ \\
+\hline
+$|\eta| < 1.5$ & 1.03 & 1.11 & 1.22 & 1.31 & 1.40 \\
+\hline
+$|\eta| < 2.4$ & 1.04 & 1.14 & 1.27 & 1.42 & 1.55 \\
+\hline
+\end{tabular}
+\caption{Conversion factors between $\nch$ with a $\pT$ threshold, and $\nch$ including particles down to $\pT = 0$. The factor shown is $\nch / \nch(\pT > X)$, extracted with Pythia 8, tune CUETP8M1. A potential multiplicity dependence of this factor is neglected for the projections in this document.}
+\label{tab:smallsystems_conversion}
+\end{table}
+
+\subsubsection{Global Event Properties}
+
+Multiplicity distribution
+mean pT
 
 \subsubsection{Particle Correlations}
 
@@ -220,8 +244,6 @@ Their measurement in small systems can provide important insight in the validity
 \caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right) as a function of $\nch$. The projected reach is shown for the case of 2, 3 and 4 subevents assuming a constant signal as a function of multiplicity indicated by the lower horizontal line. The vertical line indicates the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
 \label{fig:smallsystems_corr_symmetriccumulants}
 \end{figure}
-
-\clearpage
 
 \begin{figure}[ht]
 \centering
