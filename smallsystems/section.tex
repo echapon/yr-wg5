@@ -117,7 +117,7 @@ Due to interactions and rescattering with the medium, even heavy-flavor particle
 
 \subsubsection{Multiplicity distribution in pp}
 
-For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE ($|\eta| < 1.5$) \cite{Adam:2015gka} and ATLAS ($|\eta|< 2.5$) \cite{Aad:2010ac,Aad:2016xww} data. Data from CMS \cite{Khachatryan:2010nk} is compatible with the used distribution and is therefore not explicitly included in the extrapolation. A parameterisation with a single\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.} negative binomial distribution is used which also have been frequently used to characterize the multiplicity distribution~\cite{GrosseOetringhaus:2009kz,ALICE:2017pcy}.
+For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE ($|\eta| < 1.5$)~\cite{Adam:2015gka} and ATLAS ($|\eta|< 2.5$)~\cite{Aad:2010ac,Aad:2016xww} data. Data from CMS~\cite{Khachatryan:2010nk} is compatible with the used distribution and is therefore not explicitly included in the extrapolation. A parameterisation with a single\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.} negative binomial distribution is used which also have been frequently used to characterize the multiplicity distribution~\cite{GrosseOetringhaus:2009kz,ALICE:2017pcy}.
 
 The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a single negative binomial distribution of the tail of the distribution (20--40\% of the cross-section) is also shown. The three parameters of this fit are fit with a power-law fit to extrapolate to 14 TeV.
 
@@ -126,7 +126,7 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/mult_data_1.pdf}
 \hfill
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/mult_data_11.pdf}
-\caption{Multiplicity distributions measured by ALICE (left panel) and ATLAS (right panel) overlaid by the fit with a negative binomial distribution.}
+\caption{Multiplicity distributions measured by ALICE~\cite{Adam:2015gka} (left panel) and ATLAS\cite{Aad:2010ac,Aad:2016xww} (right panel) overlaid by the fit with a negative binomial distribution.}
 \label{fig:smallsystems_mult_data}
 \end{figure}
 
@@ -139,20 +139,20 @@ The data used is shown in Fig.~\ref{fig:smallsystems_mult_data}. The fit with a 
 \label{fig:smallsystems_mult_extrapolation}
 \end{figure}
 
+The resulting extrapolated multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. In addition, these are compared scaled by their respective average multiplicities. The agreement is rather good, with some discrepancy in the tail of the distribution. The extrapolation based on the smaller phase space region falls off more quickly with multiplicity, and is therefore used as the more conservative estimate for all extrapolations.
+
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.5\linewidth]{\main/smallsystems/img/energy_density.pdf}
-\caption{Energy density as a function of $\dNdy$ calculated by IP Glasma (solid lines) and with MC Glauber and the Bjorken formula (dashed lines). For details please see text. Compared are pp, p--Pb, and Pb--Pb at $\tau = \unit[0.2]{fm/c}$. The horizontal line indicates the energy density reached in central Pb--Pb collisions ($\dNdy \approx 2000$).}
+\caption{Energy density as a function of $\dNdy$ calculated by IP Glasma (solid lines) and with MC Glauber and the Bjorken formula (dashed lines); for details please see text. Compared are pp, p--Pb, and Pb--Pb at $\tau = \unit[0.2]{fm/c}$. The horizontal line indicates the energy density reached in central Pb--Pb collisions ($\dNdy \approx 2000$).}
 \label{fig:energy_density}
 \end{figure}
 
-The resulting extrapolated multiplicity distribution for 14~TeV is shown in Fig.~\ref{fig:smallsystems_mult_extrapolation} for the ALICE and ATLAS case. In addition, these are compared scaled by their respective average multiplicities. The agreement is rather good, with some discrepancy in the tail of the distribution. The extrapolation based on the smaller phase space region falls off more quickly with multiplicity, and is therefore used as the more conservative estimate for all extrapolations.
-
-While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the energy density $\epsilon$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for pp, p--Pb and Pb--Pb based on IP-Glasma~\cite{McLerran:2013una,BjoernPrivate} as well as on the Bjorken estimate:
+While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the energy density $\epsilon$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for pp, p--Pb and Pb--Pb collisions based on IP-Glasma~\cite{McLerran:2013una,SchenkePriv1} as well as on the Bjorken estimate:
 \begin{equation}
-  \epsilon = \frac{3}{2} \frac{1}{A \tau} \langle E \rangle \frac{dN_{ch}}{dy}
+  \epsilon = \frac{3}{2} \frac{1}{A \tau} \langle E \rangle \frac{dN_{ch}}{dy}.
 \end{equation}
-For the latter, as input the multiplicity-dependent $\langle\pT\rangle$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the multiplicity-dependent transverse overlap from a Glauber MC~\cite{Loizides:2017ack} (for Pb--Pb) are used. The energy density is calculated at a fixed $\tau = \unit[0.2]{fm/c}$. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can easily reach large values in pp and p--Pb collisions, as large as in central Pb--Pb collisions.
+For the latter, the input is the multiplicity-dependent $\meanpT$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the multiplicity-dependent transverse overlap from a Glauber MC~\cite{Loizides:2017ack}. The energy density is calculated at a fixed $\tau = \unit[0.2]{fm/c}$. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can easily reach large values in pp and p--Pb collisions, as large as in central Pb--Pb collisions.
 
 Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in p--Pb and Pb--Pb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$~\cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments. 
 The conversion of the provided $\dNdeta$ to multiplicity ranges with larger pseudorapidity coverage is done for simplicity assuming a flat pseudorapidity distribution. For the conversion with $\pT$ cuts as employed in many current measurements a set of conversation factors is used, listed in Tab.~\ref{tab:smallsystems_conversion}.
@@ -206,10 +206,9 @@ $|\eta| < 2.4$ & 1.04 & 1.14 & 1.27 & 1.42 & 1.55 \\
 \label{tab:smallsystems_conversion}
 \end{table}
 
-\subsubsection{Global Event Properties}
+\subsubsection{Global-Event Properties}
 
-Multiplicity distribution
-mean pT
+The measurement of global-event observables in rare high-multiplicity pp collisions are of interest in itself. The shape of the multiplicity distribution, which has been largely extrapolated in the previous section, is today a challenge for models. It is not clear which mechanisms produce very large multiplicity events and therefore the shape of the distribution is an important input. Studies of $\meanpT$ as a function of multiplicity~\cite{Abelev:2013bla} have shown a strong increase with multiplicity. However, those measurements exist only up to $\dNdeta \approx 55$, while the measurements at HL-LHC promise a measurement beyond twice that value. High-multiplicity collisions are understood as originating from the collision of multiple partons within the same pp collisions. It has been shown that the number of (low $Q^2$) parton interactions increase linearly with multiplicity with a hint of a saturation at large multiplicity~\cite{Abelev:2013sqa}. A continuation of this study at higher multiplicity with the prospect of showing that there is a maximal number of parton interactions is an important ingredient to a better understanding of particle production in high-energy pp collisions.
 
 \subsubsection{Particle Correlations}
 
@@ -237,13 +236,14 @@ In order to remove non-flow contributions, the 3-subevent method is applied. In 
 The correlations of flow harmonics between different orders, called symmetric cumulants, are very sensitive to the initial state and the hydrodynamic evolution. In Pb--Pb collisions these are, for instance, used to constrain the shear viscosity over entropy ratio $\eta/s$. In addition, they challenge the description of the observed phenomena within initial state saturation models.
 Their measurement in small systems can provide important insight in the validity of the hydrodynamic description of the observed phenomena. The present uncertainties of such measurement in small systems are too large for a definitive conclusion, in particular in pp collisions, due to the dominance of non flow like jets and resonance decays. Figure~\ref{fig:smallsystems_corr_symmetriccumulants} shows the performance projection of ${\rm SC}(2,3) = \langle v_2^2 v_3^2 \rangle - \langle v_2^2 \rangle \langle v_3^2 \rangle$ for HL-LHC for pp and p--Pb collisions. The uncertainties of the measurement without subevents becomes practically invisible, however, those stay dominated by non-flow effects. A measurement requiring two, three and even four subevents becomes possible with uncertainties of the order of few times $10^{-7}$ depending on multiplicity. Such results can give a definitive answer if a similar hydrodynamic footprint is observed in small and large systems.
 
-
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{\main/smallsystems/img/HLLHC_SC.pdf}
 \caption{Symmetric cumulants extracted with and without applying subevents for pp (left) and pPb (right) as a function of $\nch$. The projected reach is shown for the case of 2, 3 and 4 subevents assuming a constant signal as a function of multiplicity indicated by the lower horizontal line. The vertical line indicates the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
 \label{fig:smallsystems_corr_symmetriccumulants}
 \end{figure}
+
+Figure~\ref{fig:smallsystems_corr_cumulants_pid}
 
 \begin{figure}[ht]
 \centering
