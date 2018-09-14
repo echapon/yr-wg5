@@ -84,3 +84,87 @@
 \providecommand{\raa}{\ensuremath{R_\text{AA}}\Xspace}
 \providecommand{\sqrtsnn}{\snn}
 %%% end of QUARKONIA
+
+
+%% ACCELERATOR
+%%\newcommand{\text}[1]{\mathrm{#1}}
+
+% quantity as number and unitbbb
+
+\newcommand{\qty}[2]{\ensuremath{#1\,\mathrm{#2}}}  %% quantity as number and unit
+\newcommand{\enum}[2]{\ensuremath{#1\times10^{#2}}} % a number in scientific notation
+\newcommand{\NQTY}[2]{\mbox{$[#1/{\rm #2}]$}}     % numerical formula e.g. \NQTY{E}{GeV} gives [E/GeV]
+\newcommand{\UQTY}[2]{\ensuremath{#1/\mathrm{#2}}}  % numerical formula e.g. \UQTY{E}{GeV} gives E/GeV
+\newcommand{\eqty}[3]{\qty{\enum{#1}{#2}}{#3}}  % for scientific notation plus units
+\newcommand{\invnb}[1]{\qty{#1}{nb^{-1}}}           %inverse nanobarn
+
+\newcommand{\elumi}[2]{\qty{\enum{#1}{#2}}{cm^{-2}s^{-1}}}
+\newcommand{\murad}[1]{\qty{#1}{\mu rad}}
+\newcommand{\intlumimub}[1]{\qty{#1}{\mu b^{-1}}}
+
+\newcommand{\sNN}{\ensuremath{s_{\mbox{\tiny NN}}}}
+\newcommand{\yNN}{\ensuremath{y_{\mbox{\tiny NN}}}}
+\newcommand{\bstar}{\ensuremath{\beta^{*}}}
+\newcommand{\emittn}{\ensuremath{\varepsilon_n}}  
+\newcommand{\LAA}{\ensuremath{L_\text{AA}}}
+\newcommand{\LpA}{\ensuremath{L_{pA}}}
+\newcommand{\Lpp}{\ensuremath{L_{pp}}}
+\newcommand{\Lpeak}{\ensuremath{\hat{L}}}
+\newcommand{\LNN}{\ensuremath{ L_{\text{NN}}}}
+
+\newcommand{\isotope}[3]{\ensuremath{^{#1}\mathrm{#2}^{#3}}}
+%%\newcommand{\Pb}{\isotope{208}{Pb}{82+}} 
+
+% This is the header for the tables of ion parameters
+\newcommand{\speciesheader}{ &
+\isotope{16}{O}{8+}&
+\isotope{40}{Ar}{18+}&
+\isotope{40}{Ca}{20+}&
+\isotope{78}{Kr}{36+}&
+\isotope{129}{Xe}{54+}&
+\isotope{208}{Pb}{82+}
+}
+
+
+\newcommand{\bfunc}{$\beta$-function} 
+\newcommand{\bstarval}[1]{$\bstar = #1\,\mbox{m}$}
+\newcommand{\betarel}{\ensuremath{\beta_\text{rel}}} 
+\newcommand{\emittnx}{\ensuremath{\epsilon_{n,x}}}
+\newcommand{\emittny}{\ensuremath{\epsilon_{n,y}}}
+\newcommand{\emittnxy}{\ensuremath{\epsilon_{n,xy}}}
+%\newcommand{\emittl}{\ensuremath{\epsilon_l}}
+\newcommand{\emitts}{\ensuremath{\epsilon_s}}
+\newcommand{\sigs}{\ensuremath{\sigma_s}}
+\newcommand{\sigp}{\ensuremath{\sigma_p}}
+\newcommand{\kb}{\ensuremath{k_b}}
+\newcommand{\frev}{\ensuremath{f_0}}
+\newcommand{\Nb}{\ensuremath{N_b}}
+\newcommand{\Eb}{\ensuremath{E_b}}
+\newcommand{\emittval}[1]{\ensuremath{\emittn=\qty{#1}{\mu m\,rad}}}
+\newcommand{\Nbval}[2]{\ensuremath{\Nb=\enum{#1}{#2}}}
+%\newcommand{\sigz}{\ensuremath{\sigma_z}}
+\newcommand{\taul}{\ensuremath{\tau_l}}
+\newcommand{\taulval}[1]{\ensuremath{\taul=\qty{#1}{ns}}}
+\newcommand{\sigzval}[1]{\ensuremath{\sigz=\qty{#1}{cm}}}
+\newcommand{\etev}[1]{\ensuremath{\Eb=\qty{#1}{TeV}}}
+\newcommand{\VRF}{\ensuremath{V_{\mathrm{RF}}}}
+\newcommand{\lumival}[2]{\ensuremath{\mathcal{L}=\qty{#1\times 10^{#2}}{cm^{-2} s^{-1}}}}
+ 
+\newcommand{\aibsx}{\ensuremath{\alpha_{\mathrm{IBS},x}}}
+\newcommand{\aibsy}{\ensuremath{\alpha_{\mathrm{IBS},y}}}
+\newcommand{\aibsxy}{\ensuremath{\alpha_{\mathrm{IBS},x,y}}}
+\newcommand{\aradd}{\ensuremath{\alpha_{\mathrm{rad}}}}
+\newcommand{\aradds}{\ensuremath{\alpha_{\mathrm{rad},s}}}
+\newcommand{\araddx}{\ensuremath{\alpha_{\mathrm{rad},x}}}
+\newcommand{\araddy}{\ensuremath{\alpha_{\mathrm{rad},y}}}
+\newcommand{\araddxy}{\ensuremath{\alpha_{\mathrm{rad},x,y}}}
+\newcommand{\Z}{\ensuremath{Z_\text{ion}}}
+\newcommand{\A}{\ensuremath{A_\text{ion}}}
+\newcommand{\Circ}{\ensuremath{C_\text{ring}}}
+\newcommand{\lumi}{\ensuremath{\mathcal{L}}}
+\newcommand{\Lb}{\ensuremath{\mathcal{L}_b}}
+\newcommand{\Lint}{\ensuremath{\mathcal{L}_{\text{int}}}}
+\newcommand{\Lbint}{\ensuremath{\mathcal{L}_{b,\text{int}}}}
+\newcommand{\Lbpeak}{\ensuremath{\mathcal{L}_{b,\text{peak}}}}
+ 
+%% end of QCCELERATOR
