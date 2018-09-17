@@ -1,12 +1,35 @@
 % don't remove the folling lines, and edit the defintion of \main if needed
 \documentclass[../report.tex]{subfiles}
+\usepackage[utf8]{inputenc}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-\IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
 \begin{document}
 
-\section{Colletive flow and correlations}
+\section{Flow and Correlations}
+\input{tex/intro.tex} %Bjoren,Stefan +(Soumya)
+\clearpage
+\input{tex/macroscopic_properties.tex}%Bjoern, Stefan, Soumya
+\clearpage
+
+
+\input{tex/initial_conditions.tex}
+\clearpage
+%\input{tex/fluctuations.tex}
+\clearpage
+%\input{tex/response_functions.tex}
+
+
+\input{tex/longitudinal_fluctuations.tex}%Soumya (+Wei)
+\clearpage
+\input{tex/system_size_dependence.tex}%Bjoern
+\clearpage
+\input{tex/vorticity_polarization.tex}%Stefan,Alex
+\clearpage
+\input{tex/cme.tex} %Wei, Vitaly
+\clearpage
+\input{tex/summary.tex} %Soumya, Wei
 
 \end{document}
+
