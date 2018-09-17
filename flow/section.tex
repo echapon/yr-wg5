@@ -1,6 +1,6 @@
-% don't remove the folling lines, and edit the defintion of \main if needed
+% don't remove the following lines, and edit the definition of \main if needed
 \documentclass[../report.tex]{subfiles}
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 % until here
@@ -8,28 +8,28 @@
 \begin{document}
 
 \section{Flow and Correlations}
-\input{tex/intro.tex} %Bjoren,Stefan +(Soumya)
+\input{\main/flow/tex/intro.tex} %Bjoren,Stefan +(Soumya)
 \clearpage
-\input{tex/macroscopic_properties.tex}%Bjoern, Stefan, Soumya
+\input{\main/flow/tex/macroscopic_properties.tex}%Bjoern, Stefan, Soumya
 \clearpage
 
 
-\input{tex/initial_conditions.tex}
+\input{\main/flow/tex/initial_conditions.tex}
 \clearpage
 %\input{tex/fluctuations.tex}
 \clearpage
 %\input{tex/response_functions.tex}
 
 
-\input{tex/longitudinal_fluctuations.tex}%Soumya (+Wei)
+\input{\main/flow/tex/longitudinal_fluctuations.tex}%Soumya (+Wei)
 \clearpage
-\input{tex/system_size_dependence.tex}%Bjoern
+\input{\main/flow/tex/system_size_dependence.tex}%Bjoern
 \clearpage
-\input{tex/vorticity_polarization.tex}%Stefan,Alex
+\input{\main/flow/tex/vorticity_polarization.tex}%Stefan,Alex
 \clearpage
-\input{tex/cme.tex} %Wei, Vitaly
+\input{\main/flow/tex/cme.tex} %Wei, Vitaly
 \clearpage
-\input{tex/summary.tex} %Soumya, Wei
+\input{\main/flow/tex/summary.tex} %Soumya, Wei
 
 \end{document}
 
