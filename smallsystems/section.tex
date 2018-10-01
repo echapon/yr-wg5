@@ -11,6 +11,28 @@
 \begin{document}
 
 \section{Emergence of hot and dense QCD in small systems}
+
+\textbf{Coordinators}: Jan Fiete Grosse-Oetringhaus (CERN) and Constantin Loizides (Oak Ridge National Laboratory) 
+\linebreak
+\textbf{Contributors, not yet sorted alphabetically, not complete}:
+Naghmeh Mohammadi (CERN), 
+Aleksi Kurkela (CERN), 
+Christian Bierlich (University of Copenhagen), 
+Bjoern Schenke (Brookhaven National Lab), 
+Alexander Kalweit (CERN),
+Mingliang Zhou (Stony Brook University),
+Maxime Guilbaud (CERN),
+Jiangyong Jia (Brookhaven National Lab), 
+Cvetan Cheshkov (CNRS),
+Elena Bruna (),
+Henrique Zanoli (),
+Peter Jacobs (LBNL),
+Filip Krizek (),
+Michael Weber (),
+Ran Bi (),
+Kaya Tatar (),
+Yen-Jie Lee ()
+
 \label{sec:smallsyst}
 
 In the program of proton--proton collisions at the LHC, the main effort is focused on hard processes which are embedded in an underlying event consisting of a large number of soft low-$p_\perp$ particles. The underlying event is subtracted using models, such as PYTHIA~\cite{Sjostrand:2014zea} or HERWIG~\cite{Bellm:2015jjp}, based on essentially free streaming of the produced particles, supplemented in some cases with a non-perturbative string fragmentation picture~\cite{Andersson:1983ia} to model the non-perturbative soft particle production.  
@@ -74,7 +96,7 @@ The main experimental task in future years is twofold: Firstly, a detailed chara
    \hline
     \hline
   \end{tabular}
-  \caption{Summary of bulk observables or effects (classified as known from AA data) in PbPb collisions, as well as in high multiplicity pPb and pp collisions at the LHC. References to key measurements for the various observables and systems are given. See text for details.}
+  \caption{Summary of bulk observables or effects (classified as known from AA data) in PbPb collisions, as well as in high multiplicity pPb and pp collisions at the LHC. References to key measurements for the various observables and systems are given. See text for details. Table adapted from Ref.~\cite{Loizides:2016tew}.}
 \end{center}  
 \end{table}
 \end{landscape}
@@ -159,7 +181,7 @@ While the multiplicity is a convenient and well defined observable to compare di
 For the latter, the input is the multiplicity-dependent $\meanpT$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the multiplicity-dependent transverse overlap from a Glauber MC~\cite{Loizides:2017ack}. The energy density is calculated at a fixed $\tau = \unit[0.2]{fm/c}$. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can reach large values in pp and p--Pb collisions, of the order of central Pb--Pb collisions.
 
 Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in p--Pb and Pb--Pb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$~\cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments. 
-The conversion of the provided $\dNdeta$ to multiplicity ranges with larger pseudorapidity coverage is done for simplicity assuming a flat pseudorapidity distribution. For the conversion with $\pT$ cuts as employed in many current measurements a set of conversation factors is used, listed in Tab.~\ref{tab:smallsystems_conversion}.
+The conversion of the provided $\dNdeta$ to multiplicity ranges with larger pseudorapidity coverage is done for simplicity assuming a flat pseudorapidity distribution within $|\eta| < 2.5$. For the conversion with $\pT$ cuts as employed in many current measurements a set of conversation factors is used, listed in Tab.~\ref{tab:smallsystems_conversion}.
  
 \begin{table}
 \centering
@@ -199,7 +221,7 @@ Range & $\dNdeta$ & Events per pb$^{-1}$ & Events in 200~pb$^{-1}$ \\
 \begin{table}
 \centering
 \begin{tabular}{c|c|c|c|c|c}
-\backslashbox{$|\eta|$}{$\pT$} & $> \unit[0.1]{GeV/c}$ & $> \unit[0.2]{GeV/c}$ & $> \unit[0.3]{GeV/c}$ & $> \unit[0.4]{GeV/c}$ & $> \unit[0.5]{GeV/c}$ \\
+\backslashbox{$|\eta|$}{$\pT$} & $> \unit[0.1]{\UGeVc}$ & $> \unit[0.2]{GeV/c}$ & $> \unit[0.3]{GeV/c}$ & $> \unit[0.4]{GeV/c}$ & $> \unit[0.5]{GeV/c}$ \\
 \hline
 $|\eta| < 1.5$ & 1.03 & 1.11 & 1.22 & 1.31 & 1.40 \\
 \hline
@@ -223,11 +245,22 @@ In order to remove non-flow contributions, the 3-subevent method is applied. In 
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_3_4_pp.pdf}
-\includegraphics[width=.45\linewidth]{\main/smallsystems/img/c_3_4_pPb.pdf}
+\includegraphics[width=.49\linewidth]{\main/smallsystems/img/c_3_4_pp.pdf}
+\hfill
+\includegraphics[width=.49\linewidth]{\main/smallsystems/img/c_3_4_pPb.pdf}
 \caption{4-particle cumulants $c_3\{4\}$ with 3-subevent method for $pp$ (left) and $p$+Pb (right) as a function of $\nch$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty, with $c_3\{4\}$ assumed to be zero. The red and green dash lines represent $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal respectively. The horizontal line in the left panel indicates the the transition between minimum-bias data and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
 \label{fig:smallsystems_corr_cumulants}
 \end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.49\linewidth]{\main/smallsystems/img/c_3_4_pp_eta4.pdf}
+\caption{Demonstration of the influence of the larger tracking acceptances for ATLAS and CMS available in Run 4. The figure shows the 4-particle cumulants $c_3\{4\}$ as in Fig.~\ref{fig:smallsystems_corr_cumulants} for \pp{} collisions with $\Lint = \unit[200]{pb^{-1}}$. The data points indicate the reach with the current detector ($|\eta| < 2.5$) while the gray band the enlarged acceptance of $|\eta| < 4$.}
+\label{fig:smallsystems_corr_cumulants_eta4}
+\end{figure}
+
+
+
 
 % \begin{figure}[ht]
 % \centering
@@ -295,9 +328,20 @@ Narrative:
 
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/energyloss_hjet.pdf}
-\caption{Modification of jet recoil yields extracted from hadron-jet correlations for pp collisions (left) and p-Pb collisions (right). Delta-recoil ratio vs. pT.}
+\includegraphics[width=0.49\linewidth]{\main/smallsystems/img/hjet_pp.pdf}
+\hfill
+\includegraphics[width=0.49\linewidth]{\main/smallsystems/img/hjet_ppb.pdf}
+\caption{Modification of jet recoil yields extracted from hadron-jet correlations for \pp{} collisions (left) and \pPb{} collisions (right). UNDER APPROVAL.}
 \label{fig:smallsystems_energyloss_hjet}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.49\linewidth]{\main/smallsystems/img/xjg_highmult_projection_rebin.pdf}
+\hfill
+\includegraphics[width=0.49\linewidth]{\main/smallsystems/img/projection_xjz_pp_multBins.pdf}
+\caption{Projections of the measurement of jet-$\gamma$ and jet-$Z$ correlations in pp collisions. Shown are the $x_{j\gamma}$ (left panel) and $x_{jZ}$ (right panel) distributions for different multiplicity bins. The projection is based on the equivalent measurement in \pPb{} collisions~\cite{}. UNDER APPROVAL.} 
+\label{fig:smallsystems_energyloss_xjg}
 \end{figure}
 
 \begin{figure}[ht]
@@ -312,10 +356,21 @@ Narrative:
 
 \begin{figure}[ht]
 \centering
-\includegraphics[draft]{\main/smallsystems/img/thermal_radiation.pdf}
-\caption{Thermal dileptons. Left panel: dN/Mee vs. Mee Example. Right panel: sensitivity as a function of Lint (pp, pPb) [expected signal is too uncertain].}
+\includegraphics[width=0.7\linewidth]{\main/smallsystems/img/2018-09-29-2018-09-29-finalPlotsTemperatureComparison_pPb_FastSim_FitBG_noDCAcut_fitResults_study0.pdf}
+\caption{Projection of the measurement of the medium temperature extracted from thermal dileptons in \pPb{} collisions. As the expected signal is uncertain, the figure presents the required integrated luminosity relative to the prediction in Ref.~\cite{}. It is expressed as the minimum thermal photon N(Rapp) to $\pi^0$ ratio (left axis) and scaling of N(Rapp) (right axis) for achieving a 10\% uncertainty on the extracted temperature.}
 \label{fig:smallsystems_thermal_radition}
 \end{figure}
+
+The measurement of thermal radiation in \pPb{} collisions can be considered as a smoking gun for QGP formation. In order to estimate the sensitivity to the thermal radiation into the dielectron channel a similar strategy as in Sec.~\ref{sec:thermalradiation:dileptons} was used. 
+The input for the signal is composed of:
+\begin{itemize}
+\item contributions from the decays of long-lived light pseudoscalar and vector mesons (hadronic cocktail), with particle ratios and spectral shapes extrapolated from existing heavy-ion data at lower energies,
+\item correlated semileptonic charm decays based on calculations from the PYTHIA event generator \cite{Sjostrand:2006za}, 
+\item and the radiation of thermal dileptons and a medium-modified spectral function for the \Prho meson in a realistic space-time evolution.
+\end{itemize}
+The first two are the same as for the expectations used in the extraction of dark photon limits in Sec.~\ref{sec:dileptons:darkphotons}, the latter were provided by R.~Rapp~\cite{RappPriv1}. The combinatorial background was scaled from Pb--Pb collisions to the expected number of pairs in p--Pb collisions. The pair efficiency (including the efficiency for rejecting \Pepem pairs from semileptonic charm decays) is assumed to be the same as in Pb--Pb collisions. 
+
+The temperature of the QGP is extracted in the same way as in Sec.~\ref{sec:thermalradiation:dileptons}. The minimum thermal photon to $\pi^{0}$ (both decaying into \Pepem) ratio that is needed for a fit to the invariant mass spectrum with a statistical uncertainty $\sigma_{\rm T,stat} < 10$\% as a function of integrated up to 2000 nb$^{-1}$ is shown in Fig.~\ref{fig:smallsystems_thermal_radition}. If the prediction in Ref.~\cite{RappPriv1} is accurate, an integrated luminosity of $\unit[52]{nb^{-1}}$ is sufficient. In case the real signal is 50\% smaller about 4--5 times the statistics is needed.
 
 \subsection{Data-taking strategy}
 
