@@ -1,6 +1,27 @@
 % Additional commands
 % Please put yours in the appropriate section
 
+%%% TODO - WILL BE REMOVED - PLEASE REPLACE %%%
+\newcommand{\pt}{\pT}
+\providecommand{\sqrtsnn}{\sqrtsNN}
+\newcommand{\Raa}{\RAA}
+\providecommand{\raa}{\ensuremath{R_\text{AA}}\Xspace}
+
+%%%% GENERAL %%%%
+\DeclareRobustCommand{\Pepem}{\HepParticle{\Pe}{}{+}\HepParticle{\Pe}{}{-}\Xspace} % positron-electron pair
+\DeclareRobustCommand{\PGmpGmm}{\HepParticle{\PGm}{}{+}\HepParticle{\PGm}{}{-}\Xspace} % anti-muon-muon pair
+
+\newcommand{\sqrts}{\ensuremath{\sqrt{s}\Xspace}}
+\newcommand{\sqrtsNN}{\ensuremath{\sqrt{\sNN}\Xspace}}
+\newcommand{\Npart}{\ensuremath{N_{\rm part}\Xspace}}
+\newcommand{\Ncoll}{\ensuremath{N_{\rm coll}\Xspace}}
+\newcommand{\RpPb}{\ensuremath{R_{\rm pPb}\Xspace}}
+\newcommand{\RAA}{\ensuremath{R_{\rm AA}\Xspace}}
+\newcommand{\TAA}{\ensuremath{T_{\rm AA}\Xspace}}
+\newcommand{\RCP}{\ensuremath{R_{\rm CP}\Xspace}}
+\newcommand{\vtwo}{\ensuremath{v_{\rm 2}\Xspace}}
+\newcommand{\vone}{\ensuremath{v_{\rm 1}\Xspace}}
+
 %%%Small systems
 \newcommand{\nch}         {\ensuremath{N_{\mathrm {ch}}\xspace}}
 \newcommand{\meannch}         {\ensuremath{\langle N_{\mathrm {ch}}\xspace \rangle}}
@@ -9,19 +30,19 @@
 \newcommand{\dNdy}      {\mathrm{d}N_\mathrm{ch}/\mathrm{d}y}
 \newcommand{\kT}          {\ensuremath{k\sb{\scriptstyle\mathrm{T}}}}
 
-\newcommand{\pp}          {pp}
-\newcommand{\pPb}         {p-Pb}
-\newcommand{\Pbp}         {Pb-p}
-\newcommand{\pO}          {p-O}
-\newcommand{\pA}          {p-A}
-\newcommand{\PbPb}        {Pb--Pb}
-\newcommand{\XeXe}        {Xe--Xe}
-\newcommand{\AuAu}        {Au--Au}
-\newcommand{\CuCu}        {Cu--Cu}
-\newcommand{\pAu}         {p-Au}
-\newcommand{\dAu}         {d-Au}
+\newcommand{\pp}          {pp\Xspace}
+\newcommand{\pPb}         {p-Pb\Xspace}
+\newcommand{\Pbp}         {Pb-p\Xspace}
+\newcommand{\pO}          {p-O\Xspace}
+\newcommand{\pA}          {p-A\Xspace}
+\newcommand{\PbPb}        {Pb--Pb\Xspace}
+\newcommand{\XeXe}        {Xe--Xe\Xspace}
+\newcommand{\AuAu}        {Au--Au\Xspace}
+\newcommand{\CuCu}        {Cu--Cu\Xspace}
+\newcommand{\pAu}         {p-Au\Xspace}
+\newcommand{\dAu}         {d-Au\Xspace}
 
-\newcommand{\sigmaBFPP}   {\ensuremath{\sigma_\mathrm{BFPP}}}
+\newcommand{\sigmaBFPP}   {\ensuremath{\sigma_\mathrm{BFPP}}\Xspace}
 
 \newcommand{\lsim}        {\,{\buildrel < \over {_\sim}}\,}
 \newcommand{\gsim}        {\,{\buildrel > \over {_\sim}}\,}
@@ -88,8 +109,6 @@
 %%% end of LIGHT FLAVOURS %%%%
 
 %%% QUARKONIA
-\providecommand{\raa}{\ensuremath{R_\text{AA}}\Xspace}
-\providecommand{\sqrtsnn}{\sNN}
 %%% end of QUARKONIA
 
 
@@ -174,4 +193,4 @@
 \newcommand{\Lbint}{\ensuremath{\mathcal{L}_{b,\text{int}}}}
 \newcommand{\Lbpeak}{\ensuremath{\mathcal{L}_{b,\text{peak}}}}
  
-%% end of QCCELERATOR
+%% end of ACCELERATOR
