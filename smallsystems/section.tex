@@ -334,12 +334,25 @@ Narrative:
 - Produce these for pA and pp
 - For pp, see if high mu sample can be also used for something. In fact it should be made clear where it can be used and where not, as this chapter will be one of the places where a low mu pp program is motivated.
 
+
+Measurements of inclusive high-\pT\ hadron and inclusive jet yields in Minimum Bias (MB) \pPb\ collisions at the LHC are consistent with $\RpPb = 1$; i.e. no evidence of medium-induced modification is observed. For event classes split by event activity (EA), no medium-induced modification is observed in inclusive hadron production (refs); in contrast, for inclusive jet yields \RpPb\ is strongly suppressed relative to unity in ``central" \pPb\ collisions, and strongly enhanced in peripheral \pPb\ collisions (refs). Similar phenomenology is observed for inclusive jet production in \dAu\ collisions at RHIC (refs).
+
+In \pPb\ collisions at the LHC, the correlation between EA and event geometry is biased by the presence of a high-$Q^2$ process in the event~\cite{Acharya:2017okq}, which requires model-dependent corrections in order to relate EA and event geometry (refs). In order to avoid this assumption, and the corresponding modeling uncertainties for calculating \TAA, the ALICE collaboration utilized a coincidence observable, the semi-inclusive yield of jets recoiling from a high-\pT\ trigger hadron (``h+jet"~\cite{Adam:2015doa}), to search for jet quenching in \pPb\ collisions~\cite{Acharya:2017okq}. Because this observable is trigger-normalized and semi-inclusive, no scaling by \TAA\ is required, and it therefore has greater systematic sensitivity to jet quenching effects in small systems than inclusive jet observables.
+
+The h+jet coincidence observable was measured with the 2015 \pPb\ dataset~\cite{Acharya:2017okq}, with classification of events into low and high EA bins, with EA characterized by both forward charged multiplicity and zero-degree neutron energy. The ratio of recoil jet spectra for the high and low EA populations is consistent with unity, and therefore with no significant jet quenching effects within the uncertainties of the measurement. These uncertainties can be expressed as an upper limit of 400 MeV (90\% CL) on medium-induced energy transport outside a jet cone with R=0.4, for the high-EA population relative to the low-EA population. The limit is driven largely by the statistical precision of the measurement, with the systematic uncertainty making a smaller contribution. This limit, which is a factor 20 smaller than the magnitude of out-of-cone energy transport measured by a similar approach in \PbPb\ collisions~\cite{Adam:2015doa}, excludes some theoretical calculations that predicted large jet quenching in \pPb\ at the LHC~\cite{Acharya:2017okq}.
+
+Fig.~\ref{fig:hJetSmallSystems} shows an example projection of the measurement of the h+jet observable in LHC run 3/4.
+%, for \pPb\ collisions at $\sqrtsNN = \unit[5]{TeV}$ with integrated luminosity 0.5 pb$^{-1}$, and for \pp\ collisions at \sqrts{14} with integrated luminosity 200 pb$^{-1}$. 
+This projection is based on a PYTHIA simulation for \pp\ collisions, which gives the expected number of charged-hadron triggers in the interval $15<\ptt<20$~\UGeV (scaled by $A$ to model \pPb\ collisions), and the per-trigger recoil jet spectrum. 
+We utilize the PYTHIA simulation to project the statistical precision achievable for this measurement in Run 3/4. No EA-dependent shift in the spectra is imposed on the PYTHIA-generated recoil spectrum. %Rather EA "selection" in this simulation corresponds simply to a reduction in measurement statistics due to the selection of a limited percentile interval of the MB yield; for example, an EA-selection of ``very central'' events corresponding to the 0-0.1\% centrality percentile has 0.1\% of the MB event statistics. 
+The red lines indicate the 90\% CL limit for a possible EA-dependent spectrum shift, corresponding to a limit on large-angle energy transport due to jet quenching of 70 MeV/c for \pPb\ and 175 MeV/c for \pp. 
+
 \begin{figure}[ht]
 \centering
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/hjet_pp.pdf}
 \hfill
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/hjet_ppb.pdf}
-\caption{Modification of jet recoil yields extracted from hadron-jet correlations for \pp{} collisions (left) and \pPb{} collisions (right). UNDER APPROVAL.}
+\caption{UNDER APPROVAL. Modification of jet recoil yields extracted from hadron-jet correlations for \pp{} collisions (left) and \pPb{} collisions (right) within the ALICE acceptance. Shown is the ratio  of high-EA and low-EA recoil spectra, with high-EA corresponding to the 0-5\% bin for \pPb collisions (right panel), and the 0-0.1\% bin for \pp collisions (left panel). Since no EA-dependent shift is imposed, the parent distribution of the ratio has the value of unity at all \pT. The red lines show the 90\% CL limit for a possible EA-dependent spectrum shift.}
 \label{fig:smallsystems_energyloss_hjet}
 \end{figure}
 
