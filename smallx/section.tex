@@ -2,7 +2,6 @@
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-\IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
 
@@ -28,11 +27,11 @@ Proton-nucleus \cite{Salgado:2011wc} and ultraperipheral \cite{Baltz:2007kq} col
 
 On the other hand, the structure of nucleons and nuclei, and the mechanism of particle production at small $x$, are key ingredients for our understanding of heavy-ion collisions and for the characterisation of the produced hot dense medium. For hard probes, the nuclear modification of standard collinear parton densities is one of the uncertainties in the extraction of medium characteristics. For soft and semihard observables, both the parton densities and the detailed transverse structure of nucleons and nuclei are crucial ingredients for their description, e.g. for the initial conditions for hydrodynamical evolution \cite{Liu:2015nwa,Weller:2017tsr,Mantysaari:2017cni}.
 
-In the collinear framework, parton densities inside nuclei (nPDFs) \cite{armestodis2018} are poorly constrained due to two facts. On the one hand, data come from a large variety of nuclei and the number of data points for any of them, particularly for Pb for which it is less than 50 coming from fixed target DIS and DY experiments and from pPb collisions at the LHC, is very small compared to proton analysis. This fact makes the fit for a single nucleus impossible and the modeling of the $A$-dependence of the parameters in the initial conditions mandatory. On the other hand, the region covered by existing data is very small for the requirements of present hadronic colliders, see Fig. \ref{fig:smallx1}. In spite of the uncertainties (in the applicability of collinear factorisation, scale choices, etc.) for their extraction in hadronic collisions and UPCs, these are the only experimental systems where they can be constrained before electron-ion colliders become available. The most up to date analysis include between 1000 and 2000 data points for 14 nuclei and are performed at next-to-leading accuracy \cite{deFlorian:2011fp,Kovarik:2015cma,Eskola:2016oht} (even there exists some preliminary attempt at next-to-next-to-leading \cite{Khanpour:2016pph}). Differences between them mainly arise from the different sets of data included in the analysis and from the different functional forms employed for the initial conditions to be fitted. All in all, all parton species are very weakly constrained at small $x<10^{-2}$, gluons at large $x>0.2$, and flavour decomposition is largely unknown - a natural fact for $u$ and $d$ due to the approximate isospin symmetry in nuclei. The impact of presently available LHC data, studied in \cite{Eskola:2016oht}, is quite modest with some constrains on the gluon in the region $0.01<x<0.3$.
+In the collinear framework, parton densities inside nuclei (nPDFs) \cite{Paukkunen:2017bbm,armestodis2018} are poorly constrained due to two facts. On the one hand, data come from a large variety of nuclei and the number of data points for any of them, particularly for Pb for which it is less than 50 coming from fixed target DIS and DY experiments and from pPb collisions at the LHC, is very small compared to proton analysis. This fact makes the fit for a single nucleus impossible and the modeling of the $A$-dependence of the parameters in the initial conditions mandatory. On the other hand, the region covered by existing data is very small for the requirements of present hadronic colliders, see Fig. \ref{fig:smallx1}. In spite of the uncertainties (in the applicability of collinear factorisation, scale choices, etc.) for their extraction in hadronic collisions and UPCs, these are the only experimental systems where they can be constrained before electron-ion colliders become available. The most up to date analysis include between 1000 and 2000 data points for 14 nuclei and are performed at next-to-leading accuracy \cite{deFlorian:2011fp,Kovarik:2015cma,Eskola:2016oht} (even there exists some preliminary attempt at next-to-next-to-leading \cite{Khanpour:2016pph}). Differences between them mainly arise from the different sets of data included in the analysis and from the different functional forms employed for the initial conditions to be fitted. All in all, all parton species are very weakly constrained at small $x<10^{-2}$, gluons at large $x>0.2$, and flavour decomposition is largely unknown - a natural fact for $u$ and $d$ due to the approximate isospin symmetry in nuclei. The impact of presently available LHC data, studied in \cite{Eskola:2016oht}, is quite modest with some constrains on the gluon in the region $0.01<x<0.3$.
 
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{\main/smallx/fig/FHC7_3.pdf} \hfill \includegraphics[width=0.45\textwidth]{\main/smallx/fig/upc_lhc_x_Q_map_5.eps}
+\includegraphics[width=0.45\textwidth]{\main/smallx/fig/FHC7_3.pdf} \hfill \includegraphics[width=0.45\textwidth]{\main/smallx/fig/upc_lhc_x_Q_map_5-eps-converted-to.pdf}
 \caption{Left: $x$-$Q^2$ plane to be explored in proton-nucleus at the LHC and the FCC, and in  proposed electron-nucleus colliders, compared with the regions where the experimental data presently used in the EPPS16 analysis \cite{Eskola:2016oht} lie. Right: $x$-$Q^2$ plane to be explored in UPCs, taken from \cite{Baltz:2007kq}.}
 \label{fig:smallx1}
 \end{figure}
@@ -56,7 +55,7 @@ Table~\ref{tab:UPCExpRun12} summarizes the current status of UPC
 measurements in LHC Runs 1 and 2 for all four experiments.
 
 %LHCb paragraph draft MW
-LHCb is well suited for exclusive production studies in ultra-peripheral collisions. In particular, its optimisation for flavour physics within its acceptance 2<eta<5 warrant an excellent resolution for typical momenta in quarkonium and heavy-flavour exclusive production as demonstrated in cite conf-note. Its particle identification capabilities allow to efficiently look for final states with charged muons, pions, Kaons and protons. Exclusive diphoton analysis as pioneered in ATLAS and CMS are also conceivable with lower ET-thresholds. The feasibility of inclusive gamma-induced measurements will require further studies. In Tab.~\ref{tab:UPCExpRun12} conceivable final states with suitable kinematic selections for analysis with LHCb are given.
+LHCb is well suited for exclusive production studies in ultra-peripheral collisions. In particular, its optimisation for flavour physics within its acceptance 2$<\eta<$5 warrant an excellent resolution for typical momenta in quarkonium and heavy-flavour exclusive production as demonstrated in~\cite{LHCb-CONF-2018-003}. Its particle identification capabilities allow to look for final states with charged muons, pions, Kaons and protons. Exclusive diphoton analysis as pioneered in ATLAS~\cite{Aaboud:2017bwk} and CMS~\cite{CMS-PAS-FSQ-16-012} are also conceivable with lower \ET-thresholds. The feasibility of inclusive $\gamma$-induced measurements will require further studies. In Tab.~\ref{tab:UPCExpRun12} conceivable final states with suitable kinematic selections for analysis with LHCb are given.
 
 %ALICE paragraph draft CM
 In LHC runs 3 and 4 ALICE \cite{Abelevetal:2014cna} will take data in
@@ -322,20 +321,107 @@ Theoretical predictions for dijet distributions using NL0 pQCD + EPPS16, nCTEQ15
 Editors: Mark Strikman and Vadim Guzey + Jesus Guillermo Contreras Nuno + Spencer Klein\\
 Indicative length: 1-2 pages
 
-Figures: Feynman graph of incoherent VM photoproduction in UPCs; two-panel figure for the t-dependence for light and heavy VMs.
+\subsubsubsection{Coherent vector meson production off nuclei}
+%\subsection{}
+
+Extensive data were produced in the previous LHC heavy ion runs on coherent photoproduction  of $\rho$ mesons~\cite{Adam:2015gsa}, 
+$J/\psi$~\cite{Abbas:2013oua,Abelev:2012ba,Khachatryan:2016qhq} and to a lesser extent $\Psi'$~\cite{Adam:2015sia}: 
+$\gamma+ A \to V +A$. Due to the presence of two photon sources, the $x$-range of these studies is largely  limited
+to $x\ge m_V/\sqrt{s}$. For light mesons these measurements provide information on the pattern of interactions of extended pion-size mesons and such phenomena as shadowing and color fluctuations. For small dipoles like $J/\psi$ and $\Upsilon$, 
+it provided information on the leading twist nuclear shadowing at moderate $Q^2$, which is difficult to obtain using other hard probes. A factor of $\sim 3$ reduction of the $J/\psi$ 
+cross section compared to the $\gamma p$ case is consistent with the expectation of the leading twist 
+approximation~\cite{Guzey:2013xba,Guzey:2013qza} and substantially stronger than that in the dipole 
+model~\cite{Lappi:2013am} (in this case, the shape and normalization of the rapidity distribution rather 
+strongly depends on the form of the dipole cross section and charmonium wave function).
+In the case of $\rho$ meson production, shadowing is a factor of $\sim 2$ stronger~\cite{Frankfurt:2015cwa} than in the approach based on
+the Glauber model and the vector meson dominance model.
+
+The higher LHC luminosity and experimental upgrades will allow us to collect vastly improved samples of UPC events.   In particular, the planned ALICE continuous readout \cite{Krivda:2017sto}, will eliminate many of the trigger-based constraints that have limited UPC data collection, allowing for high-efficiency collection of very samples of photoproduced light mesons.   The increases in sample sizes should be considerably larger than one would expect from scaling the luminosity.  
 \begin{itemize}
-\item Introduction: incoherent VM photoproduction in UPCs and nuclear shadowing, relation to
-geometric fluctuations of the projectile and target
-\item incoherent vs. coherent VM photoproduction from
-point of view of accessing small-$x$, UPCs with e.m. nucleus excitation and forward neutron emission
-\item Overview of the literature; general features vs. model-dependence;
-comparison to existing LHC data
-\item Predictions for run 2.
+\item
+Extend substantially the $x$ range for coherent $J/\psi$ photoproduction on nuclei
+using information on the centrality of collisions using forward neutron production~\cite{Guzey:2013jaa}
+ as well as using $pA$ scattering. In the later case, one would have to separate coherent $J/\psi$ production in $\gamma A$ and $\gamma p$  using a much more narrow $p_t$ distribution of $J/\psi $ produced in coherent $\gamma A$ scattering
+ and very good $p_t$ resolution for the transverse momentum of the pair (LHCb).
+\item
+Measure with high enough  statistics coherent $\Upsilon $ production in $\gamma p$ and $\gamma A$
+scattering to check the expectation of the 20\% reduction of the coherent cross section, which would allow one to probe gluon shadowing at a factor of $\sim 10 $ higher $Q^2$ than in $J/\psi$ production.
+\item
+Study coherent production of two pions with masses above 1 GeV to study an interplay of soft and hard dynamics as a function of $M_{\pi \pi}$ and $p_t(\pi)$.   
+\item
+Measure the production of heavier $2\pi$ \cite{Klein:2016dtn}, $4\pi$ and other resonances on ion targets, and search for the photoproduction of the observed exotic mesons.  
+By using data from both proton targets (at HERA or the LHC) and ion targets, it is possible to separate the photon-meson coupling constant and the meson-nucleon interaction cross-sections.  
+\item
+Study the photoproduction of multiple vector mesons by a single ion pair \cite{Klein:1999qj}.   Double photoproduction introduces many quantum correlations, including the possibility of observing stimulated decays of vector mesons.  Also, since the two photons share the same linear polarization, is will be possible to study photoproduction with polarized photons.
+
 \end{itemize}
 
-\subsubsection{Exclusive open charm production}
+\subsubsubsection{Nuclear Imaging with coherent photoproduction}
+
+In coherent photoproduction, production amplitudes from each individual scattering site add, with a phase factor $\exp{i(\vec{x}\cdot\vec{k})}$, where $\vec{x}$ is the location within the nucleus, and $\vec{k}$ is the momentum transfer from the nucleus to the vector meson.  So, one can Fourier transform the coherent photoproduction cross-section, $d\sigma_{\rm coherent}/dt$ to find the location of the scattering sites within the nucleus.  This can provide information on the spatial dependence of nuclear shadowing, allowing us to compare shadowing in the center of nuclei vs. shadowing in the periphery through the transverse profile $F(b)$.   Assuming azimuthal symmetry \cite{Diehl,Toll:2012mb}
+\begin{equation}
+F(b) \propto \frac{1}{2\pi} \int_0^\infty  p_T dp_T J_0(bp_T) \sqrt{\frac{d\sigma_{\rm coherent}}{dt}}.
+\end{equation}
+One complication is that it is necessary to flip the sign of $\sqrt{d\sigma_{\rm coherent}/dt}$ when crossing each diffractive minimum in the sample.
+
+This calculation is  data-hungry, and is subject to a number of theoretical uncertainties.  It is also necessary to separate the cross-section into its coherent and incoherent components.  Nevertheless, the STAR Collaboration applied it to $\rho^0$ photoproduction in UPCs \cite{Adamczyk:2017vfu}, finding a relatively boxy shape, inconsistent with a Woods-Saxon distribution, but seemingly consistent with expectations from nuclear shadowing.   A follow-on study explored the  $Q^2$ evolution of this transverse distribution by dividing the sample into three bins with different dipion mass \cite{Klein:2018grn}.  That study also considered some of the uncertainties inherent in the analysis, including the finite experimental reach in $p_T$ and the effects of the photon$p_T$, and the impact of the vector meson wave function. 
+
+Studies at the LHC could avoid many of these issues, by triggering on exclusive vector mesons (STAR required that the vector mesons be accompanied by neutrons from mutual Coulomb excitation).  This would expand the $p_T$ range where a meaningful $d\sigma_{\rm coherent}/dt$ can be extracted, increasing the accuracy of the transform.  Also, because of the higher beam energies, the photon $p_T$ is less important than it is at RHIC.    More importantly, HL-LHC could also extend this study to a wider variety of mesons, including the $\rho'$ (generically, $4\pi$ final states with a mass in the 1-2 GeV range) and the $J/psi$.  The latter is of particular interest because it is heavy enough to probe gluon shadowing, rather than just nuclear shadowing.  
+
+\subsubsubsection{Incoherent vector meson production off nuclei}
+
+Incoherent diffractive processes provide information on nuclear dynamics,  which is complementary to the 
+information one can obtain from 
+coherent scattering. In particular, incoherent $J/\psi$ photoproduction  probes quantum fluctuations of the target gluon density~\cite{Frankfurt:2008vi,Mantysaari:2016ykx,Mantysaari:2016jaz,Mantysaari:2017dwh,Cepila:2016uku,Cepila:2017nef}.
+The corresponding cross section can be measured a much larger range of $W_{\gamma N}$ than in the coherence case since one can 
+determine  (by detecting activity in the nucleus fragmentation region, for example, neutrons in a ZDC) which of two nuclei was a source of photons practically in each event.
+
+One can distinguish two contributions to incoherent diffraction: 
+quasielastic, when the nucleus involved in the strong interaction breaks down into nucleons and nuclear fragments, 
+and inelastic, when hadrons are produced in the nucleus fragmentation  region.
+% in the rapidity interval $\Delta y= y_{max} - y_{act}$. 
+At small $t$ the second  mechanism gives a $\sim 20\% $ contribution to the incoherent cross section. However, since the $t$-dependence of the inelastic  mechanism is weaker, it dominates the nuclear incoherent cross section for $|t| \ge 0.5$ GeV$^2$. 
+
+While it is generally understood and accepted that $J/\psi$ photoproduction with target dissociation is sensitive to fluctuations
+of the gluon density of the target, practical realizations of this notion require modeling. Notably, 
+proton size fluctuations at $t=0$~\cite{Frankfurt:2008vi} should be contrasted with proton shape fluctuations~\cite{Mantysaari:2016ykx,Mantysaari:2016jaz,Mantysaari:2017dwh}, which in turn
+can be refined by including fluctuations of number of hot spots~\cite{Cepila:2016uku,Cepila:2017nef}; the latter two approaches 
+are assumed to be valid in an entire range of $|t|$.
+Hence, studies of incoherent diffraction
+in $\gamma p$ scattering via $pA$ UPCs and $\gamma A$ scattering via $AA$ UPCs would allow one to map variations of the gluon fluctuations with energy ($x$) including a possible approach to the black disk regime, where the 
+fluctuations are strongly suppressed~\cite{Cepila:2016uku}.
+
+For very large $|t| \ge 1 - 2$ GeV$^2$ one enters the regime of pQCD, which corresponds to elastic scattering of small-size dipoles
+off individual small-$x$ partons of the nuclear target~\cite{Frankfurt:2008et,Frankfurt:2008er}.
+
+Note also that for the proton target, one can use the process  $\gamma + p \to VM (J/\psi) + gap + Y$  at   
+$-t \ge \mbox{few GeV}^2$ to study the perturbative Pomeron. 
+In the kinematics, where $\Delta y$ is fixed, 
+$d\sigma /dy_{VM} \propto (y_{VM}- \Delta y)^{2\alpha_{Pomeron}-2}$. In BFKL one expects
+$2\alpha_{Pomeron}-2\sim 0.4$ and, hence, a strong rapidity dependence of the corresponding cross section. A larger acceptance of the ATLAS and CMS detectors allows for a more effective study of these processes than at HERA.
+
+
+By studying the $t$-dependence and activity in the nucleus 
+fragmentation region it would be possible to separate the two mechanisms of incoherent nuclear scattering as a function of $t$.
+For small $|t| \le 0.3 - 0.5$ GeV$^2$, one can calculate nuclear shadowing for both mechanisms within the leading 
+twist shadowing framework~\cite{Guzey:2013jaa}. The shadowing turns out to be large and sensitive to the details of the leading twist shadowing dynamics.  At large $|t|$, one can study the $A$ dependence of the discussed reaction for different rapidity gap  
+intervals to track propagation of a small dipole through the nuclear medium.
+ By changing $\Delta y$ it would be possible to vary  strongly the relative role of the initial and final state interaction.
+
+
+\subsubsection{Photoproduction of heavy quarks}
 Author: Spencer Klein\\
 Indicative length: 0.5-1 page
+
+Photoproduction of open charm and bottom is a direct probe of of the gluon content of the target nucleus \cite{Klein:2002wm,Goncalves:2017zdx}.  The lowest order process, $\gamma + gluon\rightarrow c \overline c$ (or $b \overline b$) dominates over higher order, resolve processes, in which the photon radiates before it interacts with the target gluon \cite{Klein:2002wm}.  This process has some similarities with photoproduction of dijets, discussed above.  
+
+However, open charm offers some advantages.  Vertex detectors can detect separated vertices from charm production if the charm is moderately relativistic \cite{Bala:2012vg}, so it should be possible to study pairs with an invariant mass of $M_{c\overline c} \approx 4m_c$.  This will enable us to study  So, it should be possible to study gluon distributions down to Bjorken$-x$ values of around: $x \approx M_{Q\overline Q}/4\gamma m_p \exp(y)$.  The corresponding $Q^2$ is $Q^2 \approx M_{Q\overline Q}$.  This is considerably lower Bjorken$-x$ than for dijets, where the minimum mass is 10-20 GeV.  By comparing results from proton targets (in $pA$ collisions) and heavy-ion targets (in $AA$ collisions), it is possible to make a fairly clean measurement of nuclear shadowing.  
+
+The experimental signature is fairly clear: a pair of separated vertices (or a separated vertex and a lepton with a large impact parameter) in an event with one large rapidity gap. The ion near the rapidity gap should also remain intact. 
+
+The main disadvantage is the need to reconstruct both the charmed hadron and the anti-charmed hadron.  It may also be possible to make useful measurements from one fully reconstructed meson, and one semileptonic decay, but this needs to be studied.  However, the charm production rates are high enough so that the low efficiency is not too big a problem.
+
+In addition to charm and bottom, it may also be possible to study the photoproduction of top \cite{Klein:2000dk,Goncalves:2013oga}.   The rates are small (but not impossible) for lead-lead collisions, and should be adequate for lead-lead collisions.  This process would provide a separate probe of gluon distributions at larger $x$, and very high $Q^2$.  It would also allow a direct measurement of the charge of the top quark. 
 
 
 \subsection{The physics of pPb collisions}
@@ -348,8 +434,8 @@ Editors: Yen-Jie Lee (CMS), Marco van Leeuwen (ALICE), Zvi Citron (ATLAS), Micha
 Indicative length: 1-2 pages\\
 Content: observable overview table ordered by rate including back-of-envelope calculations for stat. error if nothing else available and explanations to instrumentation (one paragraph per experiment with suitable comparison with Run1/2), short mentioning of 'far beyond' observables in terms of luminosity in same collision system as default.
 
-%LHCb draft, try to be more explicit for new observables
-In LHCb during Run 3 and 4, the average multiplicity in pPb and Pbp collisions will be smaller or very similar to the nominal conditions in pp running with an average  pile-up of visible pp interaction of around 5 collisions at improved performances. The low rates in pPb collisions allow to process the full inelastic rate in the HLT as already in Run 2. The software trigger system will allow to study pPb collisions with looser selections as in standard pp collisions. Hence, LHCb can fully profit from the luminosity increase including 0-pt heavy-flavour.  A natural focus for LHCb in pPb collisions is the study of heavy-flavour with improved statistical precision and, as a consequence of strongly increased control samples for tracking efficiency and particle identification, improved systematic uncertainties including fully reconstructed D and B-mesons as well Lc and Lb baryons. A new focus of LHCb, profitting from the increased luminosity, is the study of W,Z and in particular Drell-Yan down to low masses production at forward rapidity. For Drell-Yan, production, the vertex locator allows for a strong suppression of heavy-flavour decay muons. Direct photon studies in particular in the conversion channel will greatly profit from the increased luminosity. In Tab., we summarise conceivable final states with suitable kinematic selections profitting to a large extent from the pp experience.
+%LHCb draft MW
+In LHCb during Run 3 and 4, the average multiplicity in $p$Pb and Pbp collisions will be smaller than the nominal conditions in pp running with an average  pile-up of 5 visible pp interaction. The low rates in pPb collisions allow to process the complete inelastic rate in the HLT as already in Run 2. Hence, LHCb can fully profit from the luminosity increase including \pT$=0$ heavy-flavour.  A natural focus for LHCb in pPb collisions is the study of open and hidden beauty and charm production with improved statistical precision and smaller systematic uncertainties by larger control samples for tracking efficiency and particle identification. A new focus of LHCb, profitting from the increased luminosity, is the study of W,Z and in particular Drell-Yan down to low masses production at forward rapidity. For Drell-Yan, production, the tracking exploiting the vertex locator can suppress effectively heavy-flavour decay muons. Direct photon studies in particular in the conversion channel will profit from the increased luminosity. In Tab.~\ref{tab:pPb}, we summarise conceivable final states with suitable kinematic selections profitting to a large extent from the pp experience.
 
 % ALICE general first draft MvL
 During run 3 and/or 4, ALICE will measure heavy flavor and charged particle production at mid-rapidity in pPb (and Pbp) collisions. These measurements will constrain the parton densities in the nucleus at moderate $x$. At forward and backward rapidity, measurements of W and Z production, as well as a range of quarkonia (J/$\psi$, $\psi(2S)$, and the $\upsilon$ family) will be performed. In particular the W and Z boson measurements will constrain the nuclear PDFs, while the quarkonia are also sensitive to final state effects.
@@ -359,7 +445,7 @@ During run 3 and/or 4, ALICE will measure heavy flavor and charged particle prod
 \centering
 \begin{tabular}{|c|c|c|c|c|c|}
 \hline
-Experiment   & Observable & $p_{T}$[GeV/$c$]-range, mass & $y_{lab}$               & raw yield & physics interest \\
+Experiment   & Observable & $p_{T}$[GeV/$c$]-range, mass & $y_{lab}$              & precision where available & physics interest \\
 \hline
 ALICE  & Z                &          & [-4.2,-3] [2,3.5] & uncertainty 3-4\%  (syst)  & nPDF       \\
        & W                &          & [-4.4,-3] [2,3.5] & unc 6-8\% (syst) & nPDF
@@ -393,6 +479,7 @@ LHCb   &                  &          &         &                    &         \\
 \hline
 \end{tabular}
 \caption{Acceptances and observables.  }
+\label{tab:pPb}
 }
 \end{table}
 
@@ -400,12 +487,24 @@ LHCb   &                  &          &         &                    &         \\
 Author: Marco van Leeuwen
 1 page
 
+The ALICE collaboration is considering to add a high-granularity forward calorimeter (FOCAL) to the experiment to  measure direct photon production in the rapidity range 3.0--5.0 and at low $p_\mathrm{T}$, to probe the gluon density in protons and nuclei at $x\sim 10^-5$ where gluon saturation and non-linear effects in the gluon density may become apparent. The FOCAL design is based on the Si-W calorimeter technology, with two or three high-granularity layers with silicon pixel sensors that allow to separate electromagnetic showers with only a few mm distance. This unique high granularity makes it possible to reconstruct neutral pions in the forward direction and to reject the decay photon background for the direct photon measurement.
+
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{\main/smallx/fig/gamma_unc_pPb_8TeV16_4eta5.pdf}
+\includegraphics[width=0.5\textwidth]{\main/smallx/fig/Gluons_FOCAL_norm_2_y34_y45.pdf}
+\caption{\label{fig:focal}Left panel: Projected uncertainties for the forward direct photon measurement with the ALICE FOCAL upgrade. Right panel: Uncertainty on the modification ratio of the gluon density in the Pb nucleus from a fit to FOCAL pseudo-data. The red lines show the current uncertainty and the grey band shows the uncertainty after including the FOCAL pseudo data.}
+\end{figure}
+
+Figure \ref{fig:focal} shows the expected performance of the FOCAL detector for the direct photon measurement in p--Pb collisions. The left panel show the projected uncertainties, which are 7-8\% at high $p_{T}$ and increase at lower momentum due to the combinatorial background. The right panel shows the impact of the measurement on our knowledge of the nuclear modification of the gluon distribution; the red lines show the current uncertainty, and the grey band shows the uncertainty after including the FOCAL pseudo-data. The improvement in the uncertainty is about a factor 2, but it should be noted that the direct photon measurements probes the gluon distribution at low x directly, while the existing data only probe $x \gtrsim 10^{-3}$ (see Fig. \ref{fig:smallx1}).
+
+In addition to the inclusive direct photon measurement, the FOCAL program will provide results on forward $\pi^{0}$ production in pp, p-Pb and Pb-Pb collisions, which also provide important constraints for the nuclear PDFs and parton energy loss in Pb-Pb collisions at large rapidity. Correlation measurements of neutral pions and photons will be used to further probe the gluon density and to search for evidence of multiple-gluon interactions which are expected to be important in the high gluon density of the Color Glass Condensate.
+
 \subsubsection{Detailed projections}
-Editors: experimental contacts from overview unless other contact given, description as short as possible with reference to publicly available material \\
+Editors: experimental contacts from overview unless other contact given, description as short as possible with reference to publicly available material, to be linked to overview text and to theory parts, plots to be combined in multi-panel after being available \\
 Indicative length: 2 pages \\
 Content: W,Z(ATLAS/CMS), Drell-Yan(CMS/ATLAS), dijet(CMS/ATLAS)\\
 top (CMS/ATLAS), plot will be shown in extra part by David and Hannu \\
-W,Z,low-mass Drell-Yan (LHCb), gamma (ALICE) \\
+W,Z,low-mass Drell-Yan (LHCb), gamma separate since new Hardware (ALICE) \\
 MW proposal plots: Dijets by CMS; W,Z by ATLAS/CMS (one triple differential from ATLAS)\\
 \begin{figure}[htb]
 \centering
@@ -419,9 +518,30 @@ MW proposal plots: Dijets by CMS; W,Z by ATLAS/CMS (one triple differential from
 \caption{Measured Z boson production cross-section in p-Pb collisions at $\sqrt{s_{\rm NN}} = 5.02$~TeV divided by the theoretical expectations, to be replaced with the expected statistical significance of the Z boson rapidity distribution for p-Pb collisions at $\sqrt{s_{\rm NN}} = 8.8$~TeV in run 3-4 assuming an integrated luminosity of 0.25/pb (0.25/pb) obtained with the proton (Pb ion) going toward the muon spectrometer. In the estimation, a conservative detector efficiency of 70\% is used. The results are compared with the statistical significance of the published data collected in p-Pb collisions in 2013.}
 \end{figure}
 
+%%% Dijet pseudorapidity projections %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t] %%%%%%%%%%%%%%%%%%%%%%
+\centering{} 
+\includegraphics[width=0.96\textwidth]{\main/smallx/fig/dijet-eta-projections.pdf}
+\caption{
+Projected dijet $\eta$ measurements in pPb collisions with HL-LHC data.
+\label{fig:dijet-eta-projection-cms}
+}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%% W asymmetry projections %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t] %%%%%%%%%%%%%%%%%%%%%%
+\centering{} 
+\includegraphics[width=0.6\textwidth]{\main/smallx/fig/CMS-PAS-FTR-17-002_Figure_009.png}
+\caption{
+Projected W asymmetry measurement in pPb collisions with HL-LHC data.
+\label{fig:Wasym-eta-projection-cms}
+}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
- ccbar correlations (LHCb)
 \begin{figure}
 \includegraphics[width=1.0\textwidth]{\main/smallx/fig/placeholderppmeas.png}
 \caption{placeholder from pp for ccbar correlations plot from LHCb in pPb}
@@ -448,69 +568,228 @@ In the absence of color charge in the partonic final state, the energy loss in D
 
 Note that the energy loss scaling as $E$ (FC regime) would come into play only if {\it another} energetic charged particle is produced in the final-state in association with the virtual photon (or the diphoton), such that the final state carries a global color charge. Such a situation typically occurs in DY$+$jet production in pA collisions. Consider for instance the Compton scattering process, $qg \to q\gamma^\star$. At forward rapidity, an incoming quark from the proton projectile scatters in the medium to produce the final state in a color triplet representation. In this peculiar case of quark to a color triplet final state, one would expect a negative medium-induced gluon spectrum, leading to an energy \emph{gain} (with respect to pp collisions), $\Delta E \propto (-1/2N_c)\times E$. Such an unusual dependence would manifest by a slight \emph{enhancement} of DY+jet production in pA collisions with respect to pp collisions, although a quantitative study would be needed to answer whether this effect could be visible in the experiment. Similarly, should this enhancement be small or negligible, the associate production of a prompt photon with a heavy-quark jet might be sensitive to the nPDF of heavy quarks and gluons, as emphasized in Ref.~\cite{Stavreva:2010mw}. Using $\sigma_{\gamma c} = 1.2\times10^5$~pb in the acceptance of the ALICE calorimeter~\cite{Stavreva:2010mw} leads to $2.4\times10^5$ $\gamma+c$-jet events in pPb collisions at $\sqrt{s}=8.8$~TeV assuming ${\cal L}=2$~pb$^{-1}$.
 
-More pronounced effects of fully coherent energy loss are expected when the final state is in a color octet state, or possibly in higher color representations. An example is the production of a jet pair with not too large transverse momenta (ideally only a few times the saturation scale of the target nucleus). In the case of di-gluon production, the final state can be produced in the 27-plet color representation (with Casimir $C_{27}=8$) that would lead to an average coherent energy loss proportional to $(N_c+C_{27})/2=11/2$, that is almost twice larger that expected if the final state is in a color octet state. Such higher color representations could also be probed in the production of $B_c$ mesons (or in the associate production of a D and a B meson), with a complex final state $c\,\bar{c}\,b\,\bar{b}$. From the number of fitted signal candidates ${\cal N}=10^4$ $B_c$ mesons extracted at LHCb in the semileptonic decay channel in pp collisions at $\sqrt{s}=8$~TeV with ${\cal L}=2$~fb$^{-1}$~\cite{Aaij:2014bva}, the expected $B_c$ rate in the LHCb acceptance using ${\cal L}=0.5$~pb$^{-1}$ in pPb collisions ${\cal L}=0.5$~nb$^{-1}$at the same energy is ${\cal N}=5\times 10^2$ $B_c$ mesons.
+More pronounced effects of fully coherent energy loss are expected when the final state is in a color octet state, or possibly in higher color representations. An example is the production of a jet pair with not too large transverse momenta (ideally only a few times the saturation scale of the target nucleus). In the case of di-gluon production, the final state can be produced in the 27-plet color representation (with Casimir $C_{27}=8$) that would lead to an average coherent energy loss proportional to $(N_c+C_{27})/2=11/2$, that is almost twice larger that expected if the final state is in a color octet state. Such higher color representations could also be probed in the production of $B_c$ mesons (or in the associate production of a D and a B meson), with a complex final state $c\,\bar{c}\,b\,\bar{b}$. From the number of fitted signal candidates ${\cal N}=10^4$ $B_c$ mesons extracted at LHCb in the semileptonic decay channel in pp collisions at $\sqrt{s}=8$~TeV with ${\cal L}=2$~fb$^{-1}$~\cite{Aaij:2014bva}, the expected $B_c$ rate in the LHCb acceptance using ${\cal L}=0.5$~pb$^{-1}$ in pPb collisions at the same energy is ${\cal N}=5\times 10^2$ $B_c$ mesons.
 
-\subsection{Constraints on nuclear pdf at the HL-LHC}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\subsection{Constraints on nuclear PDFs at the HL-LHC}
 \label{sec:nPDFs}
 Editors: see subparts\\
 Indicative length: 5 pages
 \subsubsection{Overview}
 Editors: Fred Olness, Aleksander Kusina, Ingo Schienbein, Hannu Paukkunen,   Ilkka Helenius\\
-Indicative length: 2 pages \\
+Indicative length: 2 pages 
+
+\color{blue}
 Content: summary of 'safe' inputs referring to sub-chapter tables, discussion of their impact and global fit to pseudodata and discussion of theory progress to enlarge 'safe' observables: low-x resummation, NNLO for heavy-quark c,b observables, necessary input assumptions and how to confirm/falsify with measurements
-outlook trying to fold in progress to be expected from experiment/theory and also consequences for Initial state description in heavy-ions \\
-Figures: summary plots for nPDF with and without reweight of pseudodata
+outlook trying to fold in progress to be expected from experiment/theory and also consequences for Initial state description in heavy-ions.  OUTLINE: sketch current status/uncertainty, short-comings (u/d asymmetry, strange),
+and where improvements can be expected.
+
+updates from cms\cite{Chatrchyan:2013uja} and atlas\cite{Aad:2014xca}
+
+\color{black}
+%%%%%%%%%%%%%% END OF TEXT COLOR
+
+%  NNPDF Figure: Impact of nuclear data   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tbh] %%%%%%%%%%%%%%%%%%%%%
+\centering{} 
+%\includegraphics[width=0.85\textwidth]{\main/smallx/fig/distances_proton2.pdf}
+\caption{
+The impact of removing the nuclear data from the PDF fit  
+in terms of the distance measure $d[x,Q]$;  here,  $d \sim 10$ corresponds to a one sigma variation. 
+Figure from  Ref.~\cite{Ball:2017nwa}.
+}
+\label{fig:nnpdfDistance}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+As previously discussed in Sec.~\ref{sec:smallxIntro}, the nuclear Parton Distribution Functions (nPDFs) are poorly constrained as compared the the proton PDFs; this is mainly due to the lack of high statistics data across the very 
+large nuclear $A$-range. 
+%
+In fact, at present even the precision of the proton PDFs  rely crucially on 
+nuclear target data; this especially  includes the neutrino-nucleon DIS structure functions which is essential for decomposing the flavor components of the proton, {]it cf., } Figure ~\ref{fig:nnpdfDistance}.
+Extraction of the proton PDFs is complicated by the fact that the poorly known nuclear corrections are then entangled with the partonic flavors. 
+%
+Thus, a HL-LHC could provide the opportunity to precisely determine 
+the nPDFs across a large range of $A$ values, and thereby
+disentangle the nuclear effects from the individual flavor components. 
 
 
 \subsubsection{$W^\pm$/Z Production}
+Editors: Fred Olness, Aleksander Kusina, Ingo Schienbein.
 
-Recent LHC W/Z  vector boson production
-data in heavy ion  collisions are quite sensitive to the
-heavier flavors (especially the strange PDF), and this complements the
-information from fixed-target  neutrino-DIS data.\cite{Kusina:2016fxy}
-
-OUTLINE: sketch current status/uncertainty, short-comings (u/d asymmetry, strange),
-and where improvements can be expected. Will try to update the below 
-ratio plots for various luminosity assumptions. 
-
-
-Measurements: 
-\begin{enumerate}
-\item 
-W/Z differential in $dy$ and $dp_T$, [small $p_T$ need to address resummation] 
-
-\item 
-$W^\pm/Z$ cross section correlations,
-
-\item 
- W/Z+ heavy quark (access to strange and heavy quark PDFs; pp at LHC, need pA and AA 
-as it is likely these can benefit from high luminosity run.
-\\
-updates from cms\cite{Chatrchyan:2013uja} and atlas\cite{Aad:2014xca}
-
-
-\end{enumerate}
-
-
-
-\begin{figure}[ht]
+%  ATLAS s(x) measurement;  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[tbh] %%%%%%%%%%%%%%%%%%%%%
 \centering{} 
-\includegraphics[width=0.30\textwidth]{\main/smallx/fig/sampleLum.png}
-\hfil
-\includegraphics[width=0.30\textwidth]{\main/smallx/fig/pdfTMP2.png}
+\includegraphics[width=0.50\textwidth]{\main/smallx/fig/atlas_fig_31a.pdf}
 \caption{
-\textcolor{red}{place-holder figures: real ones to be generated}
-We display the PDF uncertainty as a function of $x$ 
-showing the potential improvement for various luminosity assumptions.
-\textcolor{blue}{\it note: for the ratio, we should scale  central value to 1 so 
-it looks like standard uncertainty plots; see example right.}
-(Fred, Olek, Ingo, ...)}
+Determination of the relative strange-to-down sea quark fractions $r_s$ as compared with  predictions from different NNLO PDF sets. Figure from Ref.~\cite{Aaboud:2016btc}.
+}
+\label{fig:atlas_s}
 \end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%  nPDF comparisons
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t] %%%%%%%%%%%%%%%%%%%%%
+\centering{} 
+\includegraphics[trim=0cm 16.3cm 38.2cm 0cm, clip=true,width=0.90\textwidth]{\main/smallx/fig/nCTEQ-FullPDFs_Q10.pdf}
+%\includegraphics[width=0.50\textwidth]{\main/smallx/fig/WZcorr_nuc.pdf}
+\caption{
+Comparison of the gluon and strange quark nPDF for a lead nucleus as a function of $x$ for 
+a selection of nuclear PDF sets:
+HKN07~\cite{Hirai:2004wq}, DSSZ~\cite{deFlorian:2011fp}, EPPS16~\cite{Eskola:2016oht}, and nCTEQ15\cite{Kovarik:2015cma}.
+}
+\label{fig:npdf}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+%     WZ Cross section correlation  %%%  Lumonisty  figure
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t] %%%%%%%%%%%%%%%%%%%%%
+\centering{} 
+\includegraphics[width=0.48\textwidth]{\main/smallx/fig/WZcorr_nuc.pdf}
+\hfil
+\includegraphics[width=0.40\textwidth]{\main/smallx/fig/wlum}
+\caption{
+a)~Correlations between $W^+$ and $W^-$ cross sections calculated with different input PDFs and assumptions for the $pPb$ process to illustrate the separate impact of the 
+i)~nuclear corrections, ii)~heavy flavor components, and iii)~base PDFs; 
+figure based on Refs.~\cite{Kusina:2016fxy,Godat:2018kgp}.
+\\\hspace{\textwidth}
+b)~We display the PDF uncertainty of the gluon $g(x)$ at $Q=10$~GeV 
+as a function of $x$. 
+The outermost band (blue) is the nCTEQ15 PDFs with no LHC data. 
+The next (red) band reweights the nCTEQ15 PDFs with the LHC $\sqrt{s}=5.02$~TeV $pPb$ data. 
+The next two bands (green, yellow) illustrate the effect of reducing the experimental uncertainties 
+by factors of 2 and 4, respectively.\label{fig:WZcorr}
+}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Hannu & Ilkka, thanks for the comments. Let me know if the revised takes care of this. Fred
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf W/Z INCLUSIVE PRODUCTION:}
+
+LHC W/Z  vector boson production can provide new information on the $\{s,c,b\}$ PDFs 
+via  inclusive $W/Z$ production as well as associate production channels such as $Wc$ and $Wb$. 
+The heavy ion collisions supply additional information as the nuclear corrections come into play,
+and this complements other data on nuclear targets as it is at large $A$ (lead) and high energy (and thus, smaller $x$).  
+
+For example, ATLAS used the inclusive $W/Z$ production data to determine the strange component in the proton PDFs as displayed in Fig.~\ref{fig:atlas_s}, and this yielded a larger strange PDF than commonly expected~\cite{Aad:2012sb,Aaboud:2016btc}. 
+%
+A recent analysis of the ATLAS and CMS inclusive W and Z differential
+cross-section data at 7 and 8 TeV in NNLO pQCD framework~\cite{Cooper-Sarkar:2018ufj}
+(including the combined HERA inclusive data) indicates no tension between the
+data sets and also the the LHC data support unsuppressed strangeness
+in the proton at low x at both low and high scales. 
+Certainly this is an area that warrants further study. 
+
+To highlight the sensitivity of the heavy ion $W/Z$ production to both the 
+heavy flavor components and the nuclear corrections, 
+in Fig.~\ref{fig:WZcorr} we display the correlations between $W^+$ and $W^-$ 
+cross sections for proton-lead interactions calculated with different input PDFs and assumptions~\cite{Kusina:2016fxy}.
+%
+By comparing the results with and without the $\{s,c,b\}$ flavors, we see these quarks do have a
+large impact on this observable;  hence, this process can provide incisive information about the 
+corresponding PDFs. 
+%
+To see the effect of the nuclear corrections, we can compare the CT10 proton result with the other calculations. 
+%
+We observe that for the case of 2 flavors only, the separation of the proton result  (CT10) and the 
+nuclear results are quite distinct. In this case, the effect of the specific nuclear correction (nCTEQ15 or EPS09)
+or the effect of the underling base PDF (CTEQ6.1 or CT10) is minimal. 
+%
+In contrast, when we compare this picture to the 5 flavor results, the division between the proton and nuclear
+result is not as simple as the different nuclear corrections and base PDFs yield a broader range of results. 
+In particular, we note that the strange quark PDFs in the CTEQ6.1 and CT10 base PDFs are quite different, and this
+will contribute to the spread of results. 
+%
+Thus, proton-lead  production of $W/Z$  is an ideal ``laboratory'' 
+as this process is sensitive to i)~the heavy flavor components,
+ii)~the nuclear corrections, and iii)~the underlying ``base'' PDF. 
+
+To illustrate the potential improved nPDF constraints from the W/Z data, 
+in Fig.~\ref{fig:WZcorr}-(b) we display the PDF uncertainty for the gluon.
+The bands show the results without LHC data (the original nCTEQ15 result in blue), 
+then including the  LHC $\sqrt{s}=5.02$~TeV $pPb$ data, 
+and finally a assumed reduction of the experimental errors by a factor of 2 and 4.
+Given that the current uncertainties on the luminosity and statistics are 
+\textcolor{red}{NEED TO INSERT DETAILS HERE *****************}
+this should be well within reach of a HL-LHC. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hannu, thanks for this discussion. I've now integrated this into the section. 
+% Please edit as you like. Fred
+% P.S. We looked at the asymmetry with the 5.02TeV data, but much of the nuclear effects 
+% dropped out in the ratio. Maybe if we had HL this would not be an issue?
+
+% I believe the principal issue is that the 5TeV data is binned in lab-frame rapidity variable - not the rapidity in the center-of-mass frame.  Hannu 
+
+
+{\bf W ASYMMETRY RATIOS:}
+
+A complementary method  to disentangle the nuclear effects
+from proton PDF and other theory uncertainties like higher-order
+effects is to form the nuclear modification factor 
+$R_{{\rm p}A} = \sigma^{{\rm p}A}/\sigma^{{\rm p}{\rm p}}$.
+Although the on-shell W$^\pm$ production probes the PDFs in a rather
+narrow $x$ window, the W$^\pm$ case is complicated by the significant
+isospin effect for which $R_{{\rm p}A} \neq 1$ even in the absence of
+nuclear effects in PDFs. This partly undermines the clear extraction
+of the nuclear PDFs. To overcome this difficulty the asymmetry
+$(\sigma^{W^+(y^*)}-\sigma^{W^+(-y^*)})/(\sigma^{W^-(y^*)}-\sigma^{W^-(-y^*)})$
+has been proposed \cite{Paukkunen:2010qg} as an alternative. 
+
+In order
+to measure such a quantity involving four cross sections and
+subtractions among them (particularly in the denominator which may go close to zero), a good statistical
+precision --- like that achievable at the HL-LHC would be advantageous. 
+In the case of on-shell Z production, the isospin effect is much milder \cite{Paukkunen:2010qg}
+and poses less difficulties. This advantage is partly lost at low invariant
+mass (Drell-Yan region) which, however, is precisely the luminosity-hungry 
+zone where the HL-LHC can make a difference. It would be very much advantageous to reach
+this low-mass region experimentally as it offers a possibility to constrain the nuclear PDFs at lower factorization 
+scale where the nuclear effects are larger. 
+
+A scan over a wide range of invariant masses
+with HL-LHC precision would offer a possibility to test the $Q^2$ evolution of
+nuclear PDFs -- whether there are corrections to standard DGLAP -- much more accurately than the current, on-shell W$^\pm$- and Z-production measurements do.
+Precise measurements on Drell-Yan and W$^\pm$ have also potential to be useful for 
+free proton PDFs: Indeed, if the information on nuclear effects are first extracted
+via ratio observables which are not too sensitive to the proton PDFs, the absolute 
+spectra can subsequently be fed in the free proton analysis. The point is that p-$A$
+collisions are sensitive to different linear combinations of partons than in the p-p
+case --- this is exactly the reason why e.g. deeply inelastic data on Deuteron are
+still being used in free proton fits despite the complications of nuclear corrections. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf WQ ASSOCIATED PRODUCTION:}
+
+
+$W$ production with an associated heavy quark also provides incisive information 
+about the PDFs. For example $Wc$ and $Wb$ final states are sensitive to the strange and charm quark, respectively. 
+These channels have been analyzed for the LHC $pp$ data, \textcolor{red}{NEED REFS}
+and the $Wc$ channel is a key input for the ATLAS/CMS comparison of the strange.\cite{Cooper-Sarkar:2018ufj}
+A HL-LHC could provide   higher luminosity and higher statistics to 
+also allow  a similar analysis in the heavy  ion channels. \textcolor{red}{NEED REFS}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Dijet Production}
+
 Editors: Hannu Paukkunen??? ... \\
 Indicative length: 1-2 pages 
+
+\textcolor{blue}{HP as of 13.9: Yen-Jie's group still working on enlarging the kinematics. We are waiting for their input. The profit of HL-LHC over Run II data probably at high $p_{\rm T}$ \& large/small rapidity.}
 
 \noindent
 \textcolor{blue}{note: as nCTEQ does not yet have this implemented,
@@ -520,58 +799,122 @@ We suggest (Fred \& Ingo) keeping this separate from UPC
 to keep the $hh$ separate from the effective $h \gamma$ 
 (the $\gamma$ includes both direct and resolved contributions) as well as other issues.
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Heavy Quark Production}
 Editors: Ingo Schienbein, Aleksander Kusina, Fred Olness ... \\
 Indicative length: 1-2 pages 
 
-\begin{enumerate}
-\item 
-\textbf{Inclusive heavy quark production:} \\
- From the abstract:\cite{Kusina:2018pbp}
-{\it We use for the first time experimental data for the inclusive heavy quark
-production in proton--lead collisions at the LHC in order to improve
-our knowledge of the gluon distribution in nuclei. We first check that the
-two most recent global nuclear parton distribution analyses (nCTEQ15
-and EPPS16) provide a good overall description of the data, and then use
-these data in a PDF reweighing analysis. We find a first clear confirmation
-of gluon shadowing at small x. Additionally, it demonstrates that the
-inclusion of such heavy-flavour data in a global fit would significantly reduce
+
+%%%%%%%%%%%%%%
+\noindent\textbf{Inclusive Heavy Quark Production:} 
+
+
+A recent study of  inclusive heavy quark
+production in proton--lead collisions at the LHC 
+demonstrates this can also help constrain  the gluon distribution in nuclei.
+%
+Specifically, Ref.~:\cite{Kusina:2018pbp} makes use  of LHC $pPb$ data
+on $\{D^0, J/\Psi, B\to J/\Psi, \Upsilon(1S)  \}$ meson production. 
+They  find a  clear confirmation
+of gluon shadowing at small x. Additionally, they  demonstrates that the
+inclusion of such heavy-flavour data in a global fit can significantly reduce
 the uncertainty on the gluon density down to 
 $x \simeq 7 \times 10^{-6}$ while keeping
-an agreement with the other data of the global fits. Our study accounts
-for the factorisation scale uncertainties which become the largest for the
-charm(onium) sector.}
+an agreement with the other data of the global fits. 
+%
+*** PROSPECTS FOR HL-LHC *********
 
-\item 
-\textbf{prompt photon-production and diphoton production } \\
+
+
+%%%%%%%%%%%%%%
+\noindent\textbf{Prompt Photon-Production and Diphoton Production } 
+
 {\it ... reminder for Ingo:} ... contrast to above Sec.11.4.4: 
 if we compare final states that are i) colored and ii) not colored we can test the idea of energy loss
 for the e.g., small-x gluon to identify the source of this effect
 
-\item 
-\textbf{higher order corrections} \\
- NNLO heavy quark production (same diagrams as NNLO top), yields improved stability. 
+
+%%%%%%%%%%%%%%
+\noindent\textbf{Higher Order Corrections} 
+
+NNLO heavy quark production (same diagrams as NNLO top), yields improved stability. 
 ... theory issue ...
 challenge: large scale uncertainties. 
 
-\item
-\textbf{photon+heavy quark}\cite{Stavreva:2010mw,Stavreva:2012aa}\\
-interested in both p+p and p+A: 
-Tevatron saw a deviation in charm, but NOT bottom. 
-Theoretical issues or intrinsic charm??? or ...
-Update to current LHC measurements 
-
-\end{enumerate}
 
 
+
+%%%%%%%%%%%%%%
+\noindent\textbf{Photon+Heavy Quark}
+
+NEED REFS HERE ****\cite{Stavreva:2010mw,Stavreva:2012aa}
+%
+The production of a prompt photon and associated heavy quark jet ($\gamma Q$) 
+in heavy ion (p-A) collisions
+at the LHC can provide detailed information on the nuclear PDFs. 
+%
+The dominant contribution to the cross-section comes from the gluon–heavy-quark (gQ) initiated
+subprocess, making this process very sensitive to the gluon and the heavy quark nuclear parton
+densities.
+%
+With sufficient statistics, a HL-LHC could 
+help to disentangle the various nPDF sets currently available. 
+%
+Additionally, the photon transverse momentum can be used to gauge the
+initial energy of the massive parton propagating through the dense QCD
+medium produced in those collisions, making $\gamma Q$ production a
+powerful process in order to probe energy loss dynamics in the
+heavy-quark sector.  
+%
+Furthermore, the comparison of the photon-jet pair momentum, from p-p
+to Pb-Pb collisions, is sensitive to the amount of energy lost by the
+heavy-quarks and could therefore be used in order to better understand
+parton energy loss processes in the heavy quark sector.
+
+
+The process was studied at the Tevatron $pp$ collider 
+for both $\gamma c$ and $\gamma b$ final states. 
+The $p_T$ spectrum for the $\gamma b$ showed good agreement 
+with the data, while the  $\gamma c$ prediction was above the data in the largest $p_T$ bin. 
+Curiously, this is precisely the result one could expect  if there were an intrinsic charm (IC)
+component; while this measurement could not conclusively rule  in or out  the IC hypothesis, 
+increased statistics from a HL-LHC should be capable  definitively addressing this issue. 
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Top production}
 Editors: Hannu Paukkunen and David d'Enterria
 Indicative length: 1-2 pages \\
 
-\noindent The $p_{\rm T}$ reach for $t\overline{t}$, and constraints for nPDFs (currently we have this for EPS09, though EPPS16/nCTE15 would be better). Probably lepton+jets channel.
-\\
-the power to constrain large x gluons vs the heavy quark which is lower x
-\\
+\begin{figure}[htb!]
+\centering
+\includegraphics[width=0.495\textwidth]{\main/smallx/fig/ttbardiffy.pdf}
+\includegraphics[width=0.495\textwidth]{\main/smallx/fig/pTreach_in_AA.pdf}
+\caption{Left: Projected HL-LHC data for $t\overline{t}$ production compared with EPPS16 errorbands. Right: Number of expected $t\overline{t}$ events in $A$-$A$ collisions as a function of the top-quark transverse momentum.}
+\label{fig:ttbardiffy}
+\end{figure}
+
+The $t\overline{t}$ production provides a complementary observable to the dijets for probing high-$x$ gluons \cite{dEnterria:2015mgr}. For the very short t-quark life time, they decay, in practice exclusively, to W boson and b quarks. Although, the cleanest channel is the one where both W bosons decay leptonically, it has been recently demonstrated \cite{Sirunyan:2017xku} that it is possible to get a clear signal when the other W deacys leptonically and the other one goes to light-quark jets. This is the preffered observable as the yields are 3 times higher than when both W bosons decay leptonically. We have estimated the cross sections using the MCFM code, process 146 (where the leptonically decaying W comes from top quark) at NLO level (the NNLO corrections no too far from the midrapidity are of the order of 10\% \cite{}). We have applied the following fiducial cuts:
+$$ p_{\rm T}^{\ell^\pm} > 30 \, {\rm GeV}, \ |y^{\ell^\pm}| < 2.5, \ p_{\rm T}^{\rm missing} > 30 \, {\rm GeV}, $$
+$$ p_{\rm T}^{\rm jets} > 30 \, {\rm GeV}, \ |y^{\rm jets}| < 2.5, R_{\rm isolation}^{\rm jets} = 0.5. $$
+
+In this setup, the NLO calculation with the factorization and renormalization scales set to the top-quark mass yields, per-nucleon, $\sigma_{\rm n-n} \approx 4200 \, {\rm fb}$ in p-Pb collisions at $\sqrt{s} = 8.8 \, {\rm TeV}$, with CT14NLO \cite{Dulat:2015mca} proton PDFs and EPPS16 \cite{Eskola:2016oht} nuclear corrections. This is to be multiplied by a factor two to account for the electron and muon final states and by a factor of two to account for the process where the antitop is the one from which the leptonically decaying W originates from. Since this is the nucleon-nucleon cross section, we have to still multiply by a factor of 208 to get the p-Pb cross section. This yields $\sigma_{\rm p-Pb} \approx 3.5 \, {\rm nb}$. Considering the 2000$\, \rm nb^{-1}$ scenario, and efficiency of 0.75 \cite{dEnterria:2015mgr} in b-jet tagging, we expect around 5200 events. Based on this number, we have estimated the expected nuclear modificaton factor $R_{\rm pPb}$ following the steps of Ref.~\cite{dEnterria:2015mgr}, assigning each data point a 5\% uncorrelated systematic uncertainty (in the current p-Pb measurement of CMS \cite{Sirunyan:2017xku} the systematic uncertainty is $\sim$20\%). Dividing the $|y^{\ell^\pm}| < 2.5$ interval to 20 bins, the statistical uncertainty varies from 5\% ($|y^{\ell^\pm}| < 1$) to 10\% (most forward/backward). The resulting $R_{\rm pPb}$ is compared in Fig.~\ref{fig:ttbardiffy} with the EPPS16 uncertainty band. In the considered kinematic configuration the expected $R_{\rm pPb}$ is typically a bit above unity for the gluon antishadowing in EPPS16. As can be seen from the left-hand panel of Fig.~\ref{fig:ttbardiffy}, the expected precision of the measurement is not enough to give significant constraints on nuclear PDFs. In particular, the dijets considered in Section 11.4.3 will probe the same kinematic configuration with a clearly higher precision. However, here much depends on the expected systematic error (taken here to be 5\% for each data point separately) and how large are the bin-to-bin correlations. In the p-Ar mode, the higher c.m. energy of $\sqrt{s} \approx 9.4 \, {\rm TeV}$ increase the yields around 50\%. This, plus a higher achievable nucleon-nucleon luminosity ($\sqrt{10} \approx 3$, based on John Jowett email on 7.9.2018 + his slides) would render the above case almost completely systematics dominated.
+
+Using the same framework and assumptions as above, we have estimated the fiducial $t\overline{t}$ yields is $A$-$A$ collisions. Here, we have considered Pb-Pb and Ar-Ar cases. In Pb-Pb configuration with $\sqrt{s} = 5.5 \, {\rm TeV}$, the per-nucleon cross section is $\sigma_{\rm n-n} \approx 1200 \, {\rm fb}$ which translates to around 2000 reconstructed events for 13$\, \rm nb^{-1}$ ion-ion luminosity. In the Ar-Ar option, the c.m. energy is slightly higher, $\sqrt{s} = 6.3 \, {\rm TeV}$, which increases the cross-section by some 50\%. In addition, the achievable ion-ion luminosity is much higher, 3500$\,\rm nb^{-1}$ (semi-optimistic estimate from John Jowett's slides). Thus, the estimated amount of $t\overline{t}$ events is clearly larger, around 30000. The right-hand panel of Fig.~\ref{fig:ttbardiffy} shows the event distributions as a function of top-quark transverse momentum $p_{\rm T}(t)$. This shows that, the HL-LHC may allow to probe the space-time picture of heavy-ion collisions using top quarks \cite{Apolinario:2017sob} up to $p_{\rm T}(t) \approx 400\,{\rm GeV}$ in the Pb-Pb case, and up to $p_{\rm T}(t) \approx 700\,{\rm GeV}$ in the Ar-Ar alternative. \\
+
+
+
+%the power to constrain large x gluons vs the heavy quark which is lower x
+
 Czakon et al., Pinning down the large-x gluon with NNLO top-quark pair
                         differential distributions   \cite{Czakon:2016olj}
 
@@ -640,3 +983,5 @@ for nPDFs determination and small-x studies; and (iii)
 a more affordable setup for microscopic calculations of corrections.
 
 \end{document}
+
+

@@ -2,7 +2,6 @@
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-\IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
 \begin{document}
@@ -16,6 +15,9 @@
 \subsection{Perspectives for heavy-flavour observables in LHC Run 3 and 4}
 \subfile{\main/hf/intro}
 
+\subsection{Impact of detector upgrades on heavy-flavour measurements}
+\subfile{\main/hf/upgrades}
+
 \subsection{Nuclear modification factor and collective flow}
 \subfile{\main/hf/RAAv2DB}
 
@@ -25,11 +27,11 @@
 \subsection{Heavy-flavour correlations and jets}
 \subfile{\main/hf/jetcorr}
 
-\subsection{Directed flow}
+\subsection{Sensitivity to early magnetic fields and vorticity phenomena}
 \subfile{\main/hf/directedflow}
 
 
-\subsection{Heavy flavours in small systems (in dedicated chapter)}
+\subsection{Heavy flavours in small systems}
 \subfile{\main/hf/smallsystem}
 
 %\subsection{Plans for HE-LHC}

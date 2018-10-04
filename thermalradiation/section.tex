@@ -2,54 +2,82 @@
 \documentclass[../report.tex]{subfiles}
 \providecommand{\main}{..}
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
-\IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
 \begin{document}
 
-\section{Thermal radiation (Version 0.1)}
+\section{Electromagnetic radiation}
 
-The system formed in ultrarelativistic heavy-ion collisions is considered to be in thermal equilibrium and therefore emit thermal radiation that can be detected using different probes: real photons with very low momentum or virtual photons measurable via dilepton pairs. In addition, dileptons carry a mass and thus can be used to study the decay of massive particles, such as the in-medium modified spectral shape of short-lived hadrons, e.g. the \Prho meson, and the search for particles beyond the standard model, e.g. dark photons. In this section we outline the measurement of photons via calorimetry and the so-called photon conversion method, dielectron (\Pepem), and dimuon (\PGmpGmm) pairs in the ALICE detector at the LHC. In addition, the photoproduction of dilepton pairs in peripheral collisions and the expected sensitivity for the search of dark photons is discussed in subsections \ref{dileptons:peripheral} and \ref{dileptons:darkphotons}, respectively.
+The strongly interacting system formed in ultrarelativistic heavy-ion collisions 
+%is considered to be in thermal equilibrium and therefore
+emits electromagnetic radiation that can be detected using different probes: real {\it direct} photons %with low momentum
+or virtual photons measurable via dilepton pairs. 
+Direct photons can be split into {\it prompt} photons, emitted by partons of colliding nuclei during their inter-penetration and {\it thermal} photons, emitted by almost thermalized hot system. 
+For dileptons these contributions are called Drell-Yang and thermal respectively.
+In contrast to real photons, dileptons in addition carry a mass and thus can be used to study the decay of massive particles, such as the in-medium modified spectral shape of short-lived hadrons, e.g. the \Prho meson, and the search for particles beyond the standard model, e.g. dark photons. In this section, we outline the measurement of photons via calorimetry and the so-called photon conversion method, dielectron (\Pepem), and dimuon (\PGmpGmm) pairs in AA collisions in the ALICE detector at the LHC. Moreover, the photoproduction of dilepton pairs in peripheral collisions and the expected sensitivity for the search of dark photons is discussed in subsections \ref{sec:dileptons:peripheral} and \ref{sec:dileptons:darkphotons}, respectively. We begin with a short review of previous experimental results together with a summary of the basic theoretical models employed to describe these data.
 
-\subsection{Introduction/Theory}
+
+\subsection{Thermal radiation}
 %Contributed by Michael Weber, Torsten Dahms
 
-\todo{Input: Torsten Dahms}{Summary: results at RHIC and LHC}
-%point out advantage of dileptons (no blue-shift) and focus on dileptons here (?)
+Electromagnetic radiation from the hot and dense system formed in ultrarelativistic heavy-ion collisions was measured for the first time at the SPS in the form of real photons by WA98~\cite{Aggarwal:2000th}. The direct photon spectrum measured in Pb--Pb collisions at $\sqrt{s_{\rm NN}} = 17.3$~GeV showed an excess above the extrapolated prompt photon signal based on measurements in proton induced reactions. 
+The excess is described by large variety of hydrodynamic and cascade models (see \cite{Peitzmann:2001mz} for review), most of them assume creation of QGP phase.
+%The excess is successfully described by a fireball model that includes a 30\% contribution from a quark--gluon plasma (QGP) phase~\cite{Turbide:2003si}. 
+Also at the SPS, a modification of low-mass dilepton pairs in S--Au and Pb--Au collisions relative to the expectation of in-vacuum hadron decays was observed by CERES~\cite{Agakishiev:1995xb,Agakishiev:1997au,Adamova:2002kf,Agakichiev:2005ai,Adamova:2006nu} and studied with high precision by NA60 in In--In collisions~\cite{Arnaldi:2006jq,Arnaldi:2007ru,Arnaldi:2008fw,Specht:2010xu}. The data are consistent with a modified \Prho spectral function that is broadened by the coupling to baryons in the dense medium, in which chiral symmetry is at least partially restored~\cite{Rapp:1995zy,Rapp:1999us,Rapp:2009yu,Bazavov:2011nk,Hohler:2013eba}. On the other hand, the data cannot be described with a dropping mass scenario, in which the \Prho mass drops to zero reduced as chiral symmetry is restored~\cite{Brown:1991kk}. Beyond the issue of chiral symmetry restoration, NA60 measured an excess of prompt dimuons in the intermediate mass region between the \Pphi and the \PJpsi masses~\cite{Arnaldi:2007ru,Arnaldi:2008fw}. Contrary to transverse-mass spectra of the dimuon continuum at lower masses, this excess shows no increase of the exponential inverse slope with mass, \ie blue shift, that is typical for radial flow. This suggests that the source of this enhancement is from the earliest phase of the collision, before significant radial flow has built up. 
+This supports the idea that the inverse slope of the invariant mass spectrum is insensitive to the expansion of the medium and therefore a true measure of the average temperature. NA60 measured a value of $T=205\pm12$~MeV~\cite{Specht:2010xu}, which significantly exceeds the temperature of $154\pm9$~MeV, above which the formation of a Quark-Gluon Plasma has been predicted~\cite{Borsanyi:2010bp,Bazavov:2014pvz}.
+
+At RHIC energies, PHENIX and STAR have measured an enhancement of \Pepem pairs in the low mass region in Au--Au collisions~\cite{Adare:2009qk,Adare:2015ila,Adamczyk:2013caa,Adamczyk:2015mmx} that can be described with the same model of collisional broadening as used at the SPS. STAR measured that the enhancement above the hadron decay background does not change with collision energy between $\sqrt{s_{\rm NN}}=19$ and 200~GeV~\cite{Adamczyk:2015mmx}. As the total baryon density does not change significantly in this energy range, this provides further evidence that the \Prho coupling to the baryons is responsible for the enhancement. 
+Real direct photon production in Au--Au collisions was measured by PHENIX~\cite{Adare:2008ab,Adare:2014fwh,Adare:2018wgc}. An excess was observed compared to binary scaled direct photon production in pp collisions. The signal was measured via quasi-real virtual photons as well as real photons converting in detector material. The excess yield at low \pT~appears to have a universal multiplicity dependence, scaling with the charged-particle multiplicity at midrapidity to the power of about 1.25, independent of collision energy between $\sqrt{s_{\rm NN}} = 39$ and 200~GeV~\cite{Adare:2018wgc}. The transverse momentum spectrum of the excess yield has an exponential inverse slope of $T=221\pm19\pm19$~MeV for central collisions ans close values for other centralities. The spectrum, however, is strongly blue shifted by radial flow as suggested by a sizeable elliptic flow ($v_2$) of the direct photon signal~\cite{Adare:2011zr}. Therefore the inverse slope cannot be directly be interpreted as average temperature, which highlights the importance of thermal dilepton measurements as a function of invariant mass. The direct photon $v_2$ is indeed comparable to the $v_2$ of pions, which suggests late emission of direct photons dominated by the hadronic phase. To simultaneously describe the elliptic flow and the large direct photon excess, which on the other hand implies early production, poses a significant challenge to theoretical models.
+
+First results of direct photon production at the LHC also show an indication of an excess production due to thermal radiation~\cite{Adam:2015lda}. The elliptic flow measurement~\cite{Acharya:2018bdy}, however, does not cause the same challenges to models, since the experimental uncertainties are still large at this point.
+The reduction of systematic uncertainties of the direct photon measurement is the main objective for Run 3 to improve its significance. Moreover, the low magnetic field run will allow one to access the \pT \ < 1 GeV/$c$ region where the thermal photon production increases rapidly. Theoretical calculations of thermal and prompt photon productions are available at $\sqrt{s_{\rm NN}} = 5.02$ TeV (Fig.~\ref{fig:LHCExpectations_RealPhotons}) \cite{Paquet:2015lta,Paquet:2016ime,Paquet:2017wji,Dasgupta:2018pjm,vanHees:2014ida} \footnote{Private communication}. An increase by a factor $\sim$ 1.5 at about \pT~$\approx 1$~GeV and by a factor 1.5 to 2 for the prompt photons is predicted compared to yields at $\sqrt{s_{\rm NN}} = 2.76$ TeV. The mean temperature of the QGP increases from 650 MeV to 690 MeV \cite{Dasgupta:2018pjm}. The predicted thermal photon elliptic flow parameters for central collisions are close to each other at the two LHC energies  and are very small. Differences become larger as one goes towards peripheral collisions. Simultaneous measurements of photon yields and photon flow with high accuracy and lower \pT \ reach will provide constraints to theoretical models.
+%-----------------------------------------------------------------------%
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.6\textwidth]{\main/thermalradiation/figs/DirectPhotonYields5TeVYR.pdf}
+\caption{Direct photon differential invariant yield for central 0-10\% Pb--Pb collisions at $\sqrt{s_{\rm NN}} = 5.02$ as predicted by several models \cite{Paquet:2015lta,Paquet:2016ime,Paquet:2017wji,Dasgupta:2018pjm,vanHees:2014ida}}
+\label{fig:LHCExpectations_RealPhotons}
+\end{figure}
+%-----------------------------------------------------------------------%
+
+
+Dilepton measurements by ALICE at the LHC are not yet sensitive to possible low-mass enhancement and thermal signals~\cite{Acharya:2018nxm}. A precise measurement of the low-mass dielectron continuum will be one of the main objectives of the ALICE physics programme during the LHC Run 3. In the meanwhile, the dominant background of dielectrons from correlated semileptonic open heavy-flavour decays is utilised to learn more about open heavy-flavour production in pp collisions at LHC energies~\cite{Acharya:2018ohw,Acharya:2018kkj}.
+
 
 %-----------------------------------------------------------------------%
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/HistRapp-PbPb}
-\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/acceptance3-corrected}
-\caption{Placeholder: Expectations for dilepton invariant mass at LHC energies.}
+\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/finalPlotsLowB_YR_Rapp_Excess_ITSCyl0_IPcut1_events2500000000000}
+\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/finalPlotsLowB_YR_PHSD_signalsOnly_ITSCyl0_IPcut1_events2500000000000}
+\caption{Model predictions for the invariant mass spectrum of \Pepem pairs in central (0--10\%) Pb--Pb collisions at $\sqrt{s_{\rm NN}} = 5.5$~TeV. Left panel: in-medium radiation plus decays of the \Prho meson at the end of the system evolution \footnote{R.~Rapp, private communication}. Right panel: Expectations from the PHSD model including the in-medium \Prho meson, $q\bar{q}\rightarrow\gamma^{*}$, $q\bar{q}\rightarrow\gamma^{*}g$, and $qg\rightarrow\gamma^{*}$q, hadronic sources, and semileptonic decays of $c\bar{c}$\footnote{T.~Song, private communication}.}
 \label{fig:LHCExpectations_Rapp_pHSD}
 \end{figure}
 %-----------------------------------------------------------------------%
 
-An approach that has been proven to provide a quantitive description of the existing dilepton results \cite{Rapp:2011is} \todo{newer publications?}{[XXX]} is based on two ingredients that are put into a realistic space-time evolution \cite{Rapp:2000pe}. The thermal dilepton radiation is modeled by perturbative emission rates from the hadronic phase and the QUark--Gluon Plamsa (QGP)\cite{vanHees:2007th,Rapp:2009yu}. A hadronic many-body approach \cite{Rapp:1999us} is used for the medium-modified spectral function of the \Prho meson functions, which are connected to the chiral symmetry restoration of QCD at high temperatures \cite{Hohler:2013eba}. In addition, the equation of state is updated to a cross-over transition around $T_{\rm c}=170$~MeV extracted from with recent lattice QCD computations, and hadro-chemical freezeout at $T_{\rm chem}160$~MeV \cite{He:2011zx}. Figure \ref{fig:LHCExpectations_Rapp_pHSD} (left) shows the calculations performed for central Pb--Pb collisions at $\sqrt{s_{\rm NN}}= 5.5$~TeV for in-medium radiation plus decays of the \Prho meson at the end of the system evolution \footnote{R.~Rapp, private communication}. The pair-yield is estimated for the rapidity range $|y|<0.85$ and transverse momentum of single electrons $p_{\rm T}>0.2$~ GeV/$c$ and is normalized as d$N$/d$M$d$y$ / (d$N_{\rm ch}$/d$y$). 
+An approach that has been proven to provide a quantitive description of the existing dilepton results \cite{Rapp:2011is} is based on two ingredients that are put into a realistic space-time evolution \cite{Rapp:2000pe}. The thermal dilepton radiation is modelled by perturbative emission rates from the hadronic phase and the Quark--Gluon Plasma (QGP)\cite{vanHees:2007th,Rapp:2009yu}. A hadronic many-body approach \cite{Rapp:1999us} is used for the medium-modified spectral function of the \Prho meson functions, which are connected to the chiral symmetry restoration of QCD at high temperatures \cite{Hohler:2013eba}. In addition, the equation of state is updated to a cross-over transition around $T_{\rm c}=170$~MeV extracted from with recent lattice QCD computations, and hadro-chemical freezeout at $T_{\rm chem}160$~MeV \cite{He:2011zx}. Figure \ref{fig:LHCExpectations_Rapp_pHSD} (left) shows the calculations performed for central Pb--Pb collisions at $\sqrt{s_{\rm NN}}= 5.5$~TeV for in-medium radiation plus decays of the \Prho meson at the end of the system evolution \footnote{R.~Rapp, private communication}. The pair-yield is estimated for the rapidity range $|y|<0.85$ and transverse momentum of single electrons $p_{\rm T}>0.2$~ GeV/$c$ and is normalized as d$N$/d$M$d$y$ / (d$N_{\rm ch}$/d$y$). 
  
-A complementary approach to study dilepton spectra and thermal radiation is provided by the parton-hadron-string dynamics (PHSD) transport approach, also describing succesfully the existing experimental data \cite{Linnyk:2015rco,Cassing:2009vt}. The in-medium modification of the \Prho meson is incorporated in PHSD by an off-shell transport of vector mesons with a dynamically changing set of spectral functions \cite{Bratkovskaya:2007jk} evolving towards the vacuum spectral function at the end of the collision history. The electromagnetic radiation of the QGP is modeled by $q\bar{q}\rightarrow\gamma^{*}$, $q\bar{q}\rightarrow\gamma^{*}g$, and $qg\rightarrow\gamma^{*}$q using effective propagators for quarks and gluons from a dynamical quasi-particle model \cite{Linnyk:2010vb}. Figure \ref{fig:LHCExpectations_Rapp_pHSD} (right) shows both contributions to the dielectron spectrum in central Pb--Pb collisions at $\sqrt{s_{\rm NN}}= 5.5$~TeV calculated from PHSD with the same experimental selection as for Fig. \ref{fig:LHCExpectations_Rapp_pHSD} (left) together with other sources of dielectrons: \todo{Move the description of dilepton sources upwards}{decays of long-lived light mesons into \Pepem or X\Pepem (the so-called hadronic cocktail) and the semi-leptonic decay of hadrons containing heavy quarks, such as D and B mesons.} 
+A complementary approach to study dilepton spectra and thermal radiation is provided by the parton-hadron-string dynamics (PHSD) transport approach, also describing successfully the existing experimental data \cite{Linnyk:2015rco,Cassing:2009vt}. The in-medium modification of the \Prho meson is incorporated in PHSD by an off-shell transport of vector mesons with a dynamically changing set of spectral functions \cite{Bratkovskaya:2007jk} evolving towards the vacuum spectral function at the end of the collision history. The electromagnetic radiation of the QGP is modelled by $q\bar{q}\rightarrow\gamma^{*}$, $q\bar{q}\rightarrow\gamma^{*}g$, and $qg\rightarrow\gamma^{*}$q using effective propagators for quarks and gluons from a dynamical quasi-particle model \cite{Linnyk:2010vb}. Figure \ref{fig:LHCExpectations_Rapp_pHSD} (right) shows both contributions to the dielectron spectrum in central Pb--Pb collisions at $\sqrt{s_{\rm NN}}= 5.5$~TeV calculated from PHSD with the same experimental selection as for Fig. \ref{fig:LHCExpectations_Rapp_pHSD} (left) together with other sources of dielectrons: decays of long-lived light mesons into \Pepem or X\Pepem (the so-called hadronic cocktail) and the semileptonic decay of hadrons containing heavy quarks, such as D and B mesons\footnote{T.~Song, private communication}. 
 
 Important input for models aiming to describe the dilepton yield at LHC energies are the in-medium spectral function for \Prho mesons as well as the photon and dilepton rates from the QGP. For the latter, Lattice QCD calculations, which are currently limited to the quenched approximation, will hopefully be extended (e.g. larger lattices especially in the time direction or using the continuum limit) and be available in higher accuracy for realistic systems including light dynamical degrees of freedom in future. Recent updates on calculations of the photon rate \cite{Ghiglieri:2016tvj}, the electrical conductivity \cite{Aarts:2014nba}, and dilepton rates \cite{Ding:2016hua} are promising. Together with transport coefficients, which in future should also be better under control in lattice calculations, these results should then be used in models like used in Fig.~\ref{fig:LHCExpectations_Rapp_pHSD} (left). For the in-medium spectral functions, one could then also use direct input from Lattice QCD \cite{Aarts:2005hg,Brandt:2015aqk} or from a functional renormalization group approach \cite{Jung:2016yxl}.
 
-More differential information can be used to study the equation of state of the system throughout the full collision history. The measurement of the elliptic flow coefficient $v_{\rm 2}$ of thermal photons especially if combined with results from hadronic channels should put tighter constraints on fundamental properties of the medium (e.g. transport coefficients) as well as its "initial conditions" or "pre-equilibrium" dynamics. For example, the mass dependent measurement of  $v_{\rm 2}$ is sensitive to the presence of bulk viscosity, which is difficult to access in hadronic observables alone \todo{update with publication, which should appear soon}{\cite{Vujanovic:2017wtw}}. 
+More differential information can be used to study the equation of state of the system throughout the full collision history. The measurement of the elliptic flow coefficient $v_{\rm 2}$ of thermal photons especially if combined with results from hadronic channels should put tighter constraints on fundamental properties of the medium (e.g. transport coefficients) as well as its "initial conditions" or "pre-equilibrium" dynamics. For example, the mass dependent measurement of  $v_{\rm 2}$ is sensitive to the presence of bulk viscosity, which is difficult to access in hadronic observables alone \cite{Vujanovic:2017wtw}. 
 
 
-\newpage
+
 %Section Real photons
-\include{RealPhotons.tex}
+\include{thermalradiation/RealPhotons}
 
-\newpage
-\subsection{Dileptons}
+
+\subsubsection{Dileptons}
+\label{sec:thermalradiation:dileptons}
 %Contributed by Raphaelle Bailhache, Oton Vazquez Doce, Michael Weber, Antonio Uras
 
-The sensitivity to the expected signal of thermal radiation and an in-medium modification of the \Prho spectral function in the dielectron and dimuon channels with the ALICE detector \cite{generalALICEreferences} was studied already in preparation for its upgrade in 2019/20 \cite{Abelevetal:2014cna,Abelevetal:2014dna,ALICE:2014qrd,ALICE:MFTLoI}. The measurement of low-mass dileptons after this upgrade will profit from  
+The sensitivity to the expected signal of thermal radiation and an in-medium modification of the \Prho spectral function in the dielectron and dimuon channels with the ALICE detector \cite{Aamodt:2008zz,Abelev:2014ffa} was studied already in preparation for ITS upgrade in 2019/20 \cite{Abelevetal:2014cna,Abelevetal:2014dna,ALICE:2014qrd,ALICE:MFTLoI}. The measurement of low-mass dileptons after this upgrade will profit from  
 \begin{itemize}
 \item an improved vertex resolution, which leads to a better separation of electrons from prompt sources, like thermal radiation, and electrons from the decays of heavy-flavour hadrons, for which $c\tau$ is about 150 $\mu$m (open-charm hadrons) or 400 $\mu$m (open-beauty hadrons), 
 \item a reduced material budget and improved tracking efficiency at low transverse momentum $p_{\rm T}$, which leads to a smaller background of electrons and positrons from photon conversion in the detector material,
 \item a higher rate capability (50 kHz in Pb--Pb collisions) that will increase the expected number of events in the central barrel detector by a factor of 100, 
-\item a dedicated heavy-ion run at low magnetic field of the ALICE solenoid ($B=0.2$~T instead of $0.5$~T), which increases the \todo{need to be extended?}{phase-space acceptance} and the efficiency of low momentum tracks 
+\item a dedicated heavy-ion run with a reduced magnetic field of the ALICE solenoid ($B=0.2$~T instead of $0.5$~T), which increases the phase-space acceptance and the reconstruction efficiency of low momentum particles 
 \item and the installation of the muon forward tracker, that will lead to an improved mass resolution and reduced background in the dimuon channel.
 \end{itemize}
 The expected measured spectra discussed in this section follow closely the strategy that is discussed in more detail in \cite{Abelevetal:2014cna,Abelevetal:2014dna,ALICE:2014qrd,ALICE:MFTLoI}
@@ -58,27 +86,27 @@ For the dielectron channel an integrated luminosity $L_{\rm int}\approx 3$~nb$^{
 The input for the signal is composed of:
 \begin{itemize}
 \item contributions from the decays of long-lived light pseudoscalar and vector mesons (hadronic cocktail), with particle ratios and spectral shapes extrapolated from existing heavy-ion data at lower energies,
-\item correlated semi-leptonic charm decays based on calculations from the PYTHIA event generator \cite{},
+\item correlated semileptonic charm decays based on calculations from the PYTHIA event generator \cite{Sjostrand:2006za},
 \item and the radiation of thermal dileptons and a medium-modified spectral function for the \Prho meson in a realistic space-time evolution (see Fig.~\ref{fig:LHCExpectations_Rapp_pHSD}(left)).
 \end{itemize}
-With respect to earlier calculations \cite{Abelevetal:2014cna,Abelevetal:2014dna,ALICE:2014qrd} we use here a \todo{or full}{fast} simulation of central Pb--Pb collisions to estimate the combinatorial background and the statistical significance of the signal. The particles are produced with the with HIJING \cite{} event generator and then propagated through the detector material by GEANT3 \cite{}. An updated geometry of the ITS is utilised in the detector description and leads to a more realistic treatment of conversion electrons and the subsequent background. 
+With respect to earlier calculations \cite{Abelevetal:2014cna,Abelevetal:2014dna,ALICE:2014qrd} we use here a fast simulation of central Pb--Pb collisions to estimate the combinatorial background and the statistical significance of the signal. The particles are produced with the event generator HIJING \cite{Wang:1991hta} and then propagated through the detector material by GEANT3 \cite{Brun:1994aa}. An updated geometry of the ITS is utilised in the detector description and leads to a more realistic treatment of conversion electrons and the subsequent background. 
 Electrons are reconstructed and identified via signals in the ALICE Time Projection Chamber (TPC) and Time-Of-Flight (TOF) detector, a parametrised efficiency from runs at low magnetic field during LHC Run 2 is applied. After pairing electrons and positrons an additional selection on the pair distance of closest approach 
 \begin{equation}
 DCA_{ee}(\sigma)=\sqrt{(\mathrm{DCA}_{\mathrm{xy},1}/\sigma_{\mathrm{xy},1})^2+\mathrm{DCA}_{\mathrm{xy},2}/\sigma_{\mathrm{xy},2})^2}
 \end{equation}
-is applied to reduce the contribution from correlated semi-leptonic charm decays. The selection is chosen such that 95\% of these pairs are rejected, while having an efficiency for prompt pairs of $\sim17$\%.
-The signal distribution $S$, which includes the remaining charm and beauty hadron decays, is obtained by subtraction of the combinatorial background from all \Pepem pairs. The combinatorial background $B$ is estimated from like-sign pairs and a correction factor $R$ that is taking into account the different acceptance of the apparatus for unlike- and like-sign pairs \cite{allLMeePapersRun1and2}. The significance that is used to project the statistical uncertainty on the measurement is calculated as $S/\sqrt{S+2B}$. The signal S is shown in Fig.~\ref{fig:DileptonsSpectra}(left) together with all input distributions. In order to extract the thermal component and the in-medium modified \Prho spectral function, the hadronic coktail and the contribution from correlated semi-leptonic charm decays is subtracted and shown in Fig.~\ref{fig:DileptonsSpectraSubtracted}(left). In addition, the systematic uncertainties from the combinatorial background and signal extraction, as well as physical backgrounds after subtraction are shown. The relative systematic uncertainty from tracking and track matching on the signal is assumed to be 4\%. \todo{Check final numbers}{For the systematic uncertainty on B a mass dependent uncertainty on the R factor (0.2\% at $M=0.3$~GeV/$c^2$ \cite{pp13 TeV paper}) and the statistical uncertainty of B is used.} A relative systematic uncertainty on the light-hadron cocktail and on the total charm cross-sections of 10\% and 15\%, respectively, are applied.
+is applied to reduce the contribution from correlated semileptonic charm decays. The selection is chosen such that 95\% of these pairs are rejected, while having an efficiency for prompt pairs of $\sim17$\%.
+The signal distribution $S$, which includes the remaining charm and beauty hadron decays, is obtained by subtraction of the combinatorial background from all \Pepem pairs. The combinatorial background $B$ is estimated from like-sign pairs and a correction factor $R$ that is taking into account the different acceptance of the apparatus for unlike- and like-sign pairs \cite{Acharya:2018kkj,Acharya:2018ohw,Acharya:2018nxm}. The significance that is used to project the statistical uncertainty on the measurement is calculated as $S/\sqrt{S+2B}$. The signal S is shown in Fig.~\ref{fig:DileptonsSpectra}(left) together with all input distributions. In order to extract the thermal component and the in-medium modified \Prho spectral function, the hadronic coktail and the contribution from correlated semileptonic charm decays is subtracted and shown in Fig.~\ref{fig:DileptonsSpectraSubtracted}(left). In addition, the systematic uncertainties from the combinatorial background and signal extraction, as well as physical backgrounds after subtraction are shown. The relative systematic uncertainty from tracking and track matching on the signal is assumed to be 4\%. For the systematic uncertainty on B a mass dependent uncertainty on the R factor (0.2\% at $M=0.3$~GeV/$c^2$ \cite{Acharya:2018kkj}) is used. A relative systematic uncertainty on the light-hadron cocktail and on the total charm cross-sections of 10\% and 15\%, respectively, are applied.
 
-In the dimuon channel, the full integrated luminosity of Pb--Pb collisions ($L_{\rm int}\approx 10$~nb$^{−1}$) is used. In this channel, the main source of background is represented by the combinatorial pairs of muons coming from uncorrelated semimuonic decays of light-flavoured mesons, mainly pions and kaons, copiously produced in high-energy nuclear collisions. The opposite-sign dimuon mass spectrum obtained after the subtraction of the combinatorial background evaluated by means of an event mixing technique, results from the superposition of several opposite-sign correlated dimuon sources, represented in the right panel of \figurename~\ref{fig:DileptonsSpectra}. In order to isolate the thermal dimuon radiation and the in-medium modified line shapes of the $\Prho$ meson, the known and well-identifiable sources of the hadronic cocktail --- 2-body and Dalitz decays of the $\Peta$, $\Pomega$, $\Pphi$ mesons, for which no in-medium effect is expected --- are subtracted from total opposite-sign correlated dimuon mass spectrum. A~10\,\% systematic uncertainty in the evaluation of the shape and the normalization of these sources has been considered in the performace studies. The same procedure has been also applied for the subtraction of the dimuons from the open charm and open beauty processes; alternatively, these two sources could be separated from the prompt ones by means of an analysis based on the discrimination of the dimuon offset at the primary vertex.
+In the dimuon channel, the full integrated luminosity of Pb--Pb collisions ($L_{\rm int}\approx 10$~nb$^{−1}$) is used. In this channel, the main source of background is represented by the combinatorial pairs of muons coming from uncorrelated semimuonic decays of light-flavoured mesons, mainly pions and kaons, copiously produced in high-energy nuclear collisions. The opposite-sign dimuon mass spectrum obtained after the subtraction of the combinatorial background evaluated by means of an event mixing technique, results from the superposition of several opposite-sign correlated dimuon sources, represented in the right panel of \figurename~\ref{fig:DileptonsSpectra}. In order to isolate the thermal dimuon radiation and the in-medium modified line shapes of the $\Prho$ meson, the known and well-identifiable sources of the hadronic cocktail --- 2-body and Dalitz decays of the $\Peta$, $\Pomega$, $\Pphi$ mesons, for which no in-medium effect is expected --- are subtracted from total opposite-sign correlated dimuon mass spectrum. A~10\,\% systematic uncertainty in the evaluation of the shape and the normalization of these sources has been considered in the performance studies. The same procedure has been also applied for the subtraction of the dimuons from the open charm and open beauty processes; alternatively, these two sources could be separated from the prompt ones by means of an analysis based on the discrimination of the dimuon offset at the primary vertex.
 
 
 
 %-----------------------------------------------------------------------%
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/ElectronsSpectrumAll}
-\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/MuonsSpectrumAll}
-\caption{Placeholder: Expected performance for invariant mass spectra for dielectrons and dimuons}
+\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/2018-09-25-2018-09-25-finalPlotsLowB_ITS3_EoI_final_Mee_ITSCyl0_IPcut1_events2500000000_redraw}
+\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/2018-09-14-2018-09-14-GlobalPlotLowMass_MFT_Pt_1_10}
+\caption{Inclusive \Pepem (left) and \PGmpGmm (right) invariant mass spectrum for 0--10\% most central Pb--Pb collisions at $\sqrt{s_{\rm NN}} = 5.5$~TeV. The green boxes show the systematic uncertainties from the combinatorial background subtraction.}
 \label{fig:DileptonsSpectra}
 \end{figure}
 %-----------------------------------------------------------------------%
@@ -86,54 +114,63 @@ In the dimuon channel, the full integrated luminosity of Pb--Pb collisions ($L_{
 %-----------------------------------------------------------------------%
 \begin{figure}[htb]
 \centering
-\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/ElectronsSpectrum}
-\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/MuonsSpectrum}
-\caption{Placeholder: Expected performance for invariant mass spectra for dielectrons and dimuons (after subtraction of light hadron decays and from correlated charm semi-leptonic decays)}
+\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/2018-09-25-2018-09-25-finalPlotsLowB_ITS3_EoI_final_Excess_ITSCyl0_IPcut1_events2500000000_redraw}
+\includegraphics[width=0.45\textwidth]{\main/thermalradiation/figs/2018-09-14-2018-09-14-RappPredictionLowMass_MFT_Pt_1_10}
+\caption{Excess (after subtraction of light hadron decays and from correlated charm semileptonic decays) \Pepem (left) and \PGmpGmm (right) invariant mass spectrum for 0--10\% most central Pb--Pb collisions at $\sqrt{s_{\rm NN}} = 5.5$~TeV. The green boxes show the systematic uncertainties from the combinatorial background subtraction, the magenta (left) and blue (right) boxes indicate systematic errors related to the subtraction of the cocktail and charm contribution.}
 \label{fig:DileptonsSpectraSubtracted}
 \end{figure}
 %-----------------------------------------------------------------------%
 
-The spectral function of low-mass dielectrons and dimuons in the mass region of the modified \Prho mesons spectral function $M\sim0.5$~GeV/$c^2$ can be extracted with a systematic uncertainty of XXX\% and $\sim 20$\,\%, respectively (see Fig.~\ref{fig:DileptonsSpectraSubtracted}. 
-The sizable contribution of thermal dilepton pairs above $M>1.1$~GeV/$c^2$ can be used to extract the temperature of the system. An exponential fit with d$N$ /d$M \sim  M^{3/2}$ exp( $M /T_{\rm fit}$ ) to the subtracted \Pepem spectra in the invariant mass region \todo{use final ranges}{$1.2 < M < 2.5$ ~GeV/$c^2$} was performed. Comparing the fit parameter $T_{\rm fit}$ to the real temperature $T_{\rm real}$ from the fit to the thermal contribution, a statistical uncertainty of XXX\% and systematic uncertainty of XXX\% and XXX\% for the background and the charm subtraction, respectively, were estimated. The same kind of measurement is also expected to be possible in the dimuon channel, considering a dedicated set of cuts optimized for the analysis of the intermediate mass region mentioned above (the cuts considered in the right panel of \figurename~\ref{fig:DileptonsSpectraSubtracted} being optimized for the signal extraction in the mass region below $\sim 1$~GeV/$c^2$).
+The spectral function of low-mass dielectrons and dimuons in the mass region of the modified \Prho mesons spectral function $M\approx0.5$~GeV/$c^2$ can be extracted with a systematic uncertainty of $\approx 40$\% and $\approx 20$\%, respectively (see Fig.~\ref{fig:DileptonsSpectraSubtracted}). 
+The sizable contribution of thermal dilepton pairs above $M>1.1$~GeV/$c^2$ can be used to extract the temperature of the system. An exponential fit with d$N$ /d$M \sim  M^{3/2}$ exp( $M /T_{\rm fit}$ ) to the subtracted \Pepem spectra in the invariant mass region $1.1 < M < 2.0$ ~GeV/$c^2$ was performed. Comparing the fit parameter $T_{\rm fit}$ to the real temperature $T_{\rm real}$ from the fit to the thermal contribution, a statistical uncertainty of 5\% and systematic uncertainty of 5\% and 20\% for the background and the charm subtraction, respectively, were estimated. The same kind of measurement is also expected to be possible in the dimuon channel, considering a dedicated set of cuts optimized for the analysis of the intermediate mass region mentioned above (the cuts considered in the right panel of \figurename~\ref{fig:DileptonsSpectraSubtracted} being optimized for the signal extraction in the mass region below $\sim 1$~GeV/$c^2$).
 
-\todo{In addition if ready}{In addition if ready: determine HF yield via multidimensional fit (as for pp publications)}
+An alternative method to separate the thermal component from the modified heavy-flavour production in the intermediate mass range, is to fit the measured $DCA_{ee}$ distribution as a function of the dielectron invariant mass and pair transverse momentum with a three component functions, including the contributions from prompt dielectron sources, from open-charm hadron decays and from open-beauty hadron decays. Since the shape of the heavy-flavour $DCA_{ee}$ spectra is quasi model independent, the dielectron yield of open heavy-flavour decays in the ALICE acceptance can be determined from the data with small uncertainties, without relying on theoretical calculations. Such fits were performed already with the Run 1 data in pp collisions at $\sqrt{s}$ = 7 TeV \cite{Acharya:2018ohw}. Nevertheless, the statistics available did not allow for a differential study.    
 
+The measurement of the dielectron elliptic flow coefficient $v_{2}$ as a function of $M_{\rm ee}$ in peripheral Pb--Pb collisions (40--60\%) was studied already in \cite{Abelevetal:2014cna}. It was shown that an absolute statistical uncertainty on $v_{2}$ of $\sigma_{v_{2}} \approx 0.01$ can be achieved.
 
-\newpage
 \subsection{Two-photon and photonuclear interactions}
-\label{dileptons:peripheral}
+\label{sec:dileptons:peripheral}
 %Contributed by Spencer Klein
 
-Although two-photon and photonuclear interactions are  expected in both ultra-peripheral (UPC) and more central collisions, they were not generally expected to be visible in non-UPC collisions.  The few final state particles from the photon-mediated interaction were expected to be swamped by the more copious hadronically produced particles.   That expectation changed recently, when ALICE \cite{Adam:2015gba} and then STAR \cite{Adam:2018tdm,Zha:2018ohg} and ATLAS \cite{Aaron} observed excesses of dileptons produced at very small pair $p_T$, $p_T < 100$ MeV/c.   These pairs were prominent in lead-lead and gold-gold collisions, but not in pp interactions; the excess corresponded to $R_{AA} >5$ (sometimes much more,, depending on the exact cut and centrality.  This is inconsistent with all expectations for hadroproduction, but  consistent with photoproduction, where the pair $p_T$ scale is set by the nuclear radius $R_A$, with $p_T \approx \hbar/R_A$. 
+Although two-photon and photonuclear interactions are expected to occur in both ultra-peripheral (UPC) and more central collisions, they were not generally expected to be visible in non-UPC collisions.  The few final state particles from the photon-mediated interaction were expected to be swamped by the more copious hadronically produced particles.   That expectation changed recently, when ALICE \cite{Adam:2015gba} and then STAR \cite{Adam:2018tdm,Zha:2018ohg} and ATLAS \cite{QM2018:presentation:AaronAngerami} observed excesses of dileptons produced at very small pair $p_T$, $p_T < 100$ MeV/c.   These pairs were prominent in Pb--Pb and Au--Au collisions, but not in pp interactions; the excess corresponded to $R_{AA} >5$ (sometimes much more, depending on the exact cut and centrality.  This is inconsistent with all expectations for hadroproduction, but  consistent with photoproduction, where the pair $p_T$ scale is set by the nuclear radius $R_A$, with $p_T \approx \hbar/R_A$. 
 
-UPC photon-mediated interactions have been studied at both RHIC and the LHC \cite{Baltz:2007kq,Bertulani:2005ru,Klein:2017nqo,Bertulani:1987tz,Baur:2001jj}.  The agreement between data and calculations is quite good.  Photoproduction of $\rho$, $\omega$, $\rho'$, $J/\psi$, $\psi'$,  $\Upsilon$ and direct $\pi^+\pi^-$ pairs has been observed, along with two-photon production of dilepton pairs and light-by-light scattering.  In peripheral collisions, photon-mediated interactions might be used to probe the nuclear medium that they may occur in, including the QGP \cite{Aaron,Adam:2018tdm}.   The produced leptons may interact with this medium, leading to alterations in their momentum.    
+UPC photon-mediated interactions have been studied at both RHIC and the LHC \cite{Baltz:2007kq,Bertulani:2005ru,Klein:2017nqo,Bertulani:1987tz,Baur:2001jj}.  The agreement between data and calculations is quite good.  Photoproduction of $\rho$, $\omega$, $\rho'$, $J/\psi$, $\psi'$,  $\Upsilon$ and direct $\pi^+\pi^-$ pairs has been observed, along with two-photon production of dilepton pairs and light-by-light scattering.  In peripheral collisions, photon-mediated interactions might be used to probe the nuclear medium that they may occur in, including the QGP \cite{QM2018:presentation:AaronAngerami,Adam:2018tdm}.   The produced leptons may interact with this medium, leading to alterations in their momentum.    
 
-Peripheral collisions introduce several new considerations for  photon-mediated reactions, particularly evolving coherence conditions for both photon emission and coherent photon-nucleus scattering.  In both $\gamma\gamma$ and photonuclear interactions photon emission is assumed to be completely coherent, governed by the nuclear form factor $F(q)$ \cite{Vidovic:1992ik}.   The photon emission from a nucleus moving with Lorentz boost $\gamma$ should occur before the hadronic interaction (which is taken to occur at $t=0$), at a retarded time, $t-x/c$ \cite{Zha:2017jch}, where $x=|b|/\gamma$; $|b|$ is the transverse distance from the photon emission point to where it interacts.    For very small impact parameters, some coherence may be lost, and a more detailed calculation is needed.  For coherent photonuclear collisions, the situation is more complicated, and will be discussed below. 
+Peripheral collisions introduce several new considerations for  photon-mediated reactions, particularly evolving coherence conditions for both photon emission and coherent photon-nucleus scattering.  Photon emission in both $\gamma\gamma$ and photonuclear interactions is expected to be completely coherent, governed by the nuclear form factor $F(q)$ \cite{Vidovic:1992ik}.   The photon emission from a nucleus moving with Lorentz boost $\gamma$ should occur before the hadronic interaction (which is taken to occur at $t=0$), at a retarded time, $t-x/c$ \cite{Zha:2017jch}, where $x=|b|/\gamma$; $|b|$ is the transverse distance from the photon emission point to where it interacts.    For very small impact parameters, some coherence may be lost, and a more detailed calculation is needed.  For photon-nucleus collisions, the situation is more complicated, and will be discussed below. 
 
 Here, we discuss two-photon interactions and then coherent photonuclear interactions. 
 
 \subsubsection{Two-photon interactions}
 
-In two-photon interactions, each nucleus emits a photon, which then interact and form a lepton pair.   In UPCs, this process is well described by the Weizsacker-Williams approach (where each photon is treated as real), except at very low pair $p_T$, where a lowest-order QED calculation works better \cite{Adams:2004rz}.     UPC calculations can be easily extended to include peripheral collisions \cite{Klein:2018cjh, Zha:2018ywo}.  The kinematic distributions are similar to those in UPCs, and the cross-section depends on the range of impact parameters.
+In two-photon interactions, each nucleus emits a photon, which then interact and form a lepton pair.   In UPCs, this process is well described by the Weizsacker-Williams approach (where each photon is treated as real), except at very low pair $p_T$, where a lowest-order QED calculation works better \cite{Adams:2004rz}.     UPC calculations can be easily extended to include peripheral collisions \cite{Klein:2018cjh, Zha:2018ywo,Klusek-Gawenda:2018zfz}.  The kinematic distributions are similar to those in UPCs, and the cross-section depends on the range of impact parameters.
 
-At Quark Matter 2018, ATLAS  \cite{Aaron}  showed results showing a dramatic modification to $\gamma\gamma\rightarrow\mu^+\mu^-$ in peripheral collisions.  Figure \ref{fig:ATLASacoplanarity} shows the pair acoplanarity $\alpha$, the azimuthal angular deviation from being perfectly back-to-back, and $A$, the energy imbalance between the two leptons.  For UPCs, they found good agreement with the STARlight \cite{Baltz:2009jk,Klein:2016yzr} reference, with the data and calculations peaked at small $\alpha$ and $A$.   More central collisions show dramatic changes with the low-$\alpha$ peak largely disappearing, and the $A$ distributions only minimally changed.  ATLAS described this as "Consistent with order of magnitude estimates from kinetic theory for multiple scattering off electric charges in thermal plasma."  Multiple scattering would remove the peak at low $\alpha$, but leave $A$ largely unaffected.  If multiple scattering is large, though, one also expects bremsstrahlung, which should increase $A$.   To evaluate this further requires a calculation of how many of the produced leptons are produced in the medium, and/or traverse it.  This calculation is badly needed.   The STAR Collaboration has studied two-photon $e^+e^-$ in peripheral gold-gold collisions; they found a small difference between their pair $p_T$ spectrum and calculations, and suggest that it might be due to medium effects.    ALICE has not seen these pairs, likely because their pair studies require  lepton $p_T > 1$ GeV/c, which eliminates most pairs from $\gamma\gamma$ reactions. 
+At Quark Matter 2018, ATLAS  \cite{QM2018:presentation:AaronAngerami}  showed results showing a dramatic modification to $\gamma\gamma\rightarrow\mu^+\mu^-$ in peripheral collisions.  Figure \ref{fig:ATLASacoplanarity} shows the pair acoplanarity $\alpha$, the azimuthal angular deviation from being perfectly back-to-back, and $A$, the energy imbalance between the two leptons.  For UPCs, they found good agreement with the STARlight \cite{Baltz:2009jk,Klein:2016yzr} reference, with the data and calculations peaked at small $\alpha$ and $A$.   More central collisions show dramatic changes with the low-$\alpha$ peak largely disappearing, and the $A$ distributions only minimally changed.  ATLAS described this as "Consistent with order of magnitude estimates from kinetic theory for multiple scattering off electric charges in thermal plasma."  Multiple scattering would remove the peak at low $\alpha$, but leave $A$ largely unaffected.  If multiple scattering is large, though, one also expects bremsstrahlung, which should increase $A$.   To evaluate this further requires a calculation of how many of the produced leptons are produced in the medium, and/or traverse it.  The STAR Collaboration has studied two-photon $e^+e^-$ in peripheral gold-gold collisions; they found a small difference between their pair $p_T$ spectrum and calculations, and suggest that it might be due to medium effects\cite{Adam:2018tdm}.    ALICE has not yet seen these pairs \cite{Adam:2015gba}, likely because their pair acceptance requires  lepton $p_T > 1$ GeV/c, eliminating most pairs from $\gamma\gamma$ reactions. 
 
-Coupled with better theoretical calculations, HL-LHC can confirm and dramatically expand our understanding of this effect.   One important goal should be to expand the study to cover a much wider range of masses.  As pair mass decreases, the average distance between the nuclei and the two-photon production point increases, so the medium should have less and less effect.  Very high mass pairs are also of interest, since they should show increased  in-medium effects.   It would also be interesting to compare $e^+e^-$ with $\mu^+\mu^-$ (and possibly $\tau^+\tau^-$), since the lighter leptons should have more bremsstrahlung.  If the leptons interact with the medium, then the electron $A$ distribution should show more change than that for muons.  
+Coupled with better theoretical calculations, HL-LHC can confirm and dramatically expand our understanding of this effect.   One important goal is to expand the study to cover a much wider range of masses.  Figure \ref{fig:project} shows the expected mass spectrum obtainable by ATLAS for a 13 nb$^{-1}$ HL-LHC run, assuming no changes in the trigger; masses up to 100 GeV should be accessible. These high mass pairs correspond to two-photon interactions in or very near the two nuclei, so should show increased effects due to interactions with the medium or magnetic fields associated with the quark-gluon plasma. In contrast, lower masses correspond to larger distances between the dilepton production point and the nuclei, so in-medium effects may be smaller.  These lower masses should be accessible with a softer requirement on the muon momentum.   It would also be interesting to compare $e^+e^-$ with $\mu^+\mu^-$ (and possibly $\tau^+\tau^-$), since the lighter leptons should interact more.  If the leptons interact with the medium, then the electron $A$ distribution should show more change than that for muons.  
 
 \begin{figure}[htb]
 \centering
 \includegraphics[width=0.85\textwidth]{\main/thermalradiation/figs/ATLASacoplanarity.png}
-\caption{Acoplanarity ($\alpha$, top) and lepton energy imbalance ($A$, bottom) as a function of centrality, for dimuon pairs with pair mass above 10 GeV, observed in the ATLAS detector.  From Ref. \cite{Aaron}.}
+\caption{Acoplanarity ($\alpha$, top) and lepton energy imbalance ($A$, bottom) as a function of centrality, for dimuon pairs with pair mass above 10 GeV, observed in the ATLAS detector.  From Ref. \cite{QM2018:presentation:AaronAngerami}.}
 \label{fig:ATLASacoplanarity}
 \end{figure}
 
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.5\textwidth]{\main/thermalradiation/figs/thermaldileptonmass_peripheralCollisions}
+\caption{Expected dimuon yield in ATLAS acceptance (both muons with $p_T>4$ GeV/c and $|\eta|<2.4$), for 40--80\% centrality Pb--Pb collisions and the expected Run3/4 integrated luminosity of 13 nb$^{-1}$.  Masses up to 100 GeV are accessible.  The effective 8 GeV minimum mass is because of the nearly back-to-back topology and the 4 GeV/c minimum muon $p_T$ cut. This was calculated using STARlight \cite{Klein:2016yzr,Klein:2018cjh}
+}
+\label{fig:project} 
+\end{figure}
+
+
 \subsubsection{Photonuclear interactions}
 
-In UPC photonuclear interactions, a photon emitted by one nucleus fluctuates to a quark-antiquark dipole, which then scatters elastically from the other (target) nucleus, emerging as a real vector meson.  The scattering occurs via Pomeron exchange, which preserves the photon quantum numbers.  In perturbative QCD, Pomerons are made up of gluons, so the process is sensitive to the gluon distribution in the target nucleus.  UPC measurements are consistent with moderate gluon shadowing.   In coherent scattering, the typical pair $p_T$ is $\hbar/R_A$.  Incoherent scattering is also possible, with a lower cross-section.  There the quark-antiquark dipole scatters elastically from a single nucleon (or, at still higher $p_T$ inelastically from a single nucleon), producing a vector meson with a typical $p_T$ of a few hundred MeV/c.
+In photonuclear interactions, a photon emitted by one nucleus fluctuates to a quark-antiquark dipole, which then scatters elastically from the other (target) nucleus, emerging as a real vector meson.  The scattering occurs via Pomeron exchange, which preserves the photon quantum numbers.  In perturbative QCD, Pomerons are made up of gluons, so the process is sensitive to the gluon distribution in the target nucleus.  UPC measurements are consistent with moderate gluon shadowing.   In coherent scattering, the typical pair $p_T$ is $\hbar/R_A$.  Incoherent scattering is also possible, with a lower cross-section.  There the quark-antiquark dipole scatters elastically from a single nucleon (or, at still higher $p_T$ inelastically from a single nucleon), producing a vector meson with a typical $p_T$ of a few hundred MeV/c.
 
-Both ALICE \cite{Adam:2015gba}  and STAR \cite{Zha:2018ohg} have observed coherent $J/\psi$ photoproduction in peripheral heavy-ion collisions.  There are a number of parallel theoretical calculations \cite{Klusek-Gawenda:2015hja,Zha:2017jch}.  The photon emission process is similar to the two-photon case, but the dipole-nucleons scattering happens at the same time as the hadronic interaction, introducing several complications to the calculations.  This immediately raises several questions:  What happens to the coherence if a target nucleon is involved in an interaction?   Does the dipole-nucleon interaction occur before or after the nuclear collisions?    If the hadronic interaction occurs first, the target nucleon will have lost energy, so the photon-nucleon cross-section will be smaller.  Probably, a detailed calculation would need to accommodate both possibilities.   There is also destructive interference between photoproduction from the two possible target nuclei \cite{Abelev:2008ew}; this interference extends to higher $p_T$ for more central collisions, and should reduce the cross-section for the region where nuclear collisions occur.  Ref. \cite{Zha:2017jch} makes predictions for a variety of coherence conditions, and as Fig. \ref{fig:jpsiinpcs} shows, finds that the ALICE and STAR data is likely below the region where there is complete coherence for both photon emission and scattering, but probably above that where coherence is limited to only the spectator nucleons.  This is not surprising, but there is at least one element missing from this calculation.  $J/\psi$ have a lifetime of order $10^{-20}$ s, far shorter than the expanding quark gluon plasma.  Coherently photoproduced $J/\psi$ have $p_T ~ 100$ MeV/c, so, near mid-rapidity,  are moving at a small fraction of the speed of light.  Particularly for more central collisions, one would expect many of them to be engulfed by the expanded QGP, before they have a chance to decay.  
+Both ALICE \cite{Adam:2015gba}  and STAR \cite{Zha:2018ohg} have observed coherent $J/\psi$ photoproduction in peripheral heavy-ion collisions.  There are a number of parallel theoretical calculations \cite{Klusek-Gawenda:2015hja,Zha:2017jch}.  The photon emission process is similar to the two-photon case, but the dipole-nucleons scattering happens at the same time as the hadronic interaction, introducing several complications to the calculations.  This immediately raises several questions:  What happens to the coherence if a target nucleon is involved in an interaction?   Does the dipole-nucleon interaction occur before or after the nuclear collisions?    If the hadronic interaction occurs first, the target nucleon will have lost energy, so the photon-nucleon cross-section will be smaller.  A detailed calculation should consider both possibilities.   There is also destructive interference between photoproduction from the two possible target nuclei \cite{Abelev:2008ew}; this interference extends to higher $p_T$ for more central collisions, and should reduce the cross-section for the region where nuclear collisions occur. At $b=0$, we expect complete destructive interference.  Ref. \cite{Zha:2017jch} makes predictions for a variety of coherence conditions, and as Fig. \ref{fig:jpsiinpcs} shows, finds that the ALICE and STAR data likely lie below the region where there is complete coherence for both photon emission and scattering, but probably above that where coherence is limited to only the spectator nucleons.  This is not surprising, but there is at least one element missing from this calculation.  $J/\psi$ have a lifetime of order $10^{-20}$ s, far shorter than the expanding quark gluon plasma.  Coherently photoproduced $J/\psi$ have $p_T ~ 100$ MeV/c, so, near mid-rapidity,  are moving at a small fraction of the speed of light.  Particularly for more central collisions, one would expect many of them to be engulfed by the expanded QGP, before they have a chance to decay.  
 
-The ALICE error bars are large, and more data, from the current runs and HL-LHC is needed to pin down the centrality dependence of the cross-section.  More data will also allow access to additional observables.  A detailed study of the shape of $d\sigma/d|p_T|$ would shed more light on the possible loss of coherence in more central collisions. There are also expected correlations between the reaction plane, which can be determined from the hadronic part of the collision, with the photonuclear interaction.  Because the destructive interference between photoproduction at mid-rapidity on the two nuclei goes as $\sigma \sim |1-\exp{(i{\vec{b}\cdot\vec{p_T})}}|^2$ \cite{Klein:1999gv}, the azimuthal direction of $\vec{p_T}$ provides information about the azimuthal direction of $\vec{b}$, {\it i. e.} the reaction plane.  Thus, it can be used either as an independent measurement of the reaction plane, or as a test of the loss of correlation.  Also, the $J/\psi$ polarization follows that of the photon that produced it, so it also follows $\vec{b}$, providing another probe of the reaction plane.
+The ALICE error bars are large, and more data, from the current runs and HL-LHC is needed to pin down the centrality dependence of the cross-section.  More data will also allow access to additional observables.  A detailed study of the shape of $d\sigma/d|p_T|$ would shed more light on the possible loss of coherence in more central collisions. There are also expected correlations between the reaction plane, which can be determined from the hadronic part of the collision, with the photonuclear interaction.  Because the destructive interference between photoproduction at mid-rapidity on the two nuclei goes as $\sigma \sim |1-\exp{(i{\vec{b}\cdot\vec{p_T})}}|^2$ \cite{Klein:1999gv}, the azimuthal direction of $\vec{p_T}$ provides information about the azimuthal direction of $\vec{b}$, {\it i. e.} the reaction plane.  Thus, it can be used either as an independent measurement of the reaction plane, or as a test of the loss of correlation.  Also, the $J/\psi$ polarization follows that of the photon that produced it, so it also follows $\vec{b}$, providing another probe of the reaction plane.  With a large data sample, we may also be able to probe incoherent $J/\psi$ photoproduction, at least in very peripheral hadronic collisions, where the signal:noise ratio is high.  
 
 It would also be very interesting to study $\psi'$ and $\Upsilon$ photoproduction in peripheral collisions.  Since these mesons have different sizes from the $J/\psi$, they should interact with the medium with different strengths.  These studies should be possible at HL-LHC.  
 
@@ -145,17 +182,17 @@ It would also be very interesting to study $\psi'$ and $\Upsilon$ photoproductio
 \end{figure}
 
 
-\newpage
 \subsection{Dark Photons }
-\label{dileptons:darkphotons}
+\label{sec:dileptons:darkphotons}
 %Taku Gunji
 % ------ dark photon section written by T. Gunji ------ %
 
-Dark Matter is a hypothetical form of matter that is responsible for accounting for approximately 80\% of the matter in the Universe.  
+Dark Matter is a hypothetical form of matter that is responsible for accounting for approximately 80\% of the matter in the Universe~\cite{Planck:2013jfk}.
 The nature of dark matter cannot be incorporated within the Standard Model 
 %and is associated with the physics beyond the Standard Model. Possible 
-and the understanding of dark matter requires new introduction of interactions between dark matter particles 
-and the ordinary standard model particles via unknown dark-sector forces. 
+and the understanding of dark matter requires new introduction of interactions 
+between dark matter particles 
+and the ordinary standard model particles via unknown dark-sector forces~\cite{Alexander:2016aln}. 
 Dark sector could have rich structure with a few possible candidates, 
 where one of them is regarded as Dark Photon ($A'$) with 
 $L_{mix} \propto\frac{\epsilon}{2}F^{\mu\nu}X_{\mu\nu}$.
@@ -168,12 +205,12 @@ with the residual interaction ($\epsilon$) to the Standard Model particles.
 Understanding of possible interactions of dark photons has been motivated by 
 a number of astrophysical anomalies such as antiproton spectrum in 
 the cosmic rays measured by AMS Collaboration,
-positron excess in the cosmic rays observed earlier by PAMELA 
-and confirmed by FERMI and AMS, 
+positron excess in the cosmic rays observed earlier by PAMELA~\cite{Adriani:2008zr}
+and confirmed by FERMI~\cite{FermiLAT:2011ab} and AMS~\cite{Aguilar:2013qda}, 
 and the long standing discrepancy
 between the measured and the calculated anomalous magnetic moment of 
 the muon $(g-2)_{\mu}$, where
-the difference is more than three standard deviations away from zero.
+the difference is more than three standard deviations away from zero~\cite{Bennett:2006fi}.
 
 %Further constraints of dark photon mass ($m_{A'}$) and mixing parameter ($\epsilon$) have been 
 %performed recently by beam-dump experiments ()~\cite{}, fixed-target experiments~\cite{}, 
@@ -182,49 +219,66 @@ the difference is more than three standard deviations away from zero.
 %Figure~\ref{fig:darkphoton2016} shows 
 %compilation of existing Dark Photon constraints in ($m_{A'}$, $\epsilon$ ) in 2016.
 
-A lot of experimental activities have been seen recently to further constrain 
-the mixing parameter ($\epsilon$) as a function of dark photon mass ($m_{A'}$).
 If the dark photon is the lightest state of the dark sector 
-and therefore can decay only into the Standard model particles, dark photons with
-mass $m_{A'} \le 2m_{\mu}$ decay only into electron-positron pairs. 
+and therefore can decay only into the Standard model particles, dark photons with mass $m_{A'} \le 2m_{\mu}$ decay only into electron-positron pairs. 
 For dark photons above 2 muon threshold ($m_{A'} \ge 2m_{\mu}$), 
 dark photons can decay into muon pairs. For ($m_{A'} \ge 2m_{\pi}$), 
 dark photons can decay into hadrons as well. 
-Figure~\ref{fig:darkphoton2016} shows compilation of existing Dark Photon constraints in ($m_{A'}$, $\epsilon$ ) in 2016, where they are from 
+A lot of experimental activities have been seen recently 
+and constraints of mixing parameter ($\epsilon^2$) as a function 
+of dark photon mass ($m_{A'}$) has been done from many experiments. 
+They are, for example, 
+%\todo{missing reference in the caption}{Figure}~\ref{fig:darkphoton2016} shows compilation of existing Dark Photon constraints in ($m_{A'}$, $\epsilon$ ) in 2016, where they are from 
 beam-dump experiments (measurement of lepton pairs from dark photons 
-behind a sufficiently long shield. Examples are 
-KEK, E141 and E137 at SLAC, E774 at Fermilab, Orsay), 
+behind a sufficiently long shield. 
+Examples are E141~\cite{Riordan:1987aw} and E137~\cite{Bjorken:1988as}
+at SLAC, E774~\cite{Bross:1989mp} at Fermilab), 
 fixed-target experiments (by scattering the electron beam on a nuclear target, 
 the dark photon may be emitted in the initial or final state and coupling to 
 electron-positron pairs is studied by looking for a bump in the 
-electron-positron invariant mass. Examples are A1 at MAMI in Mainz, 
-APEX at JLAB, DarkLight at JLAB)
-and collider experiments (BABAR, NA48 at SPS, WASA at COSY, HADES at GSI, 
-PHENIX at RHIC, LHCb and ALICE at LHC).
+electron-positron invariant mass. Examples are A1~\cite{Merkel:2014avp} 
+at MAMI in Mainz, APEX~\cite{Abrahamyan:2011gv} at JLAB, 
+DarkLight~\cite{Balewski:2013oza} at JLAB)
+and collider experiments (BABAR~\cite{Lees:2014xha}, 
+NA48/2~\cite{Batley:2015lha} at SPS, WASA~\cite{Moskal:2014dsa} at COSY, 
+HADES~\cite{Agakishiev:2013fwl} at GSI, 
+PHENIX~\cite{Adare:2014mgk} at RHIC, LHCb~\cite{Aaij:2017rft} and ALICE at LHC).
 Since any process in which a virtual photons couples to lepton pairs or hadrons 
-can be used to search for dark photons, following processes are used in the collider experiments: measurements of Dalitz decays of the $\pi^0/\eta/\eta' \rightarrow \gamma A'$ mesons and rare meson decays such as $K\rightarrow \pi A'$, $\phi \rightarrow \eta A'$, 
+can be used to search for dark photons, 
+following processes are used in the collider experiments: measurements of Dalitz decays of the $\pi^0/\eta/\eta' \rightarrow \gamma A'$ mesons and rare meson decays such as $K\rightarrow \pi A'$, $\phi \rightarrow \eta A'$, 
 and $D^{*} \rightarrow D^{0}A'$,
 Bremsstrahlung process 
 ($e^{-}Z \rightarrow e^{-}ZA'$ with $A'$ emitted at very forward direction),  
 radiative decay of vector resonances and initial state radiation 
 (done by BABAR using radiative decays of $\Upsilon(3S)$ and 
-done by KLEO using $\phi \rightarrow e^+e^-$)
+done by KLOE~\cite{Archilli:2011zc} using $\phi \rightarrow e^+e^-$).
 %firstly explored by BABAR that looked for the bumps in the invariant mass spectrum of muon pairs in radiative decays of $\Upsilon(3S)$ and 
 %later done by KLEO using $\phi \rightarrow e^+e^-$), 
 %and initial state radiation (done by KLEO that searched for peaks 
 %in muon pairs and electron pairs below 1 GeV and probed by BABAR below 10 GeV.). 
+%New paragraph from IceCube 
+%
+%Ardid:2017lry
+The 79-string IceCube search for dark matter in the Sun public data is 
+used to test Secluded Dark Matter models~\cite{Ardid:2017lry}. 
+Dark matter particles can be captured by the Sun, annihilate, and 
+produce a neutrino flux that can be observed at Earth and that 
+depends on the dark matter scattering cross section off nuclei
+and on the dark matter annihilation rate and final states.
+This analysis constrains a kinetic mixing parameter $\epsilon \sim 10^{-9}$
+between 0.22 and $\sim$ 1 GeV~\cite{Ardid:2017lry}.
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=0.65\textwidth]{\main/thermalradiation/figs/darkphoton2015.png}
-\caption{Constraints in the $\epsilon$ vs. $m_{A'}$ planes for dark photons}
-\label{fig:darkphoton2016}
-\end{figure}
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.65\textwidth]%{\main/thermalradiation/figs/darkphoton2015.png}
+%\caption{Constraints in the $\epsilon$ vs. $m_{A'}$ planes for dark photons. From \cite{reference}.}
+%\label{fig:darkphoton2016}
+%\end{figure}
 
 %\subsubsection{Constraints by ALICE and LHCb from Run1 and Run2 data}
 ALICE has good capabilities for electron identification in the low 
 transverse momentum region, that enables to measure a large sample of 
-the $\pi^0$ Dalitz decays. 
+the $\pi^0$ Dalitz decays~\cite{Acharya:2018ohw}. 
 ALICE searches for possible decays of 
 $\pi^0 \rightarrow \gamma A', A' \rightarrow e^+e^-$ 
 by examining the electron-positron invariant mass in a large sample
@@ -232,14 +286,14 @@ of $\pi^0$ Dalitz decay for 20 $\le m_{ee} \le $90 MeV/$c^2$ in
 pp collisions at 7 TeV ($L_{int} \sim 4$~nb$^{-1}$) and 
 p-Pb collisions at 5.02 TeV ($L_{int} \sim 40$~$\mu$b$^{-1}$) as shown in 
 %from Run 1~\cite{}, where 90\% of CL of $\epsilon^2$ is shown in 
-Fig.~\ref{fig:darkphoton_alice}.\\
+Fig.~\ref{fig:darkphoton_alice_lhcb}.\\
 LHCb has good capabilities to measure muons and hardware and software 
 triggers enable to accumulate a large samples of dimuon pairs. 
 LHCb searches for prompt-like and long-lived dark photons 
 produced in pp collisions at 13 TeV, using $A' \rightarrow \mu^+\mu^-$ decays 
 from a large data sample corresponding to $L_{int} \sim 1.6$~fb$^{-1}$ 
 collected during 2016, where 
-the prompt-like $A'$ search is shown in Fig.~\ref{fig:darkphoton_lhcb}.
+the prompt-like $A'$ search is shown in Fig.~\ref{fig:darkphoton_alice_lhcb}~\cite{Aaij:2017rft}.
 %The prompt-like $A'$ search is performed 
 %from near the dimuon threshold up to 70 GeV, while the long-lived $A'$
 %search is restricted to the mass range 214 $\le m(A') \le 350$ MeV.
@@ -247,56 +301,81 @@ the prompt-like $A'$ search is shown in Fig.~\ref{fig:darkphoton_lhcb}.
 %is shown in Fig.~\ref{fig:darkphoton_lhcb}.
 
 \begin{figure}[htbp]
- \begin{minipage}{0.5\hsize}
-  \begin{center}
-   \includegraphics[width=70mm]{\main/thermalradiation/figs/darkphoton_alice_run1.pdf}
-  \end{center}
-  \caption{90\% of CL constrained by ALICE}
-  \label{fig:darkphoton_alice}
- \end{minipage}
- \begin{minipage}{0.5\hsize}
-  \begin{center}
-   \includegraphics[width=80mm]{\main/thermalradiation/figs/darkphoton_lhcb_2016.pdf}
-  \end{center}
-  \caption{90\% of CL constrained by LHCb}
-  \label{fig:darkphoton_lhcb}
- \end{minipage}
+\begin{center}
+\includegraphics[width=120mm]{\main/thermalradiation/figs/visible2.png}
+\end{center}
+\caption{90\% of confidence level of mixing parameter as a function of dark photon mass. Figure is adapted from Ref.~\cite{Ilten:2018crw}. 
+Red and blue are from ALICE and LHCb~\cite{Aaij:2017rft}. 
+Light grey band contains results from BABAR, KLOE, A1, APEX, NA48/2,  E774, E141, E137, KEK, Orsay, BESIII, CHARM, HPS, NA64, NOMAD, NuCAL, and PS191~\cite{Ilten:2018crw}.}
+\label{fig:darkphoton_alice_lhcb}
 \end{figure}
+ 
+%\begin{figure}[htbp]
+% \begin{minipage}{0.5\hsize}
+%  \begin{center}
+%%   \includegraphics[width=70mm]{\main/thermalradiation/figs/darkphoton_alice_run1.pdf}
+ % \end{center}
+ % \caption{90\% of CL constrained by ALICE}
+ % \label{fig:darkphoton_alice}
+ %\end{minipage}
+% \begin{minipage}{0.5\hsize}
+%  \begin{center}
+%   \includegraphics[width=80mm]{\main/thermalradiation/figs/darkphoton_lhcb_2016.pdf}
+%  \end{center}
+%  \caption{90\% of CL constrained by LHCb}
+%  \label{fig:darkphoton_lhcb}
+% \end{minipage}
+%\end{figure}
 
 %\subsubsection{Constraints by ALICE and LHCb from HL-LHC data}
 ALICE upgrade during LS2 will improve greatly 
 the efficiency of electron-positron measurements and data taking capability.
 %that enables to accumulate more collision data 
 %by a factor of roughly 100 ({\bf TBC}). 
-Figure~\ref{fig:darkphoton_alice_hllhc} shows 
-expected constraints that will be achieved by ALICE upgrades 
-using 6 pb$^{-1}$, 50 nb$^{-1}$, and 
-5 nb$^{-1}$ of pp, p-Pb, and Pb-Pb collisions, respectively, where 
-ALICE's constraint for 20 $\le m_{A'} \le $90 MeV/$c^2$ 
-will be compatible with BABAR-II experiments as shown in Fig.~\ref{fig:darkphoton_lhcb_hllhc}.
+Figure~\ref{fig:darkphoton_alice_lhcb_hllhc} shows 
+expected constraints that will be achieved by ALICE and LHCb
+together with the future experiments. 
+After the major ALICE upgrade, ALICE will accumulate 
+6 pb$^{-1}$, 50 nb$^{-1}$, 10 nb$^{-1}$, and 3 nb$^{-1}$
+of pp, p-Pb, Pb-Pb collisions at 0.5T, and Pb-Pb collisions at 0.2T, 
+respectively. 
+%ALICE's constraint for 20 $\le m_{A'} \le $90 MeV/$c^2$ 
+%will be compatible with BABAR-II experiments as shown in Fig.~\ref{fig:darkphoton_alice_lhcb_hllhc}.
 LHCb will improve sensitivity of dark photon searches to large regions 
-of the unexplored space, especially in the 210-520 MeV and 10-40 GeV mass ranges
-as shown in Fig.~\ref{fig:darkphoton_lhcb_hllhc}. 
-These new constraints leverage the improved invariant-mass and vertex resolution, 
+of the unexplored space. These new constraints leverage the improved invariant-mass and vertex resolution, 
 as well as the unique capabilities of the particle-identification and real-time 
-data-analysis with triggerless readout, that enables to accumulate $L_{int} \sim 16$~fb$^{-1}$.
+data-analysis with triggerless readout, 
+that enables to accumulate $L_{int} \sim 16$~fb$^{-1}$~\cite{Ilten:2016tkc}.
 
 \begin{figure}[htbp]
- \begin{minipage}{0.5\hsize}
-  \begin{center}
-   \includegraphics[width=80mm]{\main/thermalradiation/figs/darkphoton_alice_hllhc.png}
-  \end{center}
-  \caption{90\% of CL constrained by ALICE in HL-LHC era}
-  \label{fig:darkphoton_alice_hllhc}
- \end{minipage}
- \begin{minipage}{0.5\hsize}
-  \begin{center}
-   \includegraphics[width=75mm]{\main/thermalradiation/figs/darkphoton_lhcb_hllhc.pdf}
-  \end{center}
-  \caption{90\% of CL constrained by LHCb in HL-LHC era}
-  \label{fig:darkphoton_lhcb_hllhc}
- \end{minipage}
+\begin{center}
+\includegraphics[width=120mm]{\main/thermalradiation/figs/2018-09-29-2018-09-29-reach}
+\end{center}
+\caption{90\% of CL constrained by ALICE and LHCb in HL-LHC era.
+Constrains by ALICE is based on 
+6 pb$^{-1}$, 50 nb$^{-1}$, 10 nb$^{-1}$, and 3 nb$^{-1}$
+of pp, p-Pb, Pb-Pb collisions at 0.5T, and Pb-Pb collisions at 0.2T 
+and by LHC is based on 15~fb$^{-1}$.
+Figures are adopted from Ref.~\cite{Ilten:2018crw}.}
+\label{fig:darkphoton_alice_lhcb_hllhc}
 \end{figure}
+
+%\begin{figure}[htbp]
+% \begin{minipage}{0.5\hsize}
+%%  \begin{center}
+ %  \includegraphics[width=80mm]{\main/thermalradiation/figs/dark_photon_new2_2.png}
+%  \end{center}
+%  \caption{90\% of CL constrained by ALICE in HL-LHC era}
+%  \label{fig:darkphoton_alice_hllhc}
+% \end{minipage}
+% \begin{minipage}{0.5\hsize}
+%  \begin{center}
+%   \includegraphics[width=75mm]%%{\main/thermalradiation/figs/darkphoton_lhcb_hllhc.pdf}
+%  \end{center}
+%%  \caption{90\% of CL constrained by LHCb in HL-LHC era}
+ % \label{fig:darkphoton_lhcb_hllhc}
+ %\end{minipage}
+%\end{figure}
 
 
 %\begin{itemize}
@@ -320,5 +399,58 @@ data-analysis with triggerless readout, that enables to accumulate $L_{int} \sim
 %\item Overlap with "Dark WG"? Divide expectations in Pb-Pb and pp collisions? 
 %\end{itemize}
 
+\subsection{Limitations and outlook}
+
+While the statistical precision for the measurement of low mass dielectrons and dimuons as well as real photons will be sufficient in LHC Run 3 and 4 to study their yield as a function transverse momentum and with respect to the event plane (elliptic flow), more differential measurements might still be limited. 
+The measurement of the photon polarization via the angular distribution of dileptons can not only provide information the thermalization of the system, but also on the early stages of collision \cite{Baym:2017qxy}. Experimentally these distributions have been measured by the NA60 \cite{Arnaldi:2008gp}, where no polarization was found concluding that the observed excess dimuons are in agreement with the thermal emission from a a randomized system. In order to study the angular distributions, for example in the Collins-Soper reference frame \cite{Collins:1977iv,Lam:1978pu,Lam:1980uc} in the polar angle $\theta$ and the azimuthal angle $\varphi$, a large data set is needed (NA60 used $\sim50000$ excess \PGmpGmm pairs).
+
+Another promising direction is measurement of Bose-Einstein correlations of direct photons. We this probe one can trace space-time dimensions of the hottest part of the fireball and moreover, varying $k_{\rm T}$ of the photon pair, one can select pairs coming mostly from earlier or later stages of the collision and thus look at evolution of the fireball. On the other hand from the correlation strength parameter one can extract direct photon spectrum down to very low $p_{\rm T} \sim 100$ MeV/$c$. So far there was one successful measurement of direct photon BE correlations with WA98 collaboration \cite{Aggarwal:2003zy}, while at RHIC and LHC energies these measurements are still unavailable. The reason is that expected strength of these correlations $\lambda_\gamma = 1/2(N_\gamma^{dir}/N_{\gamma}^{tot})^2$ is extremely small. Moreover, in contrast to massive particles, averaging of full 3D correlation function $C_2(q_{out},q_{side},q_{long})$ to 1D $C_2(q_{inv})$ results in further dramatic decrease of correlation strength \cite{Aggarwal:2003zy}. This all requires very large statistics in addition to understanding detector response. 
+
+
+A first step to increase the statistical precision and the available data set for low-mass dileptons could be a further upgrade of the inner barrel of silicon detectors of the ALICE apparatus that is currently under discussion \cite{ALICE:ITS3LoI}. The planned reduction of the material budget would reduce conversion probability. In addition, an improvement of the tracking efficiency especially at low momentum would increase the conversion rejection efficiency even further. First studies \cite{ALICE:ITS3LoI} showed that the statistical uncertainty can be reduced by a factor 1.5, while the systematic uncertainty from the subtraction of the combinatorial background would be reduced by a factor 1.3. With a better pointing resolution the rejection of charm background is improved and would lead to a reduced the systematic uncertainty from the subtraction of the light-hadron and charm decay backgrounds by a factor of two. 
+
+\subsection{Projections for p-Pb collisions (to be moved to small systems section)}
+
+% The real photon part is commented out for the time being since the projection plot is not ready yet (MW)
+
+%%-----------------------------------------------------------------------%
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=0.45\textwidth,clip]{\main/thermalradiation/figs/2018-May-06-DRNonFit_CombAndTheory_pPb5TeV.pdf}
+%\caption{Placeholder: Direct photons in pA. }
+%\label{fig:RealPhotonsRgpA}
+%\end{figure}
+%%-----------------------------------------------------------------------%
+
+%The measurement of the direct photon spectrum in pA collisions is of special interest. On one hand, 
+%pA collisions exhibit some features, characteristic to large systems: collective flow development \cite{ABELEV:2013wsa} or enhancement of yield of strangeness \cite{Adam:2015vsf}; on the other hand, no sign of parton energy loss in hard hadron or jet production in these systems was observed \cite{Abelev:2014dsa}. 
+%Measurement of thermal direct photons in pA collisions would be strong argument for the creation of hot matter in these collisions.
+%Photon double ratio $R_\gamma$ was measured with four different methods: PCM, PHOS, EMCAL and combined PCM+EMCAL. Measurements agree with each other and results were combined accounting possible correlations of uncertainties, see Fig.\ \ref{fig:RealPhotonsRgpA}, left plot.  At $p_{\rm T}<5$ GeV/$c$  only upper limit can be set, while at higher $p_{\rm T}$ the direct photon excess was observed. It is consistent with NLO calculations scaled with number of binary nucleon-nucleon collisions in p--Pb. 
+%We use several NLO pQCD calculations: one using proton structure functions \cite{Jager:2002xm} and set of models accounting for nuclear PDF modifications \cite{Eskola:2016oht}. As one can see, accounting nuclear modifications of structure functions makes modest effect on the total direct photon yield. 
+%As for the low $p_{\rm T}$ part, even after combination and reduction of systematic uncertainties they are too large to observe the direct photon excess at $p_{\rm T}<4$ GeV/$c$ region, where calculations 
+%within hydrodynamic model by Shen et al. \cite{Shen:2016zpp} predict appearance of thermal photon contribution on few percent level. 
+%{\bf With improved statistics (?) and improved syst. uncertainties one can distinguish these models. Fig.3 Rg in small systems: (left - current in pp/pPb) right with reduced sys uncertainties. Can we measure direct photon excess in pPb with better accuracy? Can we discriminate any theories (e.g. Fuming and others?) Sys. err. estimates (Dmitri), Collections of theory predictions (Ana +?) DIscussion of subtraction of prompt photons based on experimental results and not theoretical estimates.}
+
+
+
+In order to estimate the sensitivity to the thermal radiation into the dielectron channel a similar strategy as in Sec.~\ref{sec:thermalradiation:dileptons} was used. 
+The input for the signal is composed of:
+\begin{itemize}
+\item contributions from the decays of long-lived light pseudoscalar and vector mesons (hadronic cocktail), with particle ratios and spectral shapes extrapolated from existing heavy-ion data at lower energies,
+\item correlated semileptonic charm decays based on calculations from the PYTHIA event generator \cite{Sjostrand:2006za}, 
+\item and the radiation of thermal dileptons and a medium-modified spectral function for the \Prho meson in a realistic space-time evolution.
+\end{itemize}
+The first two are the same as for the expectations used in the extraction of dark photon limits in Sec.~\ref{sec:dileptons:darkphotons}, the latter were provided by R.~Rapp\footnote{private communication Ralf Rapp}. The combinatorial background was scaled from Pb--Pb collisions to the expected number of pairs in p--Pb collisions. The pair efficiency (including the efficiency for rejecting \Pepem pairs from semileptonic charm decays) is assumed to be the same as in Pb--Pb collisions. 
+
+%-----------------------------------------------------------------------%
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.8\textwidth]{\main/thermalradiation/figs/2018-09-29-2018-09-29-finalPlotsTemperatureComparison_pPb_FastSim_FitBG_noDCAcut_fitResults_study0}
+\caption{Minimum thermal photon $N$(Rapp) to $\pi^{0}$ ratio needed to extract the temperature of the QGP with a statistical uncertainty $\sigma_{\rm T,stat} < 10$\% as a function of integrated luminosity.}
+\label{fig:SignalScalingVsLumi_Rapp_pPb}
+\end{figure}
+%-----------------------------------------------------------------------%
+
+The temperature of the QGP is extracted in the same way as in Sec.~\ref{sec:thermalradiation:dileptons}. The minimum thermal photon to $\pi^{0}$ (both decaying into \Pepem) ratio that is needed for a fit to the invariant mass spectrum with a statistical uncertainty $\sigma_{\rm T,stat} < 10$\% as a function of integrated between 50 nb$^{-1}$ and 2000 nb$^{-1}$ is shown in Fig.~\ref{fig:SignalScalingVsLumi_Rapp_pPb}. 
 
 \end{document}
