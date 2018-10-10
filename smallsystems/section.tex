@@ -159,7 +159,8 @@ Current statistics with LHC Run1 and Run 2 do not allow us to see signals for so
 
 %\subsection{Key observables}
 
-\subsection{Multiplicity distribution in pp}
+\subsection{Proton--Proton collisions at extreme multiplicities}
+\subsubsection{Multiplicity distribution}
 \label{sect:smallsystems_multiplicity}
 
 For the performance estimates at high multiplicity in pp, a multiplicity-distribution extrapolation has been used which is based on existing ALICE ($|\eta| < 1.5$)~\cite{Adam:2015gka} and ATLAS ($|\eta|< 2.5$)~\cite{Aad:2010ac,Aad:2016xww} data. Data from CMS~\cite{Khachatryan:2010nk} is compatible with the used distribution and is therefore not explicitly included in the extrapolation. A parameterisation with a single\footnote{At LHC energies two NBDs are needed for a good fit to the full distribution, but one is sufficient for the tail of the distribution.} negative binomial distribution is used which also have been frequently used to characterize the multiplicity distribution~\cite{GrosseOetringhaus:2009kz,ALICE:2017pcy}.
@@ -193,13 +194,17 @@ The resulting extrapolated multiplicity distribution for 14~$\tev$ is shown in F
 \label{fig:energy_density}
 \end{figure}
 
+\subsubsection{Energy density}
 While the multiplicity is a convenient and well defined observable to compare different collision systems, the underlying dynamics may be driven by other properties. In large collision systems, the energy density $\epsilon$ is often used to characterize the system and the expected effects. Figure~\ref{fig:energy_density} shows an estimate of the energy density for \pp, \pPb and \PbPb collisions based on IP-Glasma~\cite{Bzdak:2013zma,SchenkePriv1} as well as on the Bjorken estimate:
 \begin{equation}
   \epsilon = \frac{1}{A \tau} \langle E \rangle \frac{3}{2} \frac{dN_{ch}}{dy}.
 \end{equation}
 For the latter, the input is the multiplicity-dependent $\meanpT$~\cite{Abelev:2013bla,Acharya:2018njl} as well as the multiplicity-dependent transverse overlap from a Glauber MC~\cite{Loizides:2017ack}. The energy density is calculated at a fixed $\tau = \unit[0.2]{fm/c}$. It should be noted that these assumptions can be challenged and other ways to calculate $\epsilon$ are available. Here the aim is only to show that the energy density depends on the system at a fixed multiplicity, and can reach large values in \pp and \pPb collisions, of the order of central \PbPb collisions.
 
-Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in 5 multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in \pPb and \PbPb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$~\cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity \pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments.
+\subsubsection{Data-taking conditions and integrated luminosity for \pp collisions}
+For the performance studies in this chapter, a clean high-multiplicity sample of $\Lint = \unit[200]{pb^{-1}}$ is assumed. In order to assure a clean selection, collisions at $\mu \approx 1$ are needed which requires special runs or special conditions at the end of fill for ATLAS, CMS and LHCb. ALICE generally runs at low $\mu$ and can collect a similar sample over a long data-taking period.
+
+Table~\ref{tab:smallsystems_pp} gives the fraction of cross-section and the number of events in five multiplicity classes:  5--7, 7--10, 10--12, 12--14 and 14--16 times the average multiplicity. Table~\ref{tab:smallsystems_pbpb} gives the number of events of bins with equivalent multiplicity than commonly measured multiplicity bins in \pPb and \PbPb collisions. For the calculation of the number of events $\sigma_{\rm inel} = \unit[78.4]{mb}$~\cite{Loizides:2017ack} is used. These tables are the key input for the performance figures presented in this section. A high-multiplicity \pp program sampling \unit[200]{pb$^{-1}$} is assumed for all experiments.
 The conversion of the provided $\dNdeta$ to multiplicity ranges with larger pseudorapidity coverage is done for simplicity assuming a flat pseudorapidity distribution within $|\eta| < 2.5$. For the conversion with $\pT$ cuts as employed in many current measurements a set of conversation factors is used, listed in Tab.~\ref{tab:smallsystems_conversion}.
 
 \begin{table}
@@ -405,18 +410,6 @@ The input for the signal is composed of:
 The first two are the same as for the expectations used in the extraction of dark photon limits in Sec.~\ref{sec:dileptons:darkphotons}, the latter were provided by R.~Rapp~\cite{RappPriv1}. The combinatorial background was scaled from \PbPb collisions to the expected number of pairs in \pPb collisions. The pair efficiency (including the efficiency for rejecting \Pepem pairs from semileptonic charm decays) is assumed to be the same as in \PbPb collisions.
 
 The temperature of the QGP is extracted in the same way as in Sec.~\ref{sec:thermalradiation:dileptons}. The minimum thermal photon to $\pi^{0}$ (both decaying into \Pepem) ratio that is needed for a fit to the invariant mass spectrum with a statistical uncertainty $\sigma_{\rm T,stat} < 10$\% as a function of integrated up to 2000 nb$^{-1}$ is shown in Fig.~\ref{fig:smallsystems_thermal_radition}. If the prediction in Ref.~\cite{RappPriv1} is accurate, an integrated luminosity of $\unit[52]{nb^{-1}}$ is sufficient. In case the real signal is 50\% smaller about 4--5 times the statistics is needed.
-
-\subsection{Data-taking strategy}
-
-% High multiplicity triggering, pile up, MB sample
-% pp
-%   ALICE: additional several month pp program
-%   ATLAS/CMS: special runs (mu~1) or special conditions at end of fill
-%   LHCb: either in nominal (mu~5) or special running
-%   HM sample: 200 pb-1 pp (per experiment)
-%   How much MB for low-multiplicity questions?
-% p-Pb scheduled run
-%   1000-2000 nb-1
 
 \subsection{Summary}
 
