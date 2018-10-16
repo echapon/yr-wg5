@@ -13,6 +13,7 @@
 \section{Emergence of Hot and Dense QCD in Small Systems}
 \label{chapter:smallsystems}
 
+{ \small
 \noindent \textbf{Coordinators}: Jan Fiete Grosse-Oetringhaus (CERN) and Constantin Loizides (Oak Ridge National Laboratory)
 
 \noindent \textbf{Contributors, potentially not complete}:
@@ -35,6 +36,7 @@ Kaya Tatar (Massachusetts Institute of Technology),
 Michael Weber (Austrian Academy of Sciences),
 Henrique Zanoli (Universidade de Sao Paulo),
 Mingliang Zhou (Stony Brook University)
+}
 
 \subsection{Introduction}
 
@@ -259,7 +261,7 @@ $|\eta| < 1.5$ & 1.03 & 1.11 & 1.22 & 1.31 & 1.40 \\
 $|\eta| < 2.4$ & 1.04 & 1.14 & 1.27 & 1.42 & 1.55 \\
 \hline
 \end{tabular}
-\caption{Conversion factors between $\nch$ with a \pT threshold, and $\nch$ including particles down to $\pT = 0$. The factor shown is $\nch / \nch(\pT > X)$, extracted with Pythia 8, tune CUETP8M1. A potential multiplicity dependence of this factor is neglected for the projections in this chapter.}
+\caption{Conversion factors between $\nch$ with a \pT threshold, and $\nch$ including particles down to $\pT = 0$. The factor shown is $\nch / \nch(\pT > X)$, extracted with Pythia 8, tune CUETP8M1~\cite{Khachatryan:2015pea}. A potential multiplicity dependence of this factor is neglected for the projections in this chapter.}
 \label{tab:smallsystems_conversion}
 \end{table}
 
@@ -278,28 +280,28 @@ Furthermore, studies of $\meanpT$ as a function of multiplicity~\cite{Abelev:201
 \includegraphics[width=.49\linewidth]{\main/smallsystems/img/c_3_4_pp.pdf}
 \hfill
 \includegraphics[width=.49\linewidth]{\main/smallsystems/img/c_3_4_pPb.pdf}
-\caption{4-particle cumulants $c_3\{4\}$ measured with 3-subevent method for \pp (left panel) and \pPb collisions (right panel) as a function of $\nch$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty, with $c_3\{4\}$ assumed to be zero. The red and green dash lines represent $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal, respectively. The vertical line in the left panel indicates the the transition between minimum-bias and high-multiplicity triggered data. Figure from Ref.~\cite{}.}
+\caption{4-particle cumulants $c_3\{4\}$ measured with 3-subevent method for \pp (left panel) and \pPb collisions (right panel) as a function of $\nch$. Only statistical uncertainties are shown in the figure and the gray band represents the projected statistical uncertainty, with $c_3\{4\}$ assumed to be zero. The red and green dash lines represent $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal, respectively. The vertical line in the left panel indicates the the transition between minimum-bias and high-multiplicity triggered data. Figures from Ref.~\cite{ATL-PHYS-PUB-2018-014}.}
 \label{fig:smallsystems_corr_cumulants}
 \end{figure}
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=.49\linewidth]{\main/smallsystems/img/c_3_4_pp_eta4.pdf}
-\caption{Demonstration of the influence of the larger tracking acceptances for ATLAS and CMS available in Run 4. The figure shows the 4-particle cumulants $c_3\{4\}$ (as in the left panel of Fig.~\ref{fig:smallsystems_corr_cumulants}) for \pp collisions with $\Lint = \unit[200]{pb^{-1}}$. The data points indicate the reach with the detector in Run 3 ($|\eta| < 2.5$) while the gray band the enlarged acceptance of $|\eta| < 4$ in Run 4. The yellow, red and green dash lines represent $1.0\%$, $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal, respectively. Figures from Ref.~\cite{}.}
+\caption{Demonstration of the influence of the larger tracking acceptances for ATLAS and CMS available in Run 4. The figure shows the 4-particle cumulant $c_3\{4\}$ (as in the left panel of Fig.~\ref{fig:smallsystems_corr_cumulants}) for \pp collisions with $\Lint = \unit[200]{pb^{-1}}$. The data points indicate the reach with the detector in Run 3 ($|\eta| < 2.5$) while the gray band the enlarged acceptance of $|\eta| < 4$ in Run 4. The yellow, red and green dash lines represent $1.0\%$, $1.5\%$ and $2.0\%$ $v_3\{4\}$ signal, respectively. Figure from Ref.~\cite{ATL-PHYS-PUB-2018-014}.}
 \label{fig:smallsystems_corr_cumulants_eta4}
 \end{figure}
 
 The measurements of two-particle correlations and higher-order cumulants have been the initial observations of collective-like effects in small systems. In \pp collisions, two distinct regions are of interest at HL-LHC: the high-multiplicity tail to compare to \pPb and \PbPb collisions and the low-multiplicity regions to investigate the onset of these effects. In the following, several performance estimates are given as examples for the rich physics which can be addressed.
 
-State-of-the-art measured 4-particle cumulants of $v_3$ ($c_3\{4\}$) in \pp and \pPb collisions are presented in Fig.~\ref{fig:smallsystems_corr_cumulants} overlaid with the projection for HL-LHC.
+State-of-the-art measured 4-particle cumulants of $\vthree$ ($c_3\{4\}$) in \pp and \pPb collisions are presented in Fig.~\ref{fig:smallsystems_corr_cumulants} overlaid with the projection for HL-LHC.
 In order to remove non-flow contributions, the 3-subevent method is applied. In \pp collisions, with the data collected in Run 2, the statistical uncertainties are large and the $c_3\{4\}$ values are consistent with zero in most of the $\nch$ range. On the contrary, in large systems, significant non-zero $c_3\{4\}$ XX--YY\% depending on centrality has been measured.
-\todo{give values and REF for \PbPb measurement in similar \pT range, need to choose a centrality interval or give range.}, which reflects the nucleonic fluctuations in the initial state. Whether similar behaviour is observed in small systems still needs to be confirmed. The increase in luminosity in Run 3 and Run 4 provides a great opportunity to measure $c_3\{4\}$ in pp with high precision: the statistics are sufficient to measure a signal as small as $v_3\{4\} = 1.5\%$ for $\nch \gtrapprox 170$, while 2\% are accessible with large significance over a wide multiplicity range ($\nch \gtrapprox 100$). Similarly, in \pPb collision, the current result shows that $c_3\{4\}$ is consistent with zero, but increased statistics will help to detect a potential non-zero $c_3\{4\}$ smaller than $1.5\%$ for $100 \lessapprox \nch \lessapprox 500$. Similarly, the precision of the already measured non-zero $c_2\{4\}$ will be greatly improved\todo{can we refer to a CONF note?}.
-Figure~\ref{fig:smallsystems_corr_cumulants_eta4} illustrates the reduction of the statistical uncertainty due to the larger tracker acceptance in Run~4 for ATLAS and CMS. For this 4-particle correlator a reduction of the uncertianties of about 2.5 is expected, and therefore even the measurement of a 1\% $v_3\{4\}$ signal comes into reach. The influence of the acceptance increase on 6- and 8-particle will be larger, factor 4 and 6.5, respectively.
+\todo{give values and REF for \PbPb measurement in similar \pT range, need to choose a centrality interval or give range.}, which reflects the nucleonic fluctuations in the initial state. Whether similar behaviour is observed in small systems still needs to be confirmed. The increase in luminosity in Run 3 and Run 4 provides a great opportunity to measure $c_3\{4\}$ in pp with high precision: the statistics are sufficient to measure a signal as small as $v_3\{4\} = 1.5\%$ for $\nch \gtrapprox 170$, while 2\% are accessible with large significance over a wide multiplicity range ($\nch \gtrapprox 100$). Similarly, in \pPb collision, the current result shows that $c_3\{4\}$ is consistent with zero, but increased statistics will help to detect a potential non-zero $c_3\{4\}$ smaller than $1.5\%$ for $100 \lessapprox \nch \lessapprox 500$. Similarly, the precision of the already measured non-zero $c_2\{4\}$ will be greatly improved~\cite{ATL-PHYS-PUB-2018-014}.
+Figure~\ref{fig:smallsystems_corr_cumulants_eta4} illustrates the reduction of the statistical uncertainty due to the larger tracker acceptance in Run~4 for ATLAS and CMS. For this 4-particle correlator a reduction of the uncertainties of about 2.5 is expected, and therefore even the measurement of a 1\% $v_3\{4\}$ signal comes into reach. The influence of the acceptance increase on 6- and 8-particle will be larger, factor 4 and 6.5, respectively.
 
 \begin{figure}[t!]
 \centering
 \includegraphics[width=\linewidth]{\main/smallsystems/img/HLLHC_SC.pdf}
-\caption{Symmetric cumulants extracted with and without applying subevents for \pp (left panel) and \pPb collisions (right panel) as a function of $\nch$. The projected reach is shown for the case of 2, 3 and 4 subevents assuming a constant signal as a function of multiplicity indicated by the lower horizontal line. The vertical line indicates the transition between minimum-bias and high-multiplicity triggered data. Figures from Ref.~\cite{CMS-PAS-FTR-18-026}. Figure from Ref.~\cite{}.}
+\caption{Symmetric cumulants extracted with and without applying subevents for \pp (left panel) and \pPb collisions (right panel) as a function of $\nch$. The projected reach is shown for the case of 2, 3 and 4 subevents assuming a constant signal as a function of multiplicity indicated by the lower horizontal line. The vertical line indicates the transition between minimum-bias and high-multiplicity triggered data. Figures from Ref.~\cite{CMS-PAS-FTR-18-026}.}
 \label{fig:smallsystems_corr_symmetriccumulants}
 \end{figure}
 
@@ -308,7 +310,7 @@ Figure~\ref{fig:smallsystems_corr_cumulants_eta4} illustrates the reduction of t
 \includegraphics[width=.49\linewidth]{\main/smallsystems/img/v2_ppb.pdf}
 \hfill
 \includegraphics[width=.49\linewidth]{\main/smallsystems/img/ebye_v2_60-65_276TeVppprojection.pdf}
-\caption{Left panel: Particle identified $v_{\rm{2}}$ coefficients for \pPb collisions as a function of $\pT$. Two different cases are shown: the ALICE projections are for the 20\% highest-multiplicity collision ($\Lint = \unit[500]{nb^{-1}}$) demonstrating the negligible statistical uncertainties for heavy-flavour decay electrons and $J/\psi$, while the CMS projection is for a bin with $4-5 \meannch$ ($L_{\rm int} = \unit[2]{pb^{-1}}$) demonstrating the wide reach in multiplicity achievable for $D$ mesons and $J/\psi$. 
+\caption{Left panel: Particle identified $v_{\rm{2}}$ coefficients for \pPb collisions as a function of $\pT$. Two different cases are shown: the ALICE projections are for the 20\% highest-multiplicity collision ($\Lint = \unit[500]{nb^{-1}}$) demonstrating the negligible statistical uncertainties for heavy-flavour decay electrons and $J/\psi$, while the CMS projection is for a bin with $4-5 \meannch$ ($\Lint = \unit[2]{pb^{-1}}$) demonstrating the wide reach in multiplicity achievable for $D$ mesons and $J/\psi$. 
 Right panel: Projection of the measurement of the probability distribution of \vtwo in \pp collisions. To illustrate the reach the same signal as in \PbPb~\cite{Aad:2013xma} is assumed although the width of the distribution is most likely smaller in \pp collisions. The projection is for the equivalent \pp multiplicity (circles) as in 60--65\% centrality in \PbPb collisions (squares).}
 \label{fig:smallsystems_corr_pid_pvn}
 \end{figure}
@@ -326,7 +328,7 @@ Figure~\ref{fig:smallsystems_corr_pid_pvn} (right panel) presents a projection f
 \subsection{Strangeness Enhancement}
 \label{sect:smallsystems_strangeness}
 
-The unexpected increase of the strange particle yield normalized by the pion yield as a function of $\nch$ is one of the key observations in small systems. In \pp collisions these ratios are measured up to $\dNdeta \approx 17$ with some overlap with \pPb collisions. The most peripheral \PbPb collisions measured have a $\dNdeta \approx 96$, nearly 6 times larger. Figure~\ref{fig:smallsystems_strangeness_omega_pi} presents the expected reach of the $\Omega/\pi$ ratio in \pp collisions which will bridge the present gap between \pp and \PbPb collisions. In particular, if the measured increasing trend would continue, the $\Omega/\pi$ ratio would grow larger than in peripheral \PbPb collisions. Such an unlikely scenario will be clearly distinguishable from a scenario where the $\Omega/\pi$ flattens with increasing $\dNdeta$ and connects smoothly to \PbPb collisions. It will be groundbreaking if the thermal limit reached in the grand-canonical description in \PbPb collisions would already be reached in high-multiplicity \pp collisions.
+The unexpected increase of the strange-particle yield normalized by the pion yield as a function of $\nch$ is one of the key observations in small systems. In \pp collisions these ratios are measured up to $\dNdeta \approx 17$ with some overlap with \pPb collisions. The most peripheral \PbPb collisions measured have a $\dNdeta \approx 96$, nearly 6 times larger. Figure~\ref{fig:smallsystems_strangeness_omega_pi} presents the expected reach of the $\Omega/\pi$ ratio in \pp collisions which will bridge the present gap between \pp and \PbPb collisions. In particular, if the measured increasing trend would continue, the $\Omega/\pi$ ratio would grow larger than in peripheral \PbPb collisions. Such an unlikely scenario will be clearly distinguishable from a scenario where the $\Omega/\pi$ flattens with increasing $\dNdeta$ and connects smoothly to \PbPb collisions. It will be groundbreaking if the thermal limit reached in the grand-canonical description in \PbPb collisions would already be reached in high-multiplicity \pp collisions.
 
 \begin{figure}[t]
 \centering
@@ -344,7 +346,7 @@ The unexpected increase of the strange particle yield normalized by the pion yie
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/hjet_pp.pdf}
 \hfill
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/hjet_ppb.pdf}
-\caption{Modification of jet recoil yields extracted from hadron-jet correlations for \pp collisions (left) and \pPb collisions (right) within the ALICE acceptance. Shown is the ratio  of high-event-activity (EA) and low-EA recoil spectra, with high-EA corresponding to the 0--5\% bin for \pPb collisions (right panel), and the 0--0.1\% bin for \pp collisions (left panel). Since no EA-dependent shift is imposed, the parent distribution of the ratio has the value of unity at all \pT. The red lines show the 90\% CL limit for a possible EA-dependent spectrum shift.}
+\caption{Modification of jet recoil yields extracted from hadron--jet correlations for \pp collisions (left) and \pPb collisions (right) within the ALICE acceptance. Shown is the ratio  of high-event-activity (EA) and low-EA recoil spectra, with high-EA corresponding to the  0--0.1\% bin for \pp collisions (left panel), and the 0--5\% bin for \pPb collisions (right panel). Since no EA-dependent shift is imposed, the parent distribution of the ratio has the value of unity at all \pT. The red lines show the 90\% CL limit for a possible EA-dependent spectrum shift.}
 \label{fig:smallsystems_energyloss_hjet}
 \end{figure}
 
@@ -353,15 +355,15 @@ The unexpected increase of the strange particle yield normalized by the pion yie
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/xjg_highmult_projection_rebin.pdf}
 \hfill
 \includegraphics[width=0.49\linewidth]{\main/smallsystems/img/atlas_xj_dist_cm_2bins_forward_flipped.pdf}
-\caption{Left panel: CMS projection of the measurement of the jet--$\gamma$ momentum fraction $x_{j\gamma}$ in \pp collisions for selected high-multiplicity bins. A jet with $\pT > \unit[30]{\UGeVc}$ is required to be back-to-back ($\Delta\varphi > 7/8\pi$) with a $\gamma$ with $\pT > \unit[60]{\UGeVc}$. The shape is based on the Pythia. Figure from~\cite{CMS-PAS-FTR-18-025}. Right panel: ATLAS projection of the measurement of the jet--$Z$ momentum fraction $x_{jZ}$ in \pPb collisions in different pseudorapidity intervals. The momentum requirement are also \unit[30]{\UGeVc} for the jet and at least \unit[60]{\UGeVc} for the $Z$. The projection is based on XYZ. UNDER APPROVAL.}
+\caption{Left panel: CMS projection of the measurement of the jet--$\gamma$ momentum fraction $x_{j\gamma}$ in \pp collisions for selected high-multiplicity bins. A jet with $\pT > \unit[30]{\UGeVc}$ is required to be back-to-back ($\Delta\varphi > 7/8\pi$) with a $\gamma$ with $\pT > \unit[60]{\UGeVc}$. The shape is based on Pythia. Figure from~\cite{CMS-PAS-FTR-18-025}. Right panel: ATLAS projection of the measurement of the jet--$Z$ momentum fraction $x_{jZ}$ in \pPb collisions in different pseudorapidity intervals. The momentum requirements are also \unit[30]{\UGeVc} for the jet and at least \unit[60]{\UGeVc} for the $Z$. The projection is based on... UNDER APPROVAL.}
 \label{fig:smallsystems_energyloss_xjg_xjz}
 \end{figure}
 
-As discussed in Sect.~\ref{sect:smallsystems_historicoverview}, inclusive high-\pT hadron and jet yields show at present no evidence of medium-induced energy loss in \pPb collisions and suffer from selection biases if applied to event classes. Furthermore, these typically require a \pp reference, and can therefore not easily applied to \pp collisions itself. The large set of events expected at HL-LHC does therefore not help to resolve the question of energy loss in small systems with these observables. On the contrary, coincidence measurements of jets recoiling against another object are a promising direction and have the potential to identify small energy-loss effects or put stringent upper limits. In this section, projections are given for correlations between high-\pT hadrons and jets, as well as jets and $\gamma$ and $Z$.
+As discussed in Sect.~\ref{sect:smallsystems_historicoverview}, inclusive high-\pT hadron and jet yields show at present no evidence of medium-induced energy loss in \pPb collisions and suffer from selection biases if measured in event classes. Furthermore, these typically require a unmodified reference, and can therefore not easily applied to \pp collisions itself. The large set of events expected at HL-LHC does therefore not help to resolve the question of energy loss in small systems with these observables. On the contrary, coincidence measurements of jets recoiling against another object are a promising direction and have the potential to identify small energy-loss effects or put stringent upper limits. In this section, projections are given for correlations between high-\pT hadrons and jets, as well as jets and $\gamma$ and $Z$.
 
 Figure~\ref{fig:smallsystems_energyloss_hjet} shows a projection of the measurement of hadron--jet correlations in LHC Run 3 and 4 for \pp and \pPb collisions.
-This projection is based on a PYTHIA simulation for \pp collisions, which gives the expected number of charged-hadron triggers in the interval $15<\ptt<20$~\UGeV (scaled by $A$ to model \pPb\ collisions), and the per-trigger recoil jet spectrum.
-The projection represents the case where no energy loss effects occur, and demonstrate the achievable limit. At 90\% CL limits for a possible event-activity-dependent spectrum shift on large-angle energy transport due to jet quenching of \unit[70]{\UMeVc} for \pPb and \unit[175]{\UMeVc} for \pp collisions are expected. These values are about 50--100 times smaller than measured in \PbPb collisions.
+This projection is based on a PYTHIA simulation for \pp collisions, which gives the expected number of charged-hadron triggers in the interval $15<\ptt<20$~\UGeV\ (scaled by $A$ to model \pPb collisions), and the per-trigger recoil jet spectrum.
+The projection represents the case where no energy loss occurs, and demonstrate the achievable limit. At 90\% CL limits for a possible event-activity-dependent spectrum shift on large-angle energy transport due to jet quenching of \unit[70]{\UMeVc} for \pPb and \unit[175]{\UMeVc} for \pp collisions are expected. These values are about 50--100 times smaller than measured in \PbPb collisions.
 
 Projections for the correlation of jets and $\gamma$ as well as jets and $Z$ are presented in Fig.~\ref{fig:smallsystems_energyloss_xjg_xjz} for \pp and \pPb collisions. Shown are distribution of the momementum fraction $x_{jX} = \pT^{\rm jet}/\pT^X$ where $X$ is the $\gamma$ or $Z$. Given that the $\gamma$ and $Z$ can be considered unmodified by final-state interactions, a potential energy loss acting on the jet would directly alter the $x_{jX}$ distribution. For \pp collisions, the left panel of Fig.~\ref{fig:smallsystems_energyloss_xjg_xjz} presents the distribution for different classes in multiplicity based on Pythia, demonstrating the reach but also that shifts of the distribution because specific high multiplicity collisions are selected can be expected which need to be modelled and understood carefully. The right panel of Fig.~\ref{fig:smallsystems_energyloss_xjg_xjz} presents the projection for \pPb collisions for MB collisions but in different pseudorapidity intervals sensitive to potential differences in the p and Pb hemisphere.
 
@@ -384,12 +386,12 @@ The input for the signal is composed of:
 \end{itemize}
 The first two are the same as for the expectations used in the extraction of dark photon limits in Sec.~\ref{sec:dileptons:darkphotons}, the latter are based on Ref.~\cite{}. The combinatorial background was scaled from \PbPb collisions to the expected number of pairs in \pPb collisions. The pair efficiency (including the efficiency for rejecting \Pepem pairs from semileptonic charm decays) is assumed to be the same as in \PbPb collisions.
 
-The temperature of the QGP is extracted in the same way as in Sec.~\ref{sec:thermalradiation:dileptons}. The minimum thermal photon to $\pi^{0}$ (both decaying into \Pepem) ratio that is needed for a fit to the invariant mass spectrum with a statistical uncertainty $\sigma_{\rm T,stat} < 10$\% as a function of \Lint up to \unit[2000]{nb$^{-1}$} is shown in Fig.~\ref{fig:smallsystems_thermal_radition}. If the prediction in Ref.~\cite{RappPriv1} is accurate, an integrated luminosity of $\unit[52]{nb^{-1}}$ is sufficient. In case the real signal is 50\% smaller about 4--5 times the statistics is needed.
+The temperature of the QGP is extracted in the same way as in Sec.~\ref{sec:thermalradiation:dileptons}. The minimum thermal photon to $\pi^{0}$ (both decaying into \Pepem) ratio that is needed for a fit to the invariant mass spectrum with a statistical uncertainty $\sigma_{\rm T,stat} < 10$\% as a function of \Lint\ up to \unit[2000]{nb$^{-1}$} is shown in Fig.~\ref{fig:smallsystems_thermal_radition}. If the prediction in Ref.~\cite{RappPriv1} is accurate, an integrated luminosity of $\unit[52]{nb^{-1}}$ is sufficient for the measurement. In case the real signal is 50\% smaller about 4--5 times the statistics is needed.
 
 \subsection{Summary}
 
 The discoveries made in recent years in small collision systems have caused a paradigm shift in the field with impact on both, the modelling of heavy-ion collisions as well as the underlying event of elementary \pp collisions. While ample experimental evidence exists that certain features of large systems like multi-particle correlations are present also in small systems and can be seen as evidence for final-state interactions, no evidence has been found for other features equally related to final-state interactions like energy loss. 
 
-Significant progress is expected in the study of small collision systems at HL-LHC. This chapter has presented a set of performance studies ranging from largely non-flow suppressed high-order correlations, over measurement of strange particle yields and thermal radiation, to energy-loss signals. Together with expected progress on the theoretical understanding, the community can look forward to a deepened understanding of non-perturbative QCD and a universal description of small to large collision systems in the next decade.
+Significant progress is expected in the study of small collision systems at HL-LHC. This chapter has presented a set of performance studies ranging from largely non-flow suppressed high-order correlations, over measurement of strange-particle yields and thermal radiation, to energy-loss signals. Together with expected progress on the theoretical understanding, the community can look forward to a deepened understanding of non-perturbative QCD and a universal description of small to large collision systems in the next decade.
 
 \end{document}
