@@ -134,7 +134,9 @@
 \newcommand{\NQTY}[2]{\mbox{$[#1/{\rm #2}]$}}     % numerical formula e.g. \NQTY{E}{GeV} gives [E/GeV]
 \newcommand{\UQTY}[2]{\ensuremath{#1/\mathrm{#2}}}  % numerical formula e.g. \UQTY{E}{GeV} gives E/GeV
 \newcommand{\eqty}[3]{\qty{\enum{#1}{#2}}{#3}}  % for scientific notation plus units
-\newcommand{\invnb}[1]{\qty{#1}{nb^{-1}}}           %inverse nanobarn
+%\newcommand{\invnb}[1]{\qty{#1}{nb^{-1}}}        %inverse nanobarn
+\newcommand{\invnb}{\mathrm{nb}^{-1}}
+\newcommand{\invpb}{\mathrm{pb}^{-1}}
 
 \newcommand{\elumi}[2]{\qty{\enum{#1}{#2}}{cm^{-2}s^{-1}}}
 \newcommand{\murad}[1]{\qty{#1}{\mu rad}}
