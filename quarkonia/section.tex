@@ -27,25 +27,26 @@ M. Strickland (Kent State), R. Venugopalan (BNL), I. Vitev (LANL)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Introduction}
+\subsection{Introduction} % R. Rapp
 \label{sec_intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A key objective in high-energy heavy-ion physics is to determine the in-medium forces 
 that give rise to the remarkable many-body features of the quark-gluon plasma (QGP).
 In the QCD vacuum, the unravelling of the fundamental force between two static color charges  
 was made possible by the discovery of the charmonium and bottomonium states in the 1970's. 
-Subsequent quantitative analyses of the bound-state spectra established the underlying
-potential to be of Cornell type~\cite{Eichten:1979ms}, 
+Subsequent quantitative analyses of the bound-state spectra established a phenomenological 
+potential of the Cornell type~\cite{Eichten:1979ms}, 
 \begin{equation}
 V(r) = -\frac{4}{3} \frac{\alpha_s}{r} + \sigma r \ ,
 \label{V}
 \end{equation} 
-with a colour-Coulomb term due to gluon exchange and a linear rising term with string
-tension $\sigma\simeq0.9$\,GeV/fm. This potential has also been quantitatively confirmed 
-by lattice-QCD (lQCD) simulations~\cite{Bali:2000gf}. 
-The corresponding effective field theory of QCD, potential non-relativistic QCD
-(pNRQCD), provides a rigorous framework for the description of the heavy quarkonium
-bound-state spectra in the large-mass limit~\cite{Brambilla:2004wf}.
+with a colour-Coulomb term due to gluon exchange dominant at short distances and a linear term 
+with string tension $\sigma\simeq0.9$\,GeV/fm to account for confinement at large distance. 
+This potential has also been quantitatively confirmed 
+by lattice-QCD (lQCD) simulations~\cite{Bali:2000gf}, cf.~also Ref.~\cite{Brambilla:2004jw}. 
+The corresponding effective field theory of QCD, potential non-relativistic QCD (pNRQCD), 
+allows for the definition of the static potential in a  $1/m_Q$ expansion for large 
+heavy-quark mass, $m_Q$~\cite{Brambilla:1999xf,Brambilla:2004wf}. 
 The heavy-quark (HQ) potential thus provides a well calibrated starting point to probe the 
 QCD medium, and the in-medium spectroscopy of quarkonia is the natural tool to carry this 
 out in heavy-ion collisions, cf.~\cite{Rapp:2008tf,BraunMunzinger:2009ih,Kluberg:2009wc,Mocsy:2013syh,Liu:2015izf} 
@@ -99,32 +100,47 @@ Figure taken from Ref.~\cite{Rapp:2017chc}}
 
 On the theoretical side, the basic objects are the quarkonium spectral functions which 
 encode the information on the quarkonium binding energies, in-medium HQ masses and the
-(inelastic) reaction rates. Ample constraints on the determination of the quarkonium
+(inelastic) reaction rates.  Ample constraints on the determination of the quarkonium
 spectral functions are available from thermal lQCD, {\it e.g.}, in terms of the heavy-quark
 free energy, euclidean and spatial quarkonium correlation functions, and HQ susceptibilities,
 and are being implemented into potential model 
 calculations~\cite{Wong:2004zr,Mocsy:2005qw,Alberico:2006vw,Brambilla:2008cx,Riek:2010py,Burnier:2015tda,Liu:2017qah}.
+In particular, the role of dissociation reactions has received increasing attention.
+Early calculations of gluo-dissociation~\cite{Bhanot:1979vb,Kharzeev:1994pz} or inelastic 
+parton scattering~\cite{Grandchamp:2001pf} have been revisited and reformulated, \eg, 
+as a singlet-to-octet transition mechanism~\cite{Brambilla:2008cx} or in terms of an 
+imaginary part of a two-body potential~\cite{Laine:2006ns}, respectively. In particular, 
+the latter accounts for interference effects which reduce the rate relative to 
+``quasi-free" dissociation~\cite{Grandchamp:2001pf} in the limit of small binding; 
+interference effects can also be calculated diagramatically~\cite{Park:2007zza}; they 
+ensure that, in the limit of vanishing size, a color-neutral $Q\bar Q$ dipole 
+becomes ``invisible" to the color charges in the QGP.
+
 The information from the spectral functions can then be utilized in heavy-ion phenomenology
-via transport models. As such, there is a rather direct connection between first-principles
+via transport models. The latter provide the connection between first-principles
 information from lQCD and experiment that greatly benefits the extraction of robust information 
 on the in-medium QCD force and its emergent transport properties (most notably the (chemical)
 equilibration rates of quarkonia). 
 Thus far most transport models are based on rate equations and/or
 semiclassical Botlzmann equations. In recent years quantum transport approaches have 
-received increased attention; it will be interesting to see how large the corrections
-of these effects are to the semiclassical approaches. Quantum effects may be particular 
+been developed using, \eg, a Schr\"odinger-Langevin~\cite{Blaizot:2015hya,Katz:2015qja,Kajimoto:2017rel} 
+or density-matrix~\cite{Akamatsu:2014qsa,Brambilla:2016wgg} formulation. These will enable to  
+test the classical approximation underlying the Boltzmann and rate equation treatments and 
+ultimately quantify the corrections.  Quantum effects may be particular 
 relevant at high $\pt$ in connection with the in-medium formation times of quarkonia, 
 augmented by the Lorentz time dilation in the moving frame; schematic treatments of
 this effect in semiclassical approaches suggest that varying formation times can leave 
 observable differences for high-momentum charmonia and 
 bottomonia~\cite{Song:2015bja,Hoelck:2016tqf,Du:2017qkv,Aronson:2017ymv,Krouppa:2017jlg}. 
 Finally, the implementation of phase-space distributions of explicitly diffusing heavy quarks 
-into quarkonium transport is being investigated by various groups, which, as mentioned above, 
-will provide valuable constraints on the magnitude and \pt dependence of regeneration 
-reactions.   
+into quarkonium transport is being investigated by various groups (see, \eg, 
+Ref.~\cite{Yao:2017fuc}), which, as mentioned above, will provide valuable constraints on the 
+magnitude and \pt dependence of regeneration 
+reactions.     
 
-\subsection{Charmonia in PbPb collisions (Main contributor: Anton Andronic)}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Charmonia in PbPb collisions} % (Main contributor: Anton Andronic)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{figure}
 
@@ -193,7 +209,9 @@ reactions.
 
 \clearpage
 
-\subsection{Bottomonia in PbPb collisions (Main contributor: Emilien Chapon)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bottomonia in PbPb collisions}% (Main contributor: Emilien Chapon)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % To cite: Strickland papers, Rapp papers, Nora, Debasish, exp. papers...
 
@@ -350,8 +368,9 @@ can directly be compared to a production model.
 
 \clearpage
 
-\subsection{Quarkonia in \pPb and \pp collisions (Main contributors: J.P. Lansberg, E. Ferreiro)}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Quarkonia in \pPb and \pp collisions}% (Main contributors: J.P. Lansberg (pPb), E. Ferreiro (pp))}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [{\it Be careful to avoid duplicate with the "small systems" section}]
 
 
