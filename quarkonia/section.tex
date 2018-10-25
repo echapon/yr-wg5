@@ -20,6 +20,7 @@ Z. Citron (Ben-Gurion), S. Chen (Cagliari),
 % ALICE figures
 J. Castillo Castellanos (CEA Saclay), 
 % CMS figures: public document CMS-PAS-FTR-18-024 (in preparation)
+% CMS contributors: J. Park (Korea University), (E. Chapon)
 % theorist inputs
 M. Strickland (Kent State), R. Venugopalan (BNL), I. Vitev (LANL)
 % TBD
@@ -27,25 +28,26 @@ M. Strickland (Kent State), R. Venugopalan (BNL), I. Vitev (LANL)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Introduction}
+\subsection{Introduction} % R. Rapp
 \label{sec_intro}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 A key objective in high-energy heavy-ion physics is to determine the in-medium forces 
 that give rise to the remarkable many-body features of the quark-gluon plasma (QGP).
 In the QCD vacuum, the unravelling of the fundamental force between two static color charges  
 was made possible by the discovery of the charmonium and bottomonium states in the 1970's. 
-Subsequent quantitative analyses of the bound-state spectra established the underlying
-potential to be of Cornell type~\cite{Eichten:1979ms}, 
+Subsequent quantitative analyses of the bound-state spectra established a phenomenological 
+potential of the Cornell type~\cite{Eichten:1979ms}, 
 \begin{equation}
 V(r) = -\frac{4}{3} \frac{\alpha_s}{r} + \sigma r \ ,
 \label{V}
 \end{equation} 
-with a colour-Coulomb term due to gluon exchange and a linear rising term with string
-tension $\sigma\simeq0.9$\,GeV/fm. This potential has also been quantitatively confirmed 
-by lattice-QCD (lQCD) simulations~\cite{Bali:2000gf}. 
-The corresponding effective field theory of QCD, potential non-relativistic QCD
-(pNRQCD), provides a rigorous framework for the description of the heavy quarkonium
-bound-state spectra in the large-mass limit~\cite{Brambilla:2004wf}.
+with a colour-Coulomb term due to gluon exchange dominant at short distances and a linear term 
+with string tension $\sigma\simeq0.9$\,GeV/fm to account for confinement at large distance. 
+This potential has also been quantitatively confirmed 
+by lattice-QCD (lQCD) simulations~\cite{Bali:2000gf}, cf.~also Ref.~\cite{Brambilla:2004jw}. 
+The corresponding effective field theory of QCD, potential non-relativistic QCD (pNRQCD), 
+allows for the definition of the static potential in a  $1/m_Q$ expansion for large 
+heavy-quark mass, $m_Q$~\cite{Brambilla:1999xf,Brambilla:2004wf}. 
 The heavy-quark (HQ) potential thus provides a well calibrated starting point to probe the 
 QCD medium, and the in-medium spectroscopy of quarkonia is the natural tool to carry this 
 out in heavy-ion collisions, cf.~\cite{Rapp:2008tf,BraunMunzinger:2009ih,Kluberg:2009wc,Mocsy:2013syh,Liu:2015izf} 
@@ -99,101 +101,116 @@ Figure taken from Ref.~\cite{Rapp:2017chc}}
 
 On the theoretical side, the basic objects are the quarkonium spectral functions which 
 encode the information on the quarkonium binding energies, in-medium HQ masses and the
-(inelastic) reaction rates. Ample constraints on the determination of the quarkonium
+(inelastic) reaction rates.  Ample constraints on the determination of the quarkonium
 spectral functions are available from thermal lQCD, {\it e.g.}, in terms of the heavy-quark
 free energy, euclidean and spatial quarkonium correlation functions, and HQ susceptibilities,
 and are being implemented into potential model 
 calculations~\cite{Wong:2004zr,Mocsy:2005qw,Alberico:2006vw,Brambilla:2008cx,Riek:2010py,Burnier:2015tda,Liu:2017qah}.
+In particular, the role of dissociation reactions has received increasing attention.
+Early calculations of gluo-dissociation~\cite{Bhanot:1979vb,Kharzeev:1994pz} or inelastic 
+parton scattering~\cite{Grandchamp:2001pf} have been revisited and reformulated, \eg, 
+as a singlet-to-octet transition mechanism~\cite{Brambilla:2008cx} or in terms of an 
+imaginary part of a two-body potential~\cite{Laine:2006ns}, respectively. In particular, 
+the latter accounts for interference effects which reduce the rate relative to 
+``quasi-free" dissociation~\cite{Grandchamp:2001pf} in the limit of small binding; 
+interference effects can also be calculated diagramatically~\cite{Park:2007zza}; they 
+ensure that, in the limit of vanishing size, a color-neutral $Q\bar Q$ dipole 
+becomes ``invisible" to the color charges in the QGP.
+
 The information from the spectral functions can then be utilized in heavy-ion phenomenology
-via transport models. As such, there is a rather direct connection between first-principles
+via transport models. The latter provide the connection between first-principles
 information from lQCD and experiment that greatly benefits the extraction of robust information 
 on the in-medium QCD force and its emergent transport properties (most notably the (chemical)
 equilibration rates of quarkonia). 
 Thus far most transport models are based on rate equations and/or
 semiclassical Botlzmann equations. In recent years quantum transport approaches have 
-received increased attention; it will be interesting to see how large the corrections
-of these effects are to the semiclassical approaches. Quantum effects may be particular 
+been developed using, \eg, a Schr\"odinger-Langevin~\cite{Blaizot:2015hya,Katz:2015qja,Kajimoto:2017rel} 
+or density-matrix~\cite{Akamatsu:2014qsa,Brambilla:2016wgg} formulation. These will enable to  
+test the classical approximation underlying the Boltzmann and rate equation treatments and 
+ultimately quantify the corrections.  Quantum effects may be particular 
 relevant at high $\pt$ in connection with the in-medium formation times of quarkonia, 
 augmented by the Lorentz time dilation in the moving frame; schematic treatments of
 this effect in semiclassical approaches suggest that varying formation times can leave 
 observable differences for high-momentum charmonia and 
 bottomonia~\cite{Song:2015bja,Hoelck:2016tqf,Du:2017qkv,Aronson:2017ymv,Krouppa:2017jlg}. 
 Finally, the implementation of phase-space distributions of explicitly diffusing heavy quarks 
-into quarkonium transport is being investigated by various groups, which, as mentioned above, 
-will provide valuable constraints on the magnitude and \pt dependence of regeneration 
-reactions.   
+into quarkonium transport is being investigated by various groups (see, \eg, 
+Ref.~\cite{Yao:2017fuc}), which, as mentioned above, will provide valuable constraints on the 
+magnitude and \pt dependence of regeneration 
+reactions.     
 
-\subsection{Charmonia in PbPb collisions (Main contributor: Anton Andronic)}
+ADD/MOVE HERE general remarks on benefits in Run3,4 ?
 
+- higher statistics, better performance (through Muon Forward Tracker, for example)
 
+- significantly improve measurements in extended kinematic coverage (in \pT) and for a larger variety of quarkonium states ($\psi(2S)$, $\Upsilon(3S)$?)
+
+ADD ALSO kinametic coverage by experiments (with Figs.?) ...like:
+
+Charmonia are measured in PbPb collisions by ALICE (\pT$>$0, for  $|y|<0.9$ and 
+$2.5<y<4$), CMS ($\pT>6.5\UGeVc$, for  $|y|<1.2$, $\pT>3.5\UGeVc$, for  $1.2<|y|<2.4$ ?), and ATLAS ($\pT>7\UGeVc$, for  $|y|<2$).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Charmonia in PbPb collisions} % (Main contributor: Anton Andronic)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+A remarkable discovery at the LHC was that the suppression of \PJgy is significantly reduced in comparison to lower energies~\cite{} and that $\R_{AA}$ is enhanced towards lower \pT~\cite{Abelev:2013ila,Adam:2016rdg}.
+These observations were confirming predictions of (re)generation at the (crossover) phase boundary of QCD~\cite{BraunMunzinger:2000px} or throughout the deconfined phase~\cite{Thews:2000rj}.
+
+Recently, the measurement of a significant elliptic flow coefficient $v_2$ of \PJgy \cite{Acharya:2017tgv} brought further crucial support.
+
+Projections and simulations were done in ALICE for the Upgrade proposal \cite{Abelevetal:2014cna,CERN-LHCC-2013-014}.
+
+Current results of charmonium production in the Statistical Hadronization Model \cite{Andronic:2017pug}) and in transport models \cite{Du:2015wha,Liu:2015izf}), that describe (well) the features of the data, are included below alongside experimental projections.
+
+%but several open questions remain. 
+%The description of the \pT~ dependence of J/$\psi$ production is not yet 
+
+  
 \begin{figure}
-
 \begin{center}
- \includegraphics[width=0.66\textwidth]{\main/quarkonia/fig/alice/alice_jpsi_v2_projected.pdf}
- \includegraphics[width=0.32\textwidth]{\main/quarkonia/fig/alice/alice_jpsi_v2_projected2.pdf}
+ \includegraphics[width=0.66\textwidth]{\main/quarkonia/fig/alice/jpsiv2proj10nb06_01_47.pdf}
 \end{center}
-
- \caption{prompt J/psi v2 vs \pt, for 30--50\%: $|y|<0.9$, $1.6<|y|<2.4$, $2.5<|y|<4$~\cite{Abelevetal:2014cna,CERN-LHCC-2013-014}}
+ \caption{Projected performance of elliptic flow coefficient $v_2$ of J/$\psi$ as a function of \pT~ for the centrality class 20--40\%, for $2.5<y<4$.}
 \end{figure}
 
 \begin{figure}
 \begin{center}
  \includegraphics[width=0.5\textwidth]{\main/quarkonia/fig/atlas/atlas_promptjpsi_models}
 \end{center}
+ \caption{Prompt \PJgy RAA vs \pT~ ($|y|<2$) at high \pT~\cite{Aaboud:2018quy}}
+\end{figure}
 
- \caption{prompt J/psi RAA vs Pt ($|y|<2.4$) at high pT~\cite{Aaboud:2018quy}}
+%\begin{figure} \begin{center} \includegraphics[width=\textwidth]{\main/quarkonia/fig/alice/jpsi_polarisation.png} \end{center} \caption{prompt J/psi polarisation~\cite{Abelevetal:2014cna}} \end{figure}
+
+
+\begin{figure}
+\begin{center}
+ \includegraphics[width=0.49\textwidth]{\main/quarkonia/fig/alice/psi2s2psi_Npart_pbpb502_y0}
+ \includegraphics[width=0.49\textwidth]{\main/quarkonia/fig/alice/psi2s2psi_Npart_pbpb502_y3}
+\end{center}
+ \caption{Production ratio $\psi(2S)/\PJgy$ vs. $N_{part}$ for $|y|<0.9$ (left) and $2.5<y<4$ (right). Model predictions for the transport approach and for statistical hadronization are included.}
 \end{figure}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=\textwidth]{\main/quarkonia/fig/alice/jpsi_polarisation.png}
+ \includegraphics[width=0.6\textwidth]{\main/quarkonia/fig/theory/psi_dr_vitev.png}
 \end{center}
-
- \caption{prompt J/psi polarisation~\cite{Abelev:1475243}}
-\end{figure}
-
-\begin{figure}
-\begin{center}
- ?
-\end{center}
-
- \caption{prompt psi(2S) RAA (and yields) vs. Npart (pT integrated) }
-\end{figure}
-
-\begin{figure}
-\begin{center}
-% \includegraphics[width=0.32\textwidth]{\main/quarkonia/fig/alice/alice_dr_psi_projected}
-% \includegraphics[width=0.32\textwidth]{\main/quarkonia/fig/alice/alice_dr_psi_projected2}
-\end{center}
-
- \caption{prompt psi(2S)/J/psi (or psi2S RAA) vs. Npart: $|y|<0.9 (2.4)$, $2.5<|y|<4$}
-\end{figure}
-
-\begin{figure}
-\begin{center}
- \includegraphics[width=0.32\textwidth]{\main/quarkonia/fig/theory/psi_dr_vitev.png}
-\end{center}
-
  \caption{prompt psi(2S) (and J/psi, or ratio) vs. pT (at low and high pT) }
 \end{figure}
 
-\begin{figure}
-...
 
- \caption{prompt psi(2S) v2 vs pT for 30--50\%}
-\end{figure}
+Other states, for instance $\chi_c$, may be measured too, albeit not down to \pT=0.
 
-\begin{figure}
-\begin{center}
- \includegraphics[width=0.32\textwidth]{\main/quarkonia/fig/theory/chic.png}
-\end{center}
+%\begin{figure} \caption{prompt psi(2S) v2 vs pT for 30--50\%} \end{figure}
 
- \caption{RAA of chic(1P), X(3872) vs pT for $|y|<2.4$}
-\end{figure}
+%\begin{figure} \begin{center} \includegraphics[width=0.32\textwidth]{\main/quarkonia/fig/theory/chic.png} \end{center} \caption{RAA of chic(1P), X(3872) vs pT for $|y|<2.4$} \end{figure}
 
 \clearpage
 
-\subsection{Bottomonia in PbPb collisions (Main contributor: Emilien Chapon)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Bottomonia in PbPb collisions}% (Main contributor: Emilien Chapon)}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % To cite: Strickland papers, Rapp papers, Nora, Debasish, exp. papers...
 
@@ -350,8 +367,9 @@ can directly be compared to a production model.
 
 \clearpage
 
-\subsection{Quarkonia in \pPb and \pp collisions (Main contributors: J.P. Lansberg, E. Ferreiro)}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Quarkonia in \pPb and \pp collisions}% (Main contributors: J.P. Lansberg (pPb), E. Ferreiro (pp))}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 [{\it Be careful to avoid duplicate with the "small systems" section}]
 
 
