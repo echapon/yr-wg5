@@ -7,12 +7,13 @@
 \usepackage{diagbox}
 \usepackage{hyperref}
 \usepackage{tablefootnote}
+\usepackage{placeins}
 
 \pagestyle{plain}
 % --
 % -- The bibliography file paths for the main volume and all parts
 % --
-\def\bibfiles{\main/bib/chapter,\main/introduction/bib/section,\main/opportunities/bib/section,\main/hf/bib/section,\main/quarkonia/bib/section,\main/thermalradiation/bib/section,\main/flow/bib/section,\main/smallsystems/bib/section,\main/lightflavour/bib/section,\main/jets/bib/section,\main/smallx/bib/section,\main/beyond/bib/section,\main/helhc/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/introduction/bib/section,\main/schedule/bib/section,\main/hf/bib/section,\main/quarkonia/bib/section,\main/thermalradiation/bib/section,\main/flow/bib/section,\main/smallsystems/bib/section,\main/lightflavour/bib/section,\main/jets/bib/section,\main/smallx/bib/section,\main/beyond/bib/section,\main/helhc/bib/section}
 % --
 \providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
 
@@ -47,6 +48,8 @@ HL/HE-LHC Physics Workshop Report Working Group 5}
 \subfile{\main/introduction/section}
 \clearpage
 \subfile{\main/accelerator/section}
+\clearpage
+\subfile{\main/schedule/section}
 \clearpage
 \subfile{\main/lightflavour/section}
 \clearpage
