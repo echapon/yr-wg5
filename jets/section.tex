@@ -5,8 +5,25 @@
 \IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
 
+\input{\main/jets/definitions}
+
 \begin{document}
 
 \section{Jets and parton energy loss}
+
+\subfile{\main/jets/introduction}
+\subfile{\main/jets/PrecisionELoss}
+\newpage
+\subfile{\main/jets/JetDeflection}
+\newpage
+\subfile{\main/jets/JetSubstructure}
+\newpage
+\subfile{\main/jets/Conclusion}
+
+%\input{introduction}
+%\input{PrecisionELoss.tex}
+%\input{JetDeflection.tex}
+%\input{JetSubstructure.tex}
+%\input{Conclusion}
 
 \end{document}
