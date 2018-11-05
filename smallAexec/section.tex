@@ -1,0 +1,50 @@
+% don't remove the folling lines, and edit the defintion of \main if needed
+\documentclass[../report.tex]{subfiles}
+\providecommand{\main}{..}
+\IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
+\IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
+% until here
+
+\begin{document}
+
+\section{Light Ion Collisions Summary}
+\label{sec:smallAsum}
+{ \small
+\noindent \textbf{Coordinator}: Z. Citron (Ben-Gurion University of the Negev)
+\noindent \textbf{Contributors}:
+L. Apolinario (LIP and IST Lisbon),
+C. Loizides (Oak Ridge National Laboratory),
+G. Milhano (LIP and IST Lisbon, CERN),
+A. Milov (Weizmann Institute of Science),
+A. Sickles (U. Illinois, Urbana-Champaign)
+}
+
+
+The collision of ion species with A$\ll$A$_\mathrm{Pb}$ is an exciting opportunity to pursue and expand on the physics program presented in this document.  Broadly, the advantages of using A$\ll$A$_\mathrm{Pb}$  collisions are twofold: smaller collision systems sample key physical parameters beyond what can be probed with \PbPb and \pPb collisions, and they allow higher luminosity running to maximize the accumulation of rare events in heavy-ion collisions. 
+To achieve these advantages a two-pronged scenario is envisioned composed of a short run of \OO and longer running of \ArAr.
+
+Section \ref{sec:lightions} describes the technical capabilities of the LHC to provide such collisions, as well as describing the expected performance for several different ion species.  Section \ref{sec:flow_sizedep} discusses flow measurements possible using smaller species.  A discussion of the role light ion collisions can play for low-$x$ and nPDF studies is found in section \ref{sec:nPDF_lightions}.  The implications of \ArAr collisions for the study of light-by-light scattering are discussed in section \ref{sec:gammagamma}. 
+
+Even a short \OO run can help clarify the uncertainty concerning the onset of QGP or QGP-like phenomena in high-multiplicity pA and pp collisions discussed in section \ref{sect:smallsystems_OO}.  The search for basic properties associated with the QGP in \OO collisions should bookend the searches in smaller systems, \textit{i.e.} if they can not be observed in \OO there should be no reasonable expectation of observing them in smaller collisions systems.  Further, the \OO system has well understood collision geometry as described in detail in section \ref{sect:smallsystems_OO}, enabling the study of collisions with low values of $\langle \mathrm{N_{part}}\rangle$ that are difficult to select and study in \PbPb collisions.  Colliding \OO at the LHC naturally dovetails with \pO collisions whose significance for the cosmic-ray community is detailed in section \ref{sec:pOcosmic}.
+
+Complementing \PbPb collisions and the short \OO run described above the possibility of \ArAr collisions is a promising option for the LHC heavy-ion program.  In addition to being a new system and thereby providing another data-point for observables that probe different geometries (see \textit{e.g.} section \ref{sec:flow_sizedep}), \ArAr collisions have the advantage of reaching much higher luminosity than \PbPb collisions while still providing collisions that can be expected to form a QGP.  Based on an MC Glauber simulation \cite{Miller:2007ri}, the mean number of nucleonic participants expected, $\langle \mathrm{N_{part}}\rangle$, for \ArAr ranges from  $\sim$ 7 for 60-80\% centrality to $\sim$ 70 for 0-5\% centrality collisions.  This allows high statistics studies in the region that is peripheral in \PbPb collisions as well ensuring that central events can be selected for events with a mean number of nucleon participants in which effects consistent with a QGP have been observed \cite{Sirunyan:2018eqi, ATLAS-CONF-2018-007}.  In addition, the smaller underlying event size in \ArAr relative to \PbPb collisions are expected improve the systematic uncertainties for many observables.  These features combined with the ability to increase the nucleonic luminosity for a given heavy-ion run by a factor of $\sim$ 25--75 make \ArAr collisions an extremely attractive option for hard probe measurements that in \PbPb collisions are `statistics starved' or impossible, such as top quarks for QGP studies as outlined in \cite{Apolinario:2017sob}.  Top quark studies in \ArAr collisions in the context of constraints on nPDFs are detailed in section \ref{sec:nPDF_top}.
+
+
+Studies with $Z$ bosons are representative examples of the types of measurements that may be undertaken in a lighter but still heavy ion rare probes program.  In Figure \ref{fig:Zreach} the expected number of $Z$ boson candidates (assuming a selection similar to that used by ATLAS and CMS in previous studies) for one month of heavy ion running  as a function of $\langle \mathrm{N_{part}}\rangle$ is shown for several different lighter ion species as well as \PbPb and $p$+Pb collisions.  The figure demonstrates that the overall yield of $Z$ bosons would be considerably higher for one \ArAr run than for several years of \PbPb running including both a sufficient number of candidates to study low $\langle \mathrm{N_{part}}\rangle$ collisions unreachable with \PbPb collisions as well as moderate $\langle \mathrm{N_{part}}\rangle$ values in which QGP formation is expected.  $Z$ bosons are a powerful aid to probe the properties of the QGP in particular in $Z$+jet events.  
+\begin{figure}
+\centering
+\includegraphics[width=0.68\linewidth]{\main/smallAexec/fig/Zcentreach_draft}
+\caption{
+The number of $Z$ bosons as a function of $\langle \mathrm{N_{part}}\rangle$ expected for one full heavy-ion run at the LHC for several collisions species.  The $Z$ bosons are reconstructed via the di-lepton decay channel with leptonic \pT$>$20 GeV and $|\eta|<$2.5, and a mass selection of 66$<M_{\ell\ell}<$116 GeV.  Luminosities shown for \PbPb and \pPb correspond to several years of running.  The central values correspond to $p$=1.5 as discussed in section \ref{sec:lightions}, with the uncertainties representing a variation of $p$ down to 1 and up to 1.9.
+\label{fig:Zreach}}
+\end{figure}
+
+We may further consider the 10\% most central events in \ArAr collisions for $Z$+jet studies using JEWEL \cite{Zapp:2009ud} to model the expected jet-quenching effects.  Figure \ref{fig:ArAr_xjz} shows the distribution of $x_{jZ}$, the ratio of the jet transverse momentum to that of the $Z$ boson for 0-10\% centrality \ArAr events ($N_{part} = 60$, $T=318$ MeV at thermalization time $\tau = 0.63$ fm/c for $\sqrt{s}=6.3$ TeV), as well as \pp collisions and 0-10\% centrality \PbPb events ($N_{part} = 356$, $T=360$ MeV at thermalization time $\tau = 0.55$ fm/c for $\sqrt{s}=5.5$ TeV).  The $Z$ boson must have \pt $>$ 60 GeV and be back-to-back ($\Delta\varphi > 7/8\pi$) to a jet with \pt $>$ 30 GeV.  The Figure clearly shows that for this observable the jet-quenching phenomena observed in \PbPb collisions as modelled by JEWEL is present also in \ArAr collisions.  This demonstrates the viability of the \ArAr collision system for a heavy ion rare probes program with upto hundreds of times more data than the LHC \PbPb program.
+\begin{figure}
+\centering
+\includegraphics[width=0.48\linewidth]{\main/smallAexec/fig/Zjetassym}
+\caption{
+The $x_{jZ}$ distribution for $p+p$, \PbPb, and \ArAr collisions calculated with JEWEL.  The 10\% most central events are shown for \PbPb and \ArAr.  The $Z$ boson must have \pt $>$ 60 GeV and be back-to-back ($\Delta\varphi > 7/8\pi$) to a jet with \pt $>$ 30 GeV.    
+\label{fig:ArAr_xjz}}
+\end{figure}
+\end{document}
