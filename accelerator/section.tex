@@ -41,7 +41,7 @@
 \textbf{Coordinator}: John M. Jowett (CERN)
 \linebreak
 \textbf{Contributors}: 
-Roderik Bruce, John M. Jowett, Michaela Schaumann (CERN),  
+Roderik Bruce,  Michaela Schaumann (CERN),  
 Marc A. Jebramcik (Johann-Wolfgang-Goethe Universit\"{a}t, Frankfurt \& CERN) 
  
 \end{raggedright} 
@@ -56,7 +56,7 @@ Not only has that peak Pb-Pb luminosity goal been exceeded by a factor of 3.6, b
 in multiple operating conditions  (see \cite{Jowett:2018yqk} and references therein). 
 Table~\ref{tab:LHCparams} summarises the main parameters of the runs to date. 
 Most recently, in 2017, the LHC has collided beams of Xe nuclei \cite{Schaumann:2018qat}, 
-providing many of the new results presented in this conference.  
+providing many   new results.  
 The goal for 2018 will be to complete the accumulation 
 of an integrated \PbPb\ 
 luminosity of \qty{1}{nb^{-1}} to 
@@ -71,7 +71,7 @@ in each annual Pb-Pb and p--Pb run~\cite{ipac2011:Jowett:2011zz,Jowett:1492972,i
 The original design values for Pb--Pb~\cite{lhc1} 
 and p-Pb~\cite{Salgado:2011wc}  
 and future upgrade Pb--Pb goals are also shown 
-(in these columns the integrated luminosity goal is to be attained over the 4~P--Pb 
+(in these columns the integrated luminosity goal is to be attained over the 4~\PbPb\  
 runs in the
 {10-year periods} before and after 2020).
 Peak and integrated luminosities are averages for ATLAS and CMS 
@@ -204,9 +204,9 @@ the  colliding nucleon pairs will have an average centre-of-mass energy
 \sqrt{\sNN}  \approx 2c\,{p_p}\sqrt{\frac{{{Z_1}{Z_2}}}{{{A_1}{A_2}}}}
 \approx 2c\,{p_p}
 \begin{cases}
-1 & \text{p-p}\\
-0.628 & \text{p-Pb}\\
-0.394 & \text{Pb-Pb}
+1 & \text{\pp}\\
+0.628 & \text{\pPb}\\
+0.394 & \text{\PbPb}
 \end{cases}
 \end{equation}
 and a central rapidity shift in the direction of the $(Z_1,A_1)$ beam   
@@ -215,8 +215,8 @@ and a central rapidity shift in the direction of the $(Z_1,A_1)$ beam
 \approx
 \begin{cases}
 0 & \text{\pp, \PbPb}\\
-0.465 & \text{p-Pb}\\
--0.465 & \text{Pb-p}
+0.465 & \text{\pPb} \\
+-0.465 & \text{\Pbp}
 \end{cases}. 
 \end{equation} 
 We present parameters for operation at the nominal LHC momentum
@@ -225,19 +225,34 @@ We present parameters for operation at the nominal LHC momentum
 
 
 % Contribution from Marc
-The injection and ramp of protons and lead ions with equal magnetic rigidity leads to moving long-range beam-beam encounters in the four interaction regions of the LHC. These beam-beam encounters were one of the reasons why the feasibility of p--Pb operation in the LHC was initially questioned. This effect has been proven small in the LHC and calculations have shown this effect also being negligible for the HL-LHC era despite larger bunch numbers and higher proton bunch intensities.
+The injection and ramp of protons and lead ions with equal magnetic rigidity leads to moving long-range beam-beam encounters in the four interaction regions of the LHC. 
+These beam-beam encounters were one of the reasons why the feasibility of \pPb\ operation in the LHC was initially questioned. This effect has been proven small in the LHC and calculations have shown this effect also being negligible for the HL-LHC era despite larger bunch numbers and higher proton bunch intensities.
 
-The dynamic range of the interlock strip-line BPMs, common for the lead and proton beam, limited the proton intensity to $N_b=5\times10^{10}$ protons per bunch during Run 1. Gating the strip-line BPM read-out removed this constraint in 2016. The higher proton intensity of $N_b=2.8\times10^{10}$ protons per bunch resulted in increased luminosities at the IPs but also lead to the substantial deposition of collision debris from the Pb beam in the dispersion suppressors at ATLAS and CMS risking a beam dump \cite{ipac2017:Jowett:2289686}. The respective collision debris collimators (TCLs), which could have intercepted emerging fragments from the IPs, were not commissioned for the 2016 p--Pb run. Adequate TCL settings are expected to neutralise these fragments and should allow for higher peak luminosities in the future.
+The dynamic range of the interlock strip-line BPMs, common for the lead and proton beam, limited the proton intensity to $N_b=\enum{5}{10}$ protons per bunch during Run 1. 
+Gating the stripline BPM read-out appropriately removed this constraint in 2016. 
+The higher proton intensity of 
+$\Nb=\enum{2.8}{10}$ 
+protons per bunch resulted in increased luminosities at the IPs but also led to the substantial deposition of collision debris from the \Pb\ beam in the dispersion suppressors at ATLAS and CMS risking a beam dump \cite{ipac2017:Jowett:2289686}. 
+The   collision debris collimators (TCLs), which could have intercepted emerging fragments from the IPs, were not commissioned at tighter settings 
+for the 2016 \pPb\ run. 
+Appropriate  TCL settings are expected to neutralise these fragments and should allow for higher peak luminosities in the future.
 
-A potential p--Pb run during Run 3 and beyond will greatly benefit from the longitudinal slip stacking in the SPS and the small $\bstar=\qty{0.5}{m}$ in all experiments. The proton intensity cannot be pushed to values much larger than the maximum achieved in 2016 as bunches colliding in multiple IPs and especially in ATLAS and CMS will approach the interlock BPM threshold of $2\times 10^9$ charges per bunch too quickly if ATLAS and CMS are not luminosity levelled. This would lead to an undesirable early beam dumps while ALICE is still levelled. 
-In order to predict the potential performance of a future p--Pb run, the expected Pb--Pb filling pattern \cite{cham2017:jowett} is used providing 1136 collisions in ATLAS/CMS, 1120 collisions in ALICE and 81 collisions in LHCb. This approximation is made since the proton injection should be flexible enough to reproduce most of the respective Pb pattern. This calculations assumes $N_b=3\times10^{10}$ protons per bunch and ALICE being levelled to the instantaneous luminosity of $\mathcal{L}_\mathrm{AA}=\qty{5\times 10^{29}}{cm^{-2}s^{-1}}$. ATLAS and CMS are not luminosity levelled in this scenario since loss of integrated luminosity for ATLAS and CMS outweigh the marginal gain for ALICE. A simulation of the beam evolution based on ordinary differential equations including intra-beam scattering and radiation damping leads to a luminosity evolution in the different IPs as displayed in Fig.~\ref{fig:p_pb_lumi_evo}.
+A potential \pPb\ run during Run 3 and beyond will greatly benefit from the longitudinal slip stacking in the SPS and the small $\bstar=\qty{0.5}{m}$ in three experiments. 
+The proton intensity cannot be pushed to values much larger than the maximum achieved in 2016 as bunches colliding in multiple IPs and especially in ATLAS and CMS will approach the interlock BPM threshold of \enum{2}{9} charges per bunch too quickly if ATLAS and CMS are not luminosity levelled.  
+This would lead to an undesirable early beam dumps while ALICE is still levelled. 
+In order to predict the potential performance of a future \pPb\ run, the expected \PbPb\ filling pattern \cite{cham2017:jowett} is used providing 1136 collisions in ATLAS/CMS, 1120 collisions in ALICE and 81 collisions in LHCb. 
+This approximation is made since the proton injection should be flexible enough to reproduce most of the respective Pb pattern. This calculations assumes $N_b=3\times10^{10}$ protons per bunch and ALICE being levelled to the instantaneous luminosity of $\mathcal{L}_\mathrm{AA}=\qty{5\times 10^{29}}{cm^{-2}s^{-1}}$. 
+$\LAA=\elumi{5}{29}$
+ATLAS and CMS are not luminosity levelled in this scenario since the loss of integrated luminosity for ATLAS and CMS outweighs the marginal gain for ALICE. A simulation of the beam evolution based on ordinary differential equations including intra-beam scattering and radiation damping leads to a luminosity evolution in the different IPs as displayed in Fig.~\ref{fig:p_pb_lumi_evo}.
 \begin{figure}[htb]
     \centering
-    \includegraphics[scale=1.2]{accelerator/p_pb_lumi_evo.pdf} 
-\caption{Displayed is the evolution of the instantaneous luminosity in the different IPs. At around \qty{5.4}{h}, the interlock BPM threshold should be reached limiting the fill length to this duration.}
+    \includegraphics[scale=.8]{accelerator/pPblumiPlot.pdf} 
+\caption{Evolution of the instantaneous luminosity in the LHC experiments during a p-Pb fill. 
+At around \qty{6.1}{h} (dashed line), the interlock BPM threshold is  reached for some bunches, 
+limiting the fill length.} 
 \label{fig:p_pb_lumi_evo}
 \end{figure}
-At around $\qty{5.4}{h}$, the bunch intensity of the bunches colliding in ATLAS, ALICE and CMS drop below the interlock BPM threshold ultimately limiting the fill length. Key results from the beam evolution study are listed in Tab.~\ref{tab:p_Pb_table}. The expected peak luminosity in ATLAS and CMS is at around $\mathcal{L}_\mathrm{AA}=\qty{22.5\times 10^{29}}{cm^{-2}s^{-1}}$, i.e., roughly a factor $2.5$ larger than in 2016. The integrated luminosity in ATLAS and CMS are expected to approach $\qty{1}{pb^{-1}}$ outperforming the 2016 integrated luminosity by a rough factor $5$. Since the nominal \mbox{HL-LHC} normalised proton emittance of $\epsilon_N=\qty{2.5}{\mu m}$ is assumed, the actual performance may exceed these predictions since normalised proton emittances in the range of $\epsilon_N=\qty{1.3}{\mu m}$ have already been achieved.
+At around $\qty{6.1}{h}$, the bunch intensity of the bunches colliding in ATLAS, ALICE and CMS drop below the interlock BPM threshold ultimately limiting the fill length. Key results from the beam evolution study are listed in Tab.~\ref{tab:p_Pb_table}. The expected peak luminosity in ATLAS and CMS is at around $\mathcal{L}_\mathrm{AA}=\qty{17.4\times 10^{29}}{cm^{-2}s^{-1}}$, i.e., roughly a factor $2$ larger than in 2016. The integrated luminosity in ATLAS and CMS are expected to approach $\qty{0.7}{pb^{-1}}$ outperforming the 2016 integrated luminosity by a rough factor $3.5$. Since the nominal \mbox{HL-LHC} normalised proton emittance of $\epsilon_N=\qty{2.5}{\mu m}$ is assumed, the actual performance may exceed these predictions since normalised proton emittances in the range of $\epsilon_N=\qty{1.3}{\mu m}$ have already been achieved.
 \begin{table}[htb]
     \centering
 %\begin{tabular}{m{4.5cm}|cccc}
@@ -253,21 +268,25 @@ Bunch intensity \qty{N_b}{[10^8]}           &\multicolumn{1}{c}{300} &\multicolu
 No,\ of bunches $k_b$                       &\multicolumn{1}{c}{1232} &\multicolumn{2}{c}{1232} \\
 Norm. emittance \qty{\epsilon_N}{[\mu m]}   &\multicolumn{1}{c}{2.5} &\multicolumn{2}{c}{1.65}  \\
 Bunch length \qty{\sigma_{z}}{[m]}          &\multicolumn{1}{c}{0.09} &\multicolumn{2}{c}{0.08} \\
-Fill time \qty{t_\mathrm{fill}}{h]}         & \multicolumn{3}{c}{5.4} \\
+Fill time \qty{t_\mathrm{fill}}{[h]}         & \multicolumn{3}{c}{6.1} \\
 \hline
 IP                                          & ATLAS/CMS & ALICE & LHCb \\
 \hline
 \qty{\bstar}{[m]}                           & 0.5 &  0.5 &  0.5\\
 Colliding bunches  $k_c$                    & 1136 & 1120 &  81 \\
-Luminosity \qty{\LAA}{[10^{29}cm^{-2}s^{-1}]}               & 22.5 & 5.0 & 1.6  \\
-NN luminosity \qty{ \LNN}{[10^{31} {cm}^{-2} {s}^{-1}]}     & 46.8 & 10.4 & 3.3  \\
-$\int _{\text{month}}L_{\text{AA}}\text{ dt}$ [nb${}^{-1}$] & 1089 & 416 & 66  \\
-$\int _{\text{month}}L_{\text{NN}}\text{ dt}$ [pb${}^{-1}$] & 226 & 87 & 14  \\
+Luminosity \qty{\LAA}{[10^{29}cm^{-2}s^{-1}]}               & 17.4 & 5.0 & 1.2  \\
+NN luminosity \qty{ \LNN}{[10^{31} {cm}^{-2} {s}^{-1}]}     & 36.3 & 10.4 & 2.6  \\
+%%% $\int _{\text{month}}L_{\text{AA}}\text{ dt}$ [nb${}^{-1}$] & 892 & 433 & 54   \\
+$\int _{\text{month}}L_{\text{AA}}\text{ dt}$ [nb${}^{-1}$] & 674 & 328 & 41.1   \\
+%%% $\int _{\text{month}}L_{\text{NN}}\text{ dt}$ [pb${}^{-1}$] & 186 & 90 & 11  \\ 
+$\int _{\text{month}}L_{\text{NN}}\text{ dt}$ [pb${}^{-1}$] & 140 & 68 & 8.5   \\
  \hline
 \end{tabular}
-    \caption{The table contains the key parameters and results of the p--Pb beam evolution calculation. A turn-around time, i.e., the time between Beam Dump and Stable Beams, of \qty{2.5}{h} and an operational efficiency factor of $0.5$ is assumed. The final result was scaled down by additional $\qty{5}{\%}$ to take potential deviations of the proton filling pattern into account. The time the first bunches need to reach the interlock BPM threshold is used as the fill time.}
+    \caption{Key parameters and results of the p--Pb beam evolution calculation. A turn-around time, i.e., the time between Beam Dump and Stable Beams, of \qty{3}{h} and an operational efficiency factor of $0.5$ is assumed. The final result was scaled down by additional $\qty{5}{\%}$ to take potential deviations of the proton filling pattern into account. 
+    The time the first bunches need to reach the interlock BPM threshold is used as the fill time.}
     \label{tab:p_Pb_table}
-\end{table}
+\end{table} 
+
 \subsection{Colliding lighter nuclei at HL-LHC} \label{sec:lightions}
  
 
