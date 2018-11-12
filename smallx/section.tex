@@ -4,9 +4,9 @@
 \IfEq{\jobname}{\currfilebase}{\AtEndDocument{\biblio}}{}
 \IfEq{\jobname}{\currfilebase}{\input{\main/commands}}{}
 % until here
-
-
 \begin{document}
+
+
 \section{High energy QCD with proton-nucleus collisions and ultra-peripheral collisions}
 \input{smallx/authorlist.tex}
 \label{sec:smallx}
@@ -69,6 +69,8 @@ But non-linear effects are unavoidable in QCD, and they should eventually domina
 It was proposed long ago~\cite{Gribov:1984tu,Mueller:1985wy} that at such large densities a resummation of powers of density times coupling constant is possible, resulting in a non-perturbative but weak coupling regime where parton densities saturate, and whose effective field theory incarnation is the Color Glass Condensate~(CGC)~\cite{Gelis:2010nm}.
 Particle production in pA collisions in the forward rapidity region is dominated by small$-x$ partons in the nucleus. 
 Therefore, saturation effects are expected to be largest there. Furthermore, UPCs as a source of large fluxes of quasi-real photons, provide the opportunity to study the partonic structure of protons (in pp and pA) and nuclei (in pA and AA).
+
+
 
 On the other hand, the structure of nucleons and nuclei, and the mechanism of particle production at small~$x$, are key ingredients for our understanding of heavy-ion collisions and for the characterisation of the produced hot dense medium. 
 For hard probes, the nuclear modification of standard collinear parton densities is one of the uncertainties in the extraction of medium characteristics. 
@@ -143,10 +145,12 @@ The CMS-acceptance in Run~3 correspond to the wide central range defined in Tab.
 
 The number of vector mesons expected in the upcoming runs can give us an estimate of the expected reach of HL-LHC.   To calculate this, we considered four toy-model experimental acceptances shown in Tab.~\ref{tab:UPCtoyacceptance}.  We did not estimate the effects of cuts on the $\pT$ of the final state daughter particles, because this depends fairly sensitively on the analysis and trigger conditions.   In general, for two-prong decays, as long as the minimum detectable $\pT$ is less than about 1/4 of the final state mass, $\pT$ cuts do not have a large effect.  We apply cuts to both the vector meson rapidity and the daughter particle pseudorapidities.  These cuts overlap greatly, and the results would not be very different without the cut on the vector meson rapidity. 
 
-Table~\ref{tab:PbPbUPCrates} shows the expected cross-sections and rates for five representative vector meson decays, including the branching ratios.  The rates are calculated using STARlight~\cite{Klein:2016yzr}, which has been shown to do a good job of predicting the cross-sections for $\rho$~photoproduction on heavy targets~\cite{Adam:2015gsa,Abelev:2007nb}, and for all mesons on proton targets.  The $\rho$ is broad; here we consider the mass range from $2m_{\mathrm{\pi}$ up to $M_{\mathrm{\rho}} + 5\Gamma_{\mathrm{\rho}}$.  Direct $\mathrm{\pi}^+\mathrm{\pi}^-$~production is not included; this would add about 8\% to the rate.  
-The $\mathrm{\rho}'$ state represents $\mathrm{\pi}^+\mathrm{\pi}^-\mathrm{\pi}^+\mathrm{\pi}^-$ states with masses in the range from 4$m_{\mathrm{\pi}}$ up to 2.5~\UGeVcc.  This could include more than one state.  Since little is certain about the origin of this state or states, we anchor the calculation to the STAR measurement of the $\mathrm{\pi}^+\mathrm{\pi}^-\mathrm{\pi}^+\mathrm{\pi}^-$ final state~\cite{Abelev:2009aa} and use STARlight to extrapolate from gold to lead beams and upward in energy. 
 
-STARight does not include nuclear shadowing.  Here, for the heavy quarkonium ($J/\psi$, $\psi'$ and $\PGUP$), a rapidity-dependent nuclear shadowing correction was applied following Ref. \cite{Guzey:2016piu}.  On the average, this reduced the cross-sections and rates  by factors of 0.42, 0.475 and 0.77 for the $J/\psi$, $\psi'$ and $\PGUP$ spectively.  
+
+Table~\ref{tab:PbPbUPCrates} shows the expected cross-sections and rates for five representative vector meson decays, including the branching ratios.  The rates are calculated using STARlight~\cite{Klein:2016yzr}, which has been shown to do a good job of predicting the cross-sections for $\rho$~photoproduction on heavy targets~\cite{Adam:2015gsa,Abelev:2007nb}, and for all mesons on proton targets.  The $\rho$ is broad; here we consider the mass range from $2m_\pi$ up to $M_\rho + 5\Gamma_\rho$.  Direct $\pi^+\pi^-$~production is not included; this would add about 8\% to the rate.  
+The $\rho'$ state represents $\pi^+\pi^-\pi^+\pi^-$ states with masses in the range from 4$m_{\pi}$ up to 2.5~\UGeVcc.  This could include more than one state.  Since little is certain about the origin of this state or states, we anchor the calculation to the STAR measurement of the $\pi^+\pi^-\pi^+\pi^-$ final state~\cite{Abelev:2009aa} and use STARlight to extrapolate from gold to lead beams and upward in energy. 
+
+STARight does not include nuclear shadowing.  Here, for the heavy quarkonium ($J/\psi$, $\psi'$ and $\PGUP{}$), a rapidity-dependent nuclear shadowing correction was applied following Ref. \cite{Guzey:2016piu}.  On the average, this reduced the cross-sections and rates  by factors of 0.42, 0.475 and 0.77 for the $J/\psi$, $\psi'$ and $\PGUP{}$ respectively.  
 
 \begin{table}[h]
 \caption{Table of toy-model acceptance cuts for the different experiments.}
@@ -164,7 +168,7 @@ $\mathrm{e/\pi/\mu}$ pseudorapidity & - & $|\eta|<0.9$ & $|\eta|<2.4$  & $2.5 < 
 
 \begin{table}[h]
 \caption {Table of cross-sections and numbers of events in 13~nb$^{-1}$ integrated luminosity for the different mesons in \PbPb collisions.   B, M and K denote $10^9$, $10^6$ and $10^3$ respectively. 
-Both the rates and cross-sections include the relevant branching ratios.  The cross-sections and toy-model acceptances are determined using STARlight~\cite{Klein:2016yzr}.  For the $J/\psi$, $\psi'$ and $\PGUP$, rapidity-dependent nuclear shadowing cross-sections have been applied following the approach in Ref. \cite{Guzey:2016piu}. 
+Both the rates and cross-sections include the relevant branching ratios.  The cross-sections and toy-model acceptances are determined using STARlight~\cite{Klein:2016yzr}.  For the $J/\psi$, $\psi'$ and $\PGUP{nS}$, rapidity-dependent nuclear shadowing cross-sections have been applied following the approach in Ref. \cite{Guzey:2016piu}. 
 }
 \begin{tabular}{|c|rrrrrr|}
 \hline
@@ -173,8 +177,8 @@ Both the rates and cross-sections include the relevant branching ratios.  The cr
             &     $\sigma$              &  All          & Central 1   & Central 2   & Forward 1 & Forward 2 \\
 Meson &                                 & Total        & Total          & Total          & Total         l &  Total  \\
 \hline
-$\mathrm{\rho}\rightarrow\mathrm{\pi}^+\mathrm{\pi}^-$        & 5.2b & 68 B  & 5.5 B  & 21B & 4.9 B & 13 B \\
-$\mathrm{\rho}'\rightarrow\mathrm{\pi}^+\mathrm{\pi}^-\mathrm{\pi}^+\mathrm{\pi}^-$ & 730 mb & 9.5 B  & 210 M & 2.5 B & 190 M   & 1.2 B \\
+$\rho\rightarrow \pi^+\pi^-$        & 5.2b & 68 B  & 5.5 B  & 21B & 4.9 B & 13 B \\
+$\rho'\rightarrow \pi^+\pi^-\pi^+\pi^-$ & 730 mb & 9.5 B  & 210 M & 2.5 B & 190 M   & 1.2 B \\
 $\phi\rightarrow K^+K^-$           & 0.22b & 2.9 B & 82 M & 490 M  & 15 M & 330 M  \\
 $J/\psi\rightarrow\mu^+\mu^-$  & 1.0 mb & 14 M & 1.1 M & 5.7 M & 600 K &  1.6 M \\
 $\psi'\rightarrow\mu^+\mu^-$    & 30$\mu$b & 400 K& 35 K & 180 K & 19 K &  47 K \\
@@ -186,11 +190,11 @@ $\PGUP{1S}\rightarrow\mu^+\mu^-$ & 2.0 $\mu$b & 26 K & 2.8 K & 14 K  & 880 &  2.
 
 The rates for light mesons are enormous, enough to support billion-event samples of the $\rho$ and $\rho'$, and hundreds of millions of $\phi$, allowing the studies discussed below.  The rates for $J/\psi$, $\psi'$ and $\PGUP{1S}$ should allow cross-section and tomographic measurements. 
 
-The high rates for $\mathrm{\rho}$ bode well for high-mass $\mathrm{\pi}^+\mathrm{\pi}^-$ photoproduction. It should be possible to study pairs with masses above 2 GeV. 
+The high rates for $\rho$ bode well for high-mass $\pi^+\pi^-$ photoproduction. It should be possible to study pairs with masses above 2 GeV. 
 
-In $\phi \rightarrow K^+K^-$, the kaons have a momentum of only 135 \UMeVc\ in the $\phi$ rest frame.   The acceptance for this channel is quite low (even without a kaon $\pT$ cut), because the kaon momentum is dominated by the $p_Z$ acquired from the $\phi$, so the kaons are produced with large pseudorapidity.   This channel is likely to be unobservable, except possibly at far forward rapidity, where the kaon momenta are significantly Lorentz boosted.  Alternately, it might be easier to search for $\mathrm{\phi} \rightarrow \mathrm{\mu}^+ \mathrm{\mu}^-$ or $\mathrm{\phi} \rightarrow \mathrm{e}^+ \mathrm{e}^-$, even though the branching ratios are small. For a rough estimate, one could scale the $\mathrm{\phi}\rightarrow \mathrm{K}^+\mathrm{K}^-$ rates down by Br ($\mathrm{\phi} \rightarrow \mathrm{\mu}^+ \mathrm{\mu}^-$)/Br($\mathrm{\phi} \rightarrow \mathrm{K}^+\mathrm{K}^-$)$\approx 5.9 \times 10^{-4}$ to conservatively estimate the rate to each dilepton channel; the acceptance for the dileptons should be higher than for the kaons. 
+In $\phi \rightarrow K^+K^-$, the kaons have a momentum of only 135 \UMeVc\ in the $\phi$ rest frame.   The acceptance for this channel is quite low (even without a kaon $\pT$ cut), because the kaon momentum is dominated by the $p_Z$ acquired from the $\phi$, so the kaons are produced with large pseudorapidity.   This channel is likely to be unobservable, except possibly at far forward rapidity, where the kaon momenta are significantly Lorentz boosted.  Alternately, it might be easier to search for $\phi \rightarrow \mu^+ \mu^-$ or $\phi \rightarrow \mathrm{e}^+ \mathrm{e}^-$, even though the branching ratios are small. For a rough estimate, one could scale the $\phi\rightarrow \mathrm{K}^+\mathrm{K}^-$ rates down by Br ($\phi \rightarrow \mu^+ \mu^-$)/Br($\phi \rightarrow \mathrm{K}^+\mathrm{K}^-$)$\approx 5.9 \times 10^{-4}$ to conservatively estimate the rate to each dilepton channel; the acceptance for the dileptons should be higher than for the kaons. 
 
-It should also be possible to explore photoproduction of double vector mesons by a single ion-ion pair (by exchange of two independent photons).   The expected ratio of $\mathrm{\rho\rho}$ photoproduction to single $\mathrm{\rho}$ photoproduction is about $1:600$ while the predicted ratio of $\mathrm{\rho J/\psi}$ to $\mathrm{\rho}$ is about $1:160$ \cite{Klein:1999qj}.  
+It should also be possible to explore photoproduction of double vector mesons by a single ion-ion pair (by exchange of two independent photons).   The expected ratio of $\rho\rho$ photoproduction to single $\rho$ photoproduction is about $1:600$ while the predicted ratio of $\rho \mathrm{J/}\psi$ to $\rho$ is about $1:160$ \cite{Klein:1999qj}.  
 These events should display significant quantum correlations.  
 
 For \pPb collisions, there are additional complications, in that the per-nucleon center of mass is boosted by 0.465 units of rapidity from the lab frame, and because there are two possible directions for the beams (protons from the $+z$ direction, or from the $-z$ direction); this makes a big difference for forward detectors.  There are also two possibilities for the photon emitter, 'lead-shine', the photon from the lead nucleus, or 'proton-shine', the photon from the proton.  These have rather different kinematics, with the vector meson $\pT$ scale set by the size of the nuclear target, $\hbar/R_{\rm proton}$ or $\hbar/R_{\rm Pb}$ respectively.    So, we calculate the rates for these two possibilities in separate tables.
@@ -263,11 +267,13 @@ R_{\rm Pb} (x) = \left(\frac{\sigma_{\rm \gamma Pb}(x)}{\sigma_{\rm IA}(x)}\righ
 Resulting projections for the nuclear suppression factor are shown in Fig.~\ref{fig:r} at different scales corresponding to $J/\psi$, $\psi(2S)$ and $\PGUP{1S}$ photoproduction measurements. Uncertainties on luminosity (4\%), reference cross section (5\%) and photon flux (5\%) result in $\sim8$\% systematic uncertainty on the ratio $\sigma_{\rm \gamma Pb}(x)/\sigma_{\rm IA}(x)$ and $\sim 4$\% uncertainty on the nuclear suppression factor $R_{\rm Pb} (x)$.
 
 \begin{figure}
-\caption{Projections for gluon shadowing factor measured with heavy vector photoproduction in \PbPb UPC collisions at different scales \textcolor{blue}{CMS points will be added after approval}.}
 \centering
 \includegraphics[width=0.6\textwidth]{\main/smallx/fig/suppression_factor.pdf}
+\caption{Projections for gluon shadowing factor measured with heavy vector photoproduction in \PbPb UPC collisions at different scales \textcolor{blue}{CMS points will be added after approval}.}
 \label{fig:r}
 \end{figure}
+
+
 
 \subsubsection{Vector meson production}
 %Editors: Mark Strikman and Vadim Guzey + Jesus Guillermo Contreras Nuno + Spencer Klein\\
@@ -277,7 +283,7 @@ Resulting projections for the nuclear suppression factor are shown in Fig.~\ref{
 %\subsection{}
 
 Extensive data were produced in the previous LHC heavy ion runs on coherent photoproduction  of $\rho$ mesons~\cite{Adam:2015gsa}, 
-$J/\psi$~\cite{Abbas:2013oua,Abelev:2012ba,Khachatryan:2016qhq} and to a lesser extent $\Psi'$~\cite{Adam:2015sia}: 
+$\mathrm{J/}\psi$~\cite{Abbas:2013oua,Abelev:2012ba,Khachatryan:2016qhq} and to a lesser extent $\Psi'$~\cite{Adam:2015sia}: 
 $\gamma+ A \to V +A$. Due to the presence of two photon sources, the $x$-range of these studies is largely  limited
 to $x\ge m_V/\sqrt{s}$. For light mesons these measurements provide information on the pattern of interactions of extended pion-size mesons and such phenomena as shadowing and color fluctuations. For small dipoles like $J/\psi$ and $\PGUP{1S}$, 
 it provided information on the leading twist nuclear shadowing at moderate $Q^2$, which is difficult to obtain using other hard probes. A factor of $\sim 3$ reduction of the $J/\psi$ 
@@ -482,6 +488,7 @@ In addition to charm and bottom, it may also be possible to study the photoprodu
 
 \newpage
 
+
 \subsection{The physics of inelastic 
 p-Pb~collisions}
 \label{sec:pPbex}
@@ -500,7 +507,7 @@ Proton-lead  collisions are an integral part of the LHC programme since the 2012
 We outline the detector capabilities and observables in view of high-energy QCD studies in \pPb collisions. One upgrade dedicated to low-$x$ physics is separately discussed. After this introduction, two theory contributions zoom in on specific aspects of Run 3-4 data.  
 % ALICE general first draft MvL
 \begin{itemize}
-\item During Run 3-4, \textbf{ALICE} will measure heavy flavor and charged particle production at mid-rapidity in \pPb collisions. These measurements will constrain the parton densities in the nucleus at moderate $x$. At forward and backward rapidity, measurements of W and Z-boson production, as well as a range of quarkonia (J/$\psi$, $\psi(2S)$, and the $\PGUP$ family) will be performed. In particular the W and Z boson measurements will constrain the nuclear PDFs, while the quarkonia are also sensitive to final state effects. An example is given for the Z boson in Fig.~\ref{fig:plotDY} on the right. 
+\item During Run 3-4, \textbf{ALICE} will measure heavy flavor and charged particle production at mid-rapidity in \pPb collisions. These measurements will constrain the parton densities in the nucleus at moderate $x$. At forward and backward rapidity, measurements of W and Z-boson production, as well as a range of quarkonia (J/$\psi$, $\psi(2S)$, and the $\PGUP{nS}$ family) will be performed. In particular the W and Z boson measurements will constrain the nuclear PDFs, while the quarkonia are also sensitive to final state effects. An example is given for the Z boson in Fig.~\ref{fig:plotDY} on the right. 
 %ATLAS Z. C.
 \item \textbf{ATLAS} will measure heavy electro-weak bosons, $W$ and $Z$, with the larger \pPb dataset which will be available in Run 3-4.  The much larger luminosity will allow precision in these measurements significantly surpassing the one currently available.  Projected $W$ and $Z$ boson cross sections are shown in Figure~\ref{fig:ATLASWZxsection} [ref. to note, when available].  Previous results have suggested that the modification of EW boson cross sections that is described with nPDFs, appears to be stronger in more central collisions \cite{Aad:2015gta,TheATLAScollaboration:2015lnm}.  Figure \ref{fig:ATLASWZcent} (left) shows the projected boson yield ratio of central to peripheral collisions, $R_{\mathrm{CP}}$, for different centrality bins.  The right panel of Figure \ref{fig:ATLASWZcent} shows the yield of $Z$ bosons scaled by the nuclear thickness function, T$_{\mathrm{AB}}$,  as a function of centrality. It indicates that the $Z$ boson yield uncertainties will be considerably smaller than the T$_{\mathrm{AB}}$ uncertainty. 
 %CMS E. C.
@@ -525,12 +532,12 @@ Heavy flavour meson cross sections will also be measured, which are sensitive to
 \includegraphics[width=0.42\textwidth]{\main/smallx/fig/Wplus_8p8TeV_eta_fid_2000nb.pdf}\\
 \includegraphics[width=0.42\textwidth]{\main/smallx/fig/Zprojection_xsy.pdf}
 \includegraphics[width=0.42\textwidth]{\main/smallx/fig/Zpt_projection.pdf}
-\caption{Top row: Fiducial cross-sections for $W^+$ (left) and $W^-$ (right) boson production in \pPb collisions at $\sqrtsNN=8.8$~TeV differential in the charged lepton pseudorapidity measured in the laboratory frame $\eta_\mathrm{lab}$. The cross-sections are projected with nuclear effects described by the EPPS16 nPDF set and without any nuclear effects. The boxes represent the projected total uncertainties (quadratic sum of statistical and systematic uncertainties), while vertical bars represent statistical uncertainties (smaller than the marker size).
+\caption{Top row: Fiducial cross-sections for $W^+$ (left) and $W^-$ (right) boson production in \pPb collisions at $\sqrtsNN=8.8$~TeV differential in the charged lepton pseudorapidity measured in the laboratory frame $\eta_{\mathrm{lab}}$. The cross-sections are projected with nuclear effects described by the EPPS16 nPDF set and without any nuclear effects. The boxes represent the projected total uncertainties (quadratic sum of statistical and systematic uncertainties), while vertical bars represent statistical uncertainties (smaller than the marker size).
 Botton row: $Z$ boson rapidity (left) and transverse momentum (right) differential cross sections.\textcolor{red}{UNDER APPROVAL}}
 \label{fig:ATLASWZxsection}
 \includegraphics[width=0.42\textwidth]{\main/smallx/fig/Wplus_RCP_2000nb.pdf}
 \includegraphics[width=0.42\textwidth]{\main/smallx/fig/Zprojection_cent.pdf}
-\caption{Left:Uncertainties on measurments of the $W^+$ (left) and $W^-$ (right) boson yield ratio of central to peripheral collisions $R_\mathrm{CP}$.  The boxes represent the projected total uncertainties (quadratic sum of statistical and systematic uncertainties), while vertical bars represent statistical uncertainties.  Right:Projected $Z$ boson yields scaled by T$_{\mathrm{AB}}$ as a function of the number of nucleon participants.  Statistical uncertainties are everywhere smaller than the marker size, and projected systematic uncertainties (green) are described in the text.  The projections are compared with a previous run 1 analysis  \cite{Aad:2015gta}.\textcolor{red}{UNDER APPROVAL}}
+\caption{Left:Uncertainties on measurments of the $W^+$ (left) and $W^-$ (right) boson yield ratio of central to peripheral collisions $R_{\mathrm{CP}}$.  The boxes represent the projected total uncertainties (quadratic sum of statistical and systematic uncertainties), while vertical bars represent statistical uncertainties.  Right:Projected $Z$ boson yields scaled by T$_{\mathrm{AB}}$ as a function of the number of nucleon participants.  Statistical uncertainties are everywhere smaller than the marker size, and projected systematic uncertainties (green) are described in the text.  The projections are compared with a previous run 1 analysis  \cite{Aad:2015gta}.\textcolor{red}{UNDER APPROVAL}}
 \label{fig:ATLASWZcent} 
 \end{figure}
 
@@ -794,9 +801,9 @@ to reduce  the current uncertainties and improve the nuclear PDF determination a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[htb!]
 \centering
+\caption{Left: The CMS projections for the forward-backward asymmetry in W$^\pm$ production (Fig.~\ref{fig:CMShighpt}) compared to the original EPPS16 90\% confidence-level error bands and those after reweighting with these W$^\pm$ data. Right: The change in EPPS16 nuclear PDF modifications for sea quarks and gluons at $Q^2=100\,{\rm GeV^2}$ upon reweighting with the data shown in the left-hand panel.}
 \includegraphics[width=0.405\textwidth]{\main/smallx/fig/HLLHC_W.pdf}
 \includegraphics[width=0.425\textwidth]{\main/smallx/fig/EPPS16_HLLHC_W_100_GeV2.pdf}
-\caption{Left: The CMS projections for the forward-backward asymmetry in W$^\pm$ production (Fig.~\ref{fig:CMShighpt}) compared to the original EPPS16 90\% confidence-level error bands and those after reweighting with these W$^\pm$ data. Right: The change in EPPS16 nuclear PDF modifications for sea quarks and gluons at $Q^2=100\,{\rm GeV^2}$ upon reweighting with the data shown in the left-hand panel.}
 \label{fig:Wreweight}
 \end{figure}
 
@@ -871,8 +878,8 @@ A recent study of  inclusive heavy quark
 production in proton--lead collisions at the LHC 
 demonstrates this can also help constrain  the gluon distribution in nuclei.
 %
-Specifically, Ref.~\cite{Kusina:2018pbp} makes use  of LHC $pPb$ data on 
-$\{D^0, J/\Psi, B\to J/\Psi,   \PGUP{1S}}$ meson production~\cite{Abelev:2014hha,Adam:2016ich,Aaij:2017gcy,Adam:2015iga,Aaboud:2017cif,Abelev:2013yxa,Aaij:2013zxa,Aaij:2017cqq,LHCb:2018jln,Abelev:2014oea,TheATLAScollaboration:2015zdl,Aaij:2014mza,ATLAS:2017dgr,Sirunyan:2018sav,Sirunyan:2018pse,Aaij:2018ogq,Aaij:2018iyy}.
+Specifically, Ref.~\cite{Kusina:2018pbp} makes use  of LHC \pPb data on 
+$\mathrm{D}^0, \mathrm{J/}\psi, \mathrm{B}\to \mathrm{J/}\psi,   \PGUP{1S}$ meson production~\cite{Abelev:2014hha,Adam:2016ich,Aaij:2017gcy,Adam:2015iga,Aaboud:2017cif,Abelev:2013yxa,Aaij:2013zxa,Aaij:2017cqq,LHCb:2018jln,Abelev:2014oea,TheATLAScollaboration:2015zdl,Aaij:2014mza,ATLAS:2017dgr,Sirunyan:2018sav,Sirunyan:2018pse,Aaij:2018ogq,Aaij:2018iyy}.
 %
 They obtain a consistent description of these data assuming nPDF
 modifications are the dominant source of nuclear modifications in \pPb
@@ -917,7 +924,7 @@ from the fragmentation of quarks and gluons into photons can be
 strongly suppressed by photon isolation criteria~\cite{ATLAS:2017ojy,Acharya:2018dqe}.
 Due to the small
 diphoton cross section such a measurement would profit from a
-high-luminosity option~\cite{Catani:2018krb}. \todo[inline]{Add numbers for cross section}
+high-luminosity option~\cite{Catani:2018krb}. \todo[inline]{Add numbers}
 
 
 %%%%%%%%%%%%%%
@@ -977,8 +984,7 @@ This, plus a higher achievable nucleon-nucleon luminosity %\todo{check if can be
 would render the above case almost completely systematics dominated. %\ref{sec:lightions}
 
 Using the same framework and assumptions as above, we have estimated the fiducial $t\overline{t}$ yields is $A$-$A$ collisions. Here, we have considered \PbPb and Ar-Ar cases. In \PbPb configuration with $\sqrtsNN = 5.5 \, {\rm TeV}$, the per-nucleon cross section is $\sigma_{\rm n-n} \approx 1200 \, {\rm fb}$ which translates to around 2000 reconstructed events for 13$\, \rm nb^{-1}$ ion-ion luminosity. In the Ar-Ar option, the c.m. energy is slightly higher, $\sqrt{s} = 6.3 \, {\rm TeV}$, which increases the cross-section by some 50\%. In addition, the achievable ion-ion luminosity is much higher, 3000$\,\rm nb^{-1}$-8800$\,\rm nb^{-1}$ within 2.75 months of running, see Tables in Chapter~\ref{sec:lightions}. %\todo{will be updated with acc. chapter numbers}. %(semi-optimistic estimate from John Jowett's slides).
-Thus, the estimated amount of $t\overline{t}$ events is clearly larger, around 30000. The right-hand panel of Fig.~\ref{fig:ttbardiffy} shows the event distributions as a function of top-quark transverse momentum $\pT(t)$. This shows that, the HL-LHC may allow to probe the space-time picture of heavy-ion collisions using top quarks \cite{Apolinario:2017sob} up to $p_{\rm T}(t) \approx 400\,{\rm GeV}$ in the \PbPb case, and up to $p_{\rm T}(t) \approx 700\,{\rm GeV}$ in the Ar-Ar alternative. \\
-
+Thus, the estimated amount of $t\overline{t}$ events is clearly larger, around 30000. The right-hand panel of Fig.~\ref{fig:ttbardiffy} shows the event distributions as a function of top-quark transverse momentum $\pT(t)$. This shows that, the HL-LHC may allow to probe the space-time picture of heavy-ion collisions using top quarks \cite{Apolinario:2017sob} up to $p_{\rm T}(t) \approx 400\,{\rm GeV}$ in the \PbPb case, and up to $p_{\rm T}(t) \approx 700\,{\rm GeV}$ in the Ar-Ar alternative. 
 
 
 %the power to constrain large x gluons vs the heavy quark which is lower x
@@ -992,30 +998,34 @@ Thus, the estimated amount of $t\overline{t}$ events is clearly larger, around 3
 %Editors: Nestor Armesto, Fred Olness \\
 %Indicative length: 1-2 pages \\
 \label{sec:nPDF_lightions}
-Lighter ions, with the possibility to achieve large integrated luminosities in modest running times, see Sect.~\ref{sec:lightions} in the accelerator chapter, offer several interesting opportunities for the study of the initial stage of ion collisions, for small-$x$ physics and for the determination of nuclear parton densities, see Subsection \ref{sec:smallxIntro}.
+
+Lighter ions, with the possibility to achieve large integrated luminosities in modest running times, see Sect.~\ref{sec:lightions} in the accelerator chapter, offer several interesting opportunities for the study of the initial stage of ion collisions, for small-$x$ physics and for the determination of nuclear parton densities, see Subsection~\ref{sec:smallxIntro}.
 
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=0.485\textwidth]{\main/smallx/fig/Pb_vs_AR_g.pdf}
 \includegraphics[width=0.485\textwidth]{\main/smallx/fig/RPb.pdf}
-\caption{The EPPS16 and nCTEQ15 nuclear PDF modifications for gluons at $Q^2=10\,{\rm GeV^2}$. Left-hand panel corresponds to Argon nucleus and the right-hand panel to the Lead nucleus.}
+\caption{The EPPS16 and nCTEQ15 nuclear PDF modifications for gluons at $Q^2=10\,{\rm GeV^2}$. 
+Left-hand panel corresponds to Argon nucleus and the right-hand panel to the Lead nucleus.} 
 \label{fig:lightnPDF}
 \end{figure}
 
-First, concerning nPDFs, it should be noted that due to the scarcity of nuclear data, a PDF fit for a single nucleus is impossible as discussed in Subsection \ref{sec:smallxIntro}. The different groups \cite{deFlorian:2011fp,Kovarik:2015cma,Eskola:2016oht}  have adopted different strategies but, generically, they give the parameters in the initial condition to be fitted a dependence on the nuclear mass number. Such dependence acquires different functional forms and, therefore, it constitutes part of the parametrisation bias in the nPDF set. Data on lighter nuclei may help to constrain such parametrisations, see the discussions for UPCs and pA collisions in Subsection \ref{sec:nPDFs}. To highlight the current unknowns, Fig.~\ref{fig:lightnPDF} compares the nuclear modifications for Argon and Lead, as given by the EPPS16 and nCTEQ15 global analyses. In particular, the nCTEQ15 prediction varies, even qualitatively, quite significantly between Argon and Lead. This underscores the usefulness of e.g. a p-Ar run at the LHC.  
+First, concerning nPDFs, it should be noted that due to the scarcity of nuclear data, a PDF fit or a single nucleus is impossible as discussed in Subsection \ref{sec:smallxIntro}. The different groups \cite{deFlorian:2011fp,Kovarik:2015cma,Eskola:2016oht}  have adopted different strategies but, generically, they give the parameters in the initial condition to be fitted a dependence on the nuclear mass number. Such dependence acquires different functional forms and, therefore, it constitutes part of the parametrisation bias in the nPDF set. Data on lighter nuclei may help to constrain such parametrisations, see the discussions for UPCs and pA collisions in Subsection \ref{sec:nPDFs}. To highlight the current unknowns, Fig.~\ref{fig:lightnPDF} compares the nuclear modifications for Argon and Lead, as given by the EPPS16 and nCTEQ15 global analyses. In particular, the nCTEQ15 prediction varies, even qualitatively, quite significantly between Argon and Lead. This underscores the usefulness of e.g. a p-Ar run at the LHC.  
 
 On the other hand, the impact parameter dependence of nPDFs is linked to their dependence on nuclear size. Several models exist (see e.g. \cite{Emelyanov:1998phs,Ferreiro:2008wc}), and even less model-dependent approaches like the EPS09s analysis \cite{Helenius:2012wd} where the dependence on nuclear size was used to constrain the impact parameter dependence. Besides, first-principle calculations combining Gribov theory of inelastic shadowing and factorization theorems for hard diffraction and DIS relate diffraction in electron-proton collisions with nuclear shadowing. This has been used to predict nuclear shadowing \cite{Frankfurt:2011cs,Armesto:2003fi}, including its nuclear size and impact parameter dependence. While such relation is exact for deuteron, its extension to larger nuclei has some degree of model-dependency. Lighter ions are the ideal place to test the nuclear size dependence without resourcing to centrality selection, whose relation with impact parameter is doomed to be as problematic - at least - as found in \pPb collisions at the LHC.
 
 Lighter ions also offer large luminosities that are important for several aspects:
 \begin{itemize}
-\item Data on beauty mesons and bottomonium in pA can be used to constrain nPDFs \cite{Kusina:2017gkz} better than their charm counterparts, because of the larger scale given by the mass and by the opportunity that they are less affected by collective effects. But they demand large statistics that can be achieved with lighter ions.
+\item Data on beauty mesons and bottomonium in pA can be used to constrain nPDFs \cite{Kusina:2017gkz} better than their charm counterparts, because of the larger scale given by the mass and by the opportunity that they are less affected by collective effects. 
+But they demand large statistics that can be achieved with lighter ions.
 \item Larger luminosities will benefit measurements in pA for observables with large scales, like high-mass DY or dijets, for precise determination of nPDFs.
-\item UPCs and photon-photon studies \cite{Baltz:2007kq} will be greatly benefited in spite of the $Z^{2(4)}$ factor for the photon luminosities that can be overcompensated by the larger nucleon-nucleon luminosity .
+\item UPCs and photon-photon studies \cite{Baltz:2007kq} will be greatly benefited in spite of the $Z^{2(4)}$ factor for the photon luminosities that can be overcompensated by the larger nucleon-nucleon luminosity.
 \item Larger luminosities can also benefit small-$x$ forward observables that, like dijets \cite{Dainese:2016gch}, aim to reach quite large transverse momenta.
 \end{itemize}
 
 Lighter ions offer a bridge between small systems and \PbPb without requiring centrality selection that is problematic both in pp, pA and peripheral AA. 
-Besides, in the framework of saturation models \cite{Gelis:2010nm} that aim to describe collective effects in small systems without requiring final state interactions (see e.g. \cite{Kovner:2016wsq} and references therein), the extension from the proton to the nuclear case in phenomenological realizations  is done by a simple rescaling of the squared saturation momentum $Q_s^2\propto A^{1/3}$. And the centrality dependence is assumed to be proportional to the nuclear profile, which leads to strong problems in the nuclear periphery where a dilute situation is restored. Lighter ions offer a check of our ideas on the
+Besides, in the framework of saturation models \cite{Gelis:2010nm} that aim to describe collective effects in small systems without requiring final state interactions (see e.g. \cite{Kovner:2016wsq} and references therein), the extension from the proton to the nuclear case in phenomenological realizations  is done by a simple rescaling of the squared saturation momentum $Q_s^2\propto A^{1/3}$.
+And the centrality dependence is assumed to be proportional to the nuclear profile, which leads to strong problems in the nuclear periphery where a dilute situation is restored. Lighter ions offer a check of our ideas on the
 nuclear size versus energy leading
 the density that determines saturation, and the use of minimum bias observables
 instead of centrality-sliced ones that
