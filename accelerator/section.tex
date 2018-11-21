@@ -241,7 +241,7 @@ A potential \pPb\ run during Run 3 and beyond will greatly benefit from the long
 The proton intensity cannot be pushed to values much larger than the maximum achieved in 2016 as bunches colliding in multiple IPs and especially in ATLAS and CMS will approach the interlock BPM threshold of \enum{2}{9} charges per bunch too quickly if ATLAS and CMS are not luminosity levelled.  
 This would lead to an undesirable early beam dumps while ALICE is still levelled. 
 In order to predict the potential performance of a future \pPb\ run, the expected \PbPb\ filling pattern \cite{cham2017:jowett} is used providing 1136 collisions in ATLAS/CMS, 1120 collisions in ALICE and 81 collisions in LHCb. 
-This approximation is made since the proton injection should be flexible enough to reproduce most of the respective Pb pattern. This calculations assumes $N_b=3\times10^{10}$ protons per bunch and ALICE being levelled to the instantaneous luminosity of $\mathcal{L}_\mathrm{AA}=\qty{5\times 10^{29}}{cm^{-2}s^{-1}}$. 
+This approximation is made since the proton injection should be flexible enough to reproduce most of the respective Pb pattern. This calculations assumes $N_b=3\times10^{10}$ protons per bunch and ALICE being levelled to the instantaneous luminosity of $L_\mathrm{AA}=\qty{5\times 10^{29}}{cm^{-2}s^{-1}}$. 
 $\LAA=\elumi{5}{29}$
 ATLAS and CMS are not luminosity levelled in this scenario since the loss of integrated luminosity for ATLAS and CMS outweighs the marginal gain for ALICE. A simulation of the beam evolution based on ordinary differential equations including intra-beam scattering and radiation damping leads to a luminosity evolution in the different IPs as displayed in Fig.~\ref{fig:p_pb_lumi_evo}.
 \begin{figure}[htb]
@@ -252,7 +252,7 @@ At around \qty{6.1}{h} (dashed line), the interlock BPM threshold is  reached fo
 limiting the fill length.} 
 \label{fig:p_pb_lumi_evo}
 \end{figure}
-At around $\qty{6.1}{h}$, the bunch intensity of the bunches colliding in ATLAS, ALICE and CMS drop below the interlock BPM threshold ultimately limiting the fill length. Key results from the beam evolution study are listed in Tab.~\ref{tab:p_Pb_table}. The expected peak luminosity in ATLAS and CMS is at around $\mathcal{L}_\mathrm{AA}=\qty{17.4\times 10^{29}}{cm^{-2}s^{-1}}$, i.e., roughly a factor $2$ larger than in 2016. The integrated luminosity in ATLAS and CMS are expected to approach $\qty{0.7}{pb^{-1}}$ outperforming the 2016 integrated luminosity by a rough factor $3.5$. Since the nominal \mbox{HL-LHC} normalised proton emittance of $\epsilon_N=\qty{2.5}{\mu m}$ is assumed, the actual performance may exceed these predictions since normalised proton emittances in the range of $\epsilon_N=\qty{1.3}{\mu m}$ have already been achieved.
+At around $\qty{6.1}{h}$, the bunch intensity of the bunches colliding in ATLAS, ALICE and CMS drop below the interlock BPM threshold ultimately limiting the fill length. Key results from the beam evolution study are listed in Tab.~\ref{tab:p_Pb_table}. The expected peak luminosity in ATLAS and CMS is at around $L_\mathrm{AA}=\qty{17.4\times 10^{29}}{cm^{-2}s^{-1}}$, i.e., roughly a factor $2$ larger than in 2016. The integrated luminosity in ATLAS and CMS are expected to approach $\qty{0.7}{pb^{-1}}$ outperforming the 2016 integrated luminosity by a rough factor $3.5$. Since the nominal \mbox{HL-LHC} normalised proton emittance of $\epsilon_N=\qty{2.5}{\mu m}$ is assumed, the actual performance may exceed these predictions since normalised proton emittances in the range of $\epsilon_N=\qty{1.3}{\mu m}$ have already been achieved.
 \begin{table}[htb]
     \centering
 %\begin{tabular}{m{4.5cm}|cccc}
@@ -333,6 +333,7 @@ Nevertheless they can be used as a guide to the relative gain factors in integra
 	\input{accelerator/SpeciesTable1.tex}
 	}
    \caption{Parameters and performance for a range of light nuclei with a moderately optimistic value of the scaling parameter \(p=1.5\) in \eqref{eq:pscaling}. }
+  \label{tab:species1}
 \end{table}
 %\vspace{1em}
 
@@ -343,6 +344,7 @@ Nevertheless they can be used as a guide to the relative gain factors in integra
 	\input{accelerator/SpeciesTable2.tex}
 	}
    \caption{Parameters and performance for a range of light nuclei with an optimistic value of the scaling parameter \(p=1.9\) in \eqref{eq:pscaling}. }
+ \label{tab:species2}
 \end{table} 
  
  Collimation \cite{Hermes:2016axvg}
