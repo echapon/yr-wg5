@@ -743,6 +743,7 @@ FUNCTION {article}
 { output.bibitem
   format.collaboration output
   format.authors "author" output.check
+  format.title "title" output.check
   blank.sep
   crossref missing$
   { journal missing$   

@@ -6,7 +6,6 @@
 \usepackage{lineno}
 \usepackage{diagbox}
 \usepackage{hyperref}
-\usepackage{tablefootnote}
 \usepackage{placeins}
 \usepackage[utf8]{inputenc}
 
@@ -14,10 +13,10 @@
 % --
 % -- The bibliography file paths for the main volume and all parts
 % --
-\def\bibfiles{\main/bib/chapter,\main/introduction/bib/section,\main/schedule/bib/section,\main/hf/bib/section,\main/quarkonia/bib/section,\main/thermalradiation/bib/section,\main/flow/bib/section,\main/smallsystems/bib/section,\main/lightflavour/bib/section,\main/jets/bib/section,\main/smallx/bib/section,\main/beyond/bib/section,\main/helhc/bib/section,\main/accelerator/bib/section}
+\def\bibfiles{\main/bib/chapter,\main/introduction/bib/section,\main/schedule/bib/section,\main/hf/bib/section,\main/quarkonia/bib/section,\main/thermalradiation/bib/section,\main/flow/bib/section,\main/smallsystems/bib/section,\main/lightflavour/bib/section,\main/jets/bib/section,\main/smallx/bib/section,\main/beyond/bib/section,\main/helhc/bib/section,\main/accelerator/bib/section,\main/smallAexec/bib/section}
 % --
 \providecommand{\biblio}{\nocite{article-minimal}\bibliographystyle{report}\clearpage\bibliography{\bibfiles}}  % *Modification: added `\main/` to specify relative file location.
-
+ 
 \linenumbers
 
 \begin{document}
@@ -27,20 +26,23 @@
 %% commands
 \input{\main/commands}
 
-\title{Future physics opportunities for high-density QCD with ions and proton beams at LHC \\
+\title{Future physics opportunities for high-density QCD with ion and proton beams at the LHC \\
 HL/HE-LHC Physics Workshop Report Working Group 5}
 \input{authors}
 
 \maketitle
 
 \begin{abstract}
-  This is the abstract...
+ The future opportunities for high-density QCD with ions and proton beams at the LHC are presented. Four major scientific goals are identified: the characterisation of the macroscopic long wavelength Quark-Gluon Plasma~(QGP) properties with unprecedented precision, the investigation of the microscopic parton dynamics underlying QGP properties, the development of a unified picture of particle production and QCD dynamics from small (\pp) to large (nucleus--nucleus) systems, the exploration of parton densities in nuclei in a broad ($x$, $Q^2$) kinematic range and the search for the possible onset of parton saturation. In order to address these scientific goals, high-luminosity \PbPb and \pPb programmes are considered as priorities for Runs~3 and~4, complemented by high-multiplicity studies in pp collisions and a  short run with Oxygen ions. High-luminosity runs with intermediate-mass nuclei, for example Ar or Kr, are considered as an appealing case for extending the heavy-ion programme at the LHC beyond Run~4. The potential of the High-Energy LHC to probe QCD matter with newly available observables and phenomena is investigated.
 \end{abstract}
 
 % -- Set the level of the TOC: 2 means including subsection, 1 means
 % including section 
 \setcounter{tocdepth}{2}
+{ 
+\baselineskip=12pt
 \tableofcontents
+}
 \clearpage
 
 % -- List of sections
@@ -66,8 +68,6 @@ HL/HE-LHC Physics Workshop Report Working Group 5}
 \clearpage
 \subfile{\main/beyond/section}
 \clearpage
-\subfile{\main/smallAexec/section}
-\clearpage
 \subfile{\main/schedule/section}
 \clearpage
 \subfile{\main/helhc/section}
@@ -81,6 +81,7 @@ HL/HE-LHC Physics Workshop Report Working Group 5}
 % -- Add volume bibliography and part specific bibliographies
 %\bibliographystyle{report}
 %\bibliography{\bibfiles}
+\footnotesize
 \biblio
 
 \end{document}
