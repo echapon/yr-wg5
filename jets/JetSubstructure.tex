@@ -68,12 +68,12 @@ Such a triangular diagram, a representation of the radiation within any given je
 
 To demonstrate the potential of future measurements at the LHC we constructed Lund diagrams using the \jewel\ Monte Carlo event generator~\cite{Zapp:2013vla}.
 To study the differences in the Lund diagram due to medium effects the results are compared to a vacuum reference (jets produced in \pp\ collisions). For the simulations the \jewel
- generator with the default settings is used without the optional calculation of the so-called medium response retaining the partons / scattering centers that interacted with the jet was not used (i.e. {\it recoils off} setting of the MC generator was used).
+ generator with the default settings is used without the optional calculation of the so-called medium response retaining the partons / scattering centres that interacted with the jet was not used (i.e. {\it recoils off} setting of the MC generator was used).
 %Jets were reconstructed with the \akt\ algorithm~\cite{Cacciari:2008gp} with resolution parameter $R=0.4$ using \fastjet\ package~\cite{Cacciari:2011ma,Cacciari:2005hq}.
 %Jets retained for the substructure analysis were required to have their centroid within two units of pseudorapidity around $\eta_{\rm lab}=0$ (i.e. $|\eta^{\rm jet}| < 2$).
-The substructure of jets was analyzed by reclustering the constituents of the jet with the Cambridge/Aachen (C/A) algorithm as implemented in the \fastjet\ package~\cite{Cacciari:2011ma,Cacciari:2005hq} for two selections of jet \pt\ $80-120~\gevc$ and $200-250~\gevc$.
+The substructure of jets was analysed by reclustering the constituents of the jet with the Cambridge/Aachen (C/A) algorithm as implemented in the \fastjet\ package~\cite{Cacciari:2011ma,Cacciari:2005hq} for two selections of jet \pt\ 80--120~$\gevc$ and 200--250~$\gevc$.
 
-\begin{figure}[htbp]
+\begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.45\textwidth,page=1]{\main/jets/figures/lund/lund_t}
 	\includegraphics[width=0.45\textwidth,page=2]{\main/jets/figures/lund/lund_t}
@@ -87,8 +87,8 @@ The Lund diagram density can be constructed experimentally and compared to analy
 \begin{equation}
 \bar{\rho}(\Delta, \kappa) = \frac{1}{N_{\rm jet}} \frac{\mathrm{d}n_{\rm emission}}{\mathrm{d} \ln \kappa~\mathrm{d} \ln 1/\Delta},
 \end{equation}
-where for two clusters $1$ and $2$ labeled such that $p_{T,1} > p_{T,2}$, $\Delta^{2} = (y_1 - y_2)^2 + (\varphi_1 - \varphi_2)^2$ with $\varphi$ being the azimuthal angle and $y$ the rapidity of a cluster, and $\kappa=\frac{p_{T,2}}{p_{T,1} + p_{T,2}}\Delta$. Figure~\ref{fig:Lund_jets} shows the density $\bar{\rho}$ from the \jewel\ simulation without (left panels) and with (right panels) medium effects. 
-The $z_{g}$ variable which was defined in~\cite{Larkoski:2015lea} and studied in heavy-ion collisions~\cite{Sirunyan:2017bsd} is related to the variables in the Lund plane in the following way: $z_{\mathrm{g}} = \kappa/\Delta$ resulting in diagonal lines with negative slope in the Lund diagram for a constant value of $z_\mathrm{g}$.
+where for two clusters $1$ and $2$ labelled such that $p_{\rm T,1} > p_{\rm T,2}$, $\Delta^{2} = (y_1 - y_2)^2 + (\varphi_1 - \varphi_2)^2$ with $\varphi$ being the azimuthal angle and $y$ the rapidity of a cluster, and $\kappa=\frac{p_{\rm T,2}}{p_{\rm T,1} + p_{\rm T,2}}\Delta$. Figure~\ref{fig:Lund_jets} shows the density $\bar{\rho}$ from the \jewel\ simulation without (left panels) and with (right panels) medium effects. 
+The $z_{\rm g}$ variable which was defined in~\cite{Larkoski:2015lea} and studied in heavy-ion collisions~\cite{Sirunyan:2017bsd} is related to the variables in the Lund plane in the following way: $z_{\mathrm{g}} = \kappa/\Delta$ resulting in diagonal lines with negative slope in the Lund diagram for a constant value of $z_\mathrm{g}$.
 %
 \begin{figure}[htbp]
 	\centering
@@ -107,8 +107,8 @@ These observations are consistent with soft and hard collinear splittings being 
 To illustrate the different modifications of the Lund diagram density for the two regions identified in Fig.~\ref{fig:Lund_jets_vac_med}, projections along $\ln 1/\Delta$ are shown in Fig.~\ref{fig:Lund_projections}. For Region-A we observe 30\%-40\% depletion of splittings for the MEDIUM case whereas in Region-B a moderate increase of splittings induced by the medium is visible. The depletion in Region-A is consistent a sample of more collimated jets consistent with previous measurements in heavy-ion collisions~\cite{Acharya:2018uvf,Sirunyan:2018jqr}. The increase seen in Region-B is consistent with a small in-medium enhancement of splittings with moderate dependency on the angle of the splitting but favoring the soft collinear medium-induced radiation (moderate $ln 1/\Delta$).
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.45\textwidth,page=1]{\main/jets/figures/lund/lund_projections}
-	\includegraphics[width=0.45\textwidth,page=2]{\main/jets/figures/lund/lund_projections}
+	\includegraphics[width=0.49\textwidth,page=1]{\main/jets/figures/lund/lund_projections}
+	\includegraphics[width=0.49\textwidth,page=2]{\main/jets/figures/lund/lund_projections}
 	\caption{Projections of the lund diagram along the angular separation $\ln 1/\Delta$ of the splittings for the two selections of jet \pt. In-medium suppression of splittings for moderate $\ln{\kappa}$ according to \jewel\ (left). Enhancement for small $\ln{\kappa}$ (right).}
 	\label{fig:Lund_projections}
 \end{figure}
@@ -117,23 +117,23 @@ To illustrate the different modifications of the Lund diagram density for the tw
 
 %{\it MP: text is a placeholder here...}
 As discussed in Ref.~\cite{Andrews:2018jcm} specific regions in the Lund plane are sensitive to different type of parton splittings. 
-These regions can be identified by selecting the desired area using linear functions $\ln\kappa = \ln1/\Delta + \ln \frac{1}{p_{T} t}$, where $t$ is related to the decoherence time (thus formation time).
+These regions can be identified by selecting the desired area using linear functions $\ln\kappa = \ln1/\Delta + \ln \frac{1}{p_{\rm T} t}$, where $t$ is related to the decoherence time (thus formation time).
 Depending on the selection, different formation times are probed and splittings will occur within or outside the medium.
-We investigate three regions of the Lund plane according to a selection of diagonal lines for different $\frac{1}{p_{T} t}$ indicated in Fig.~\ref{fig:Lund_jets}.
-The density of the splittings is projected along the momentum imbalance $z = p_{T,2}/(p_{T,1} + p_{T,2})$.
+We investigate three regions of the Lund plane according to a selection of diagonal lines for different $\frac{1}{p_{\rm T} t}$ indicated in Fig.~\ref{fig:Lund_jets}.
+The density of the splittings is projected along the momentum imbalance $z = p_{\rm T,2}/(p_{\rm T,1} + p_{\rm T,2})$.
 In Fig.~\ref{fig:Lund_projections_z} we show the relative difference of the splitting density $\Delta_{\rm}\bar{\rho} = (\bar{\rho}_{\mathrm med} - \bar{\rho}_{\mathrm vac})/\bar{\rho}_{\mathrm vac}$.
-For small formation times the splitting density is suppressed for the in-medium calculations whereas for large $p_{T} t$ the modification is smaller and even slightly enhanced for large formation times.
+For small formation times the splitting density is suppressed for the in-medium calculations whereas for large $p_{\rm T} t$ the modification is smaller and even slightly enhanced for large formation times.
 This is consistent with the expectation that for large formation times the medium effects should be of smaller magnitude as compared to splittings formed early.
 %
-\begin{figure}[htbp]
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.3\textwidth,page=4]{\main/jets/figures/lund/lund_t_z}
-	\includegraphics[width=0.3\textwidth,page=8]{\main/jets/figures/lund/lund_t_z}
-	\includegraphics[width=0.3\textwidth,page=9]{\main/jets/figures/lund/lund_t_z}
-	\caption{Projections of the relative difference of the Lund diagram onto momentum imbalance of the splittings for two selections of jet \pt\ and selections of $\frac{1}{p_{T} t}$.
-	{\it Left:} relative difference for low-\pt\ jets for three selections of $\frac{1}{p_{T} t}$.
-	{\it Middle:} relative difference for high-\pt\ jets for three selections of $\frac{1}{p_{T} t}$.
-	{\it Right:} comparison of low- and high-\pt\ for two selections of $\frac{1}{p_{T} t}$.
+	\includegraphics[width=0.32\textwidth,page=4]{\main/jets/figures/lund/lund_t_z}
+	\includegraphics[width=0.32\textwidth,page=8]{\main/jets/figures/lund/lund_t_z}
+	\includegraphics[width=0.32\textwidth,page=9]{\main/jets/figures/lund/lund_t_z}
+	\caption{Projections of the relative difference of the Lund diagram onto momentum imbalance of the splittings for two selections of jet \pt\ and selections of $\frac{1}{p_{\rm T} t}$.
+	Left: relative difference for low-\pt\ jets for three selections of $\frac{1}{p_{\rm T} t}$.
+	Middle: relative difference for high-\pt\ jets for three selections of $\frac{1}{p_{\rm T} t}$.
+ Right: comparison of low- and high-\pt\ for two selections of $\frac{1}{p_{\rm T} t}$.
 	}
 	\label{fig:Lund_projections_z}
 \end{figure}
